@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="panel">
+        <button class="button panel__button">Перейти на сайт</button>
+        <h4 class="panel__title">Управление магазином</h4>
+
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <svg width="20" height="20" fill="#fff">
+              <use xlink:href="./image/icons.svg#catalog"></use>
+            </svg>
+            <span>Каталог</span>
+          </a>
+          <ul class="panel__list">
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Товары</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Атрибуты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Группы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Прайс-листы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Товары</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Категории</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel__item panel__item--active">
+          <a class="panel__link" href="#">
+            <img src="./image/orders.png" />
+            <span>Заказы</span>
+          </a>
+        </div>
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <svg width="20" height="20" fill="#fff">
+              <use xlink:href="./image/icons.svg#catalog"></use>
+            </svg>
+            <span>Контрагенты</span>
+          </a>
+          <ul class="panel__list">
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Контрагенты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Контакты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Ценовые группы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Менеджеры</a>
+            </li>
+          </ul>
+        </div>
+        <h4 class="panel__title">Общие настройки</h4>
+        <ul class="panel__setings">
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <svg width="20" height="20" fill="#fff">
+                <use xlink:href="./image/icons.svg#main"></use>
+              </svg>
+              <span>Главное</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <img class="panel__item-icon" src="./image/domain.png" />
+              <span>Домен</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <img class="panel__item-icon" src="./image/still.png" />
+              <span>Ещё</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <svg width="20" height="20" fill="#fff">
+                <use xlink:href="./image/icons.svg#add"></use>
+              </svg>
+              <span>Интеграции</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row__content">
+        <header class="admin-header">
+    <div class="admin-container admin-header__inner">
+        <div class="admin-header__status">
+            <div class="admin-header__icon"></div>
+            <span>Активен, не индексируется</span>
+        </div>
+        <button class="admin-header__button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <button class="admin-header__profile">
+             <img class="admin-header__sign"  src="./image/admin-sign.png"/>
+            <svg width="10" height="6" fill="#ff8100">
+                <use xlink:href="./image/icons.svg#arrow-bottom"></use>
+            </svg>
+        </button>
+    </div>
+</header>
+        <main class="admin-main">
+          <section class="admin table">
+            <div class="admin-container">
+              <form class="admin__form">
+                <div class="table__top">
+                  <h3 class="title-s">Заказы</h3>
+                  <label class="admin__upload">
+                    <img class="admin__upload-icon" src="./image/upload.png" />
+                    <span class="admin__upload-text">Выгрузить заказы </span>
+                    <input class="admin__upload-input" type="file" />
+                  </label>
+                </div>
+                <div class="table__content">
+                  <div class="table__item-top">
+                    <div class="table__top-wrapper">
+                      <span>№ Заказа</span>
+                      <span>Статус</span>
+                    </div>
+
+                    <span>Контакт</span>
+                    <span>Контрагент</span>
+                    <span>Дата и время</span>
+                    <span>Сумма заказа</span>
+                  </div>
+                  <div class="table__item">
+                    <button class="table__item-button" type="button">
+                      <span class="table__id">
+                        <span>534</span>
+                        <svg width="12" height="8">
+                          <use
+                            xlink:href="./image/icons.svg#arrow-bottom"
+                          ></use>
+                        </svg>
+                      </span>
+                      <span class="status status--ready">Готов к отгрузке</span>
+                    </button>
+
+                    <div class="table__item-contact">
+                      <span class="table__item-key">Контакт:</span>
+                      <span> Наталья Ермохина</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Контрагент:</span>
+                      <span> Андреева Наталья Викторовна ИП</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Дата и время:</span>
+                      <span>04.10.2023 14:14</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Сумма заказа:</span>
+
+                      <span class="table__price"> 1448611 ₽</span>
+                    </div>
+                  </div>
+                  <div class="table__item">
+                    <button class="table__item-button" type="button">
+                      <span class="table__id table__id--point">
+                        <span>534</span>
+                        <svg width="12" height="8">
+                          <use
+                            xlink:href="./image/icons.svg#arrow-bottom"
+                          ></use>
+                        </svg>
+                      </span>
+                      <span class="status status--unopened">Закрыт</span>
+                    </button>
+
+                    <div class="table__item-contact">
+                      <span class="table__item-key">Контакт:</span>
+                      <span> Наталья Ермохина</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Контрагент:</span>
+                      <span> Андреева Наталья Викторовна ИП</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Дата и время:</span>
+                      <span>04.10.2023 14:14</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Сумма заказа:</span>
+
+                      <span class="table__price"> 1448611 ₽</span>
+                    </div>
+                  </div>
+                  <div class="table__item">
+                    <button class="table__item-button" type="button">
+                      <span class="table__id table__id--point">
+                        <span>534</span>
+                        <svg width="12" height="8">
+                          <use
+                            xlink:href="./image/icons.svg#arrow-bottom"
+                          ></use>
+                        </svg>
+                      </span>
+                      <span class="status status--unopened">Закрыт</span>
+                    </button>
+
+                    <div class="table__item-contact">
+                      <span class="table__item-key">Контакт:</span>
+                      <span> Наталья Ермохина</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Контрагент:</span>
+                      <span> Андреева Наталья Викторовна ИП</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Дата и время:</span>
+                      <span>04.10.2023 14:14</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Сумма заказа:</span>
+
+                      <span class="table__price"> 1448611 ₽</span>
+                    </div>
+                  </div>
+                  <div class="table__item">
+                    <button class="table__item-button" type="button">
+                      <span class="table__id table__id--point">
+                        <span>534</span>
+                        <svg width="12" height="8">
+                          <use
+                            xlink:href="./image/icons.svg#arrow-bottom"
+                          ></use>
+                        </svg>
+                      </span>
+                      <span class="status status--unopened">Закрыт</span>
+                    </button>
+
+                    <div class="table__item-contact">
+                      <span class="table__item-key">Контакт:</span>
+                      <span> Наталья Ермохина</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Контрагент:</span>
+                      <span> Андреева Наталья Викторовна ИП</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Дата и время:</span>
+                      <span>04.10.2023 14:14</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Сумма заказа:</span>
+
+                      <span class="table__price"> 1448611 ₽</span>
+                    </div>
+                  </div>
+                  <div class="table__item">
+                    <button class="table__item-button" type="button">
+                      <span class="table__id table__id--point">
+                        <span>534</span>
+                        <svg width="12" height="8">
+                          <use
+                            xlink:href="./image/icons.svg#arrow-bottom"
+                          ></use>
+                        </svg>
+                      </span>
+                      <span class="status status--unopened">Закрыт</span>
+                    </button>
+
+                    <div class="table__item-contact">
+                      <span class="table__item-key">Контакт:</span>
+                      <span> Наталья Ермохина</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Контрагент:</span>
+                      <span> Андреева Наталья Викторовна ИП</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Дата и время:</span>
+                      <span>04.10.2023 14:14</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Сумма заказа:</span>
+
+                      <span class="table__price"> 1448611 ₽</span>
+                    </div>
+                  </div>
+                  <div class="table__item">
+                    <button class="table__item-button" type="button">
+                      <span class="table__id table__id--point">
+                        <span>534</span>
+                        <svg width="12" height="8">
+                          <use
+                            xlink:href="./image/icons.svg#arrow-bottom"
+                          ></use>
+                        </svg>
+                      </span>
+                      <span class="status status--unopened">Закрыт</span>
+                    </button>
+
+                    <div class="table__item-contact">
+                      <span class="table__item-key">Контакт:</span>
+                      <span> Наталья Ермохина</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Контрагент:</span>
+                      <span> Андреева Наталья Викторовна ИП</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Дата и время:</span>
+                      <span>04.10.2023 14:14</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Сумма заказа:</span>
+
+                      <span class="table__price"> 1448611 ₽</span>
+                    </div>
+                  </div>
+
+                  <div class="table__item">
+                    <button class="table__item-button" type="button">
+                      <span class="table__id table__id--point">
+                        <span>534</span>
+                        <svg width="12" height="8">
+                          <use
+                            xlink:href="./image/icons.svg#arrow-bottom"
+                          ></use>
+                        </svg>
+                      </span>
+                      <span class="status status--unopened">Закрыт</span>
+                    </button>
+
+                    <div class="table__item-contact">
+                      <span class="table__item-key">Контакт:</span>
+                      <span> Наталья Ермохина</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Контрагент:</span>
+                      <span> Андреева Наталья Викторовна ИП</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Дата и время:</span>
+                      <span>04.10.2023 14:14</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Сумма заказа:</span>
+
+                      <span class="table__price"> 1448611 ₽</span>
+                    </div>
+                  </div>
+                  <div class="table__item">
+                    <button class="table__item-button" type="button">
+                      <span class="table__id table__id--point">
+                        <span>534</span>
+                        <svg width="12" height="8">
+                          <use
+                            xlink:href="./image/icons.svg#arrow-bottom"
+                          ></use>
+                        </svg>
+                      </span>
+                      <span class="status status--unopened">Закрыт</span>
+                    </button>
+
+                    <div class="table__item-contact">
+                      <span class="table__item-key">Контакт:</span>
+                      <span> Наталья Ермохина</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Контрагент:</span>
+                      <span> Андреева Наталья Викторовна ИП</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Дата и время:</span>
+                      <span>04.10.2023 14:14</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Сумма заказа:</span>
+
+                      <span class="table__price"> 1448611 ₽</span>
+                    </div>
+                  </div>
+                  <div class="table__item">
+                    <button class="table__item-button" type="button">
+                      <span class="table__id table__id--point">
+                        <span>534</span>
+                        <svg width="12" height="8">
+                          <use
+                            xlink:href="./image/icons.svg#arrow-bottom"
+                          ></use>
+                        </svg>
+                      </span>
+                      <span class="status status--unopened">Закрыт</span>
+                    </button>
+
+                    <div class="table__item-contact">
+                      <span class="table__item-key">Контакт:</span>
+                      <span> Наталья Ермохина</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Контрагент:</span>
+                      <span> Андреева Наталья Викторовна ИП</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Дата и время:</span>
+                      <span>04.10.2023 14:14</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Сумма заказа:</span>
+
+                      <span class="table__price"> 1448611 ₽</span>
+                    </div>
+                  </div>
+                  <div class="table__item">
+                    <button class="table__item-button" type="button">
+                      <span class="table__id table__id--point">
+                        <span>534</span>
+                        <svg width="12" height="8">
+                          <use
+                            xlink:href="./image/icons.svg#arrow-bottom"
+                          ></use>
+                        </svg>
+                      </span>
+                      <span class="status status--unopened">Закрыт</span>
+                    </button>
+
+                    <div class="table__item-contact">
+                      <span class="table__item-key">Контакт:</span>
+                      <span> Наталья Ермохина</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Контрагент:</span>
+                      <span> Андреева Наталья Викторовна ИП</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Дата и время:</span>
+                      <span>04.10.2023 14:14</span>
+                    </div>
+                    <div>
+                      <span class="table__item-key">Сумма заказа:</span>
+
+                      <span class="table__price"> 1448611 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <nav class="navbar">
+  <button class="navbar__prev navbar__button">
+    <svg width="17" height="11" fill="#fff">
+      <use  xlink:href="./image/icons.svg#prev-arrow"></use>
+    </svg>
+  </button>
+  <ul class="navbar__list">
+    <li class="navbar__item">
+      <a class="navbar__link navbar__link--active" href="#">1</a>
+    </li>
+    <li class="navbar__item">
+      <a class="navbar__link" href="#">2</a>
+    </li>
+    <li class="navbar__item">
+      <a class="navbar__link" href="#">3</a>
+    </li>
+    <li class="navbar__item">
+      <a class="navbar__link" href="#">...</a>
+    </li>
+    <li class="navbar__item">
+      <a class="navbar__link" href="#">7</a>
+    </li>
+  </ul>
+  <button class="navbar__next navbar__button">
+    <svg   width="17" height="11" fill="#fff">
+      <use  xlink:href="./image/icons.svg#next-arrow"></use>
+    </svg>
+  </button>
+</nav>
+
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="js/main.min.js"></script>
+    <script src="js/table/table.min.js"></script>
+  </body>
+</html>

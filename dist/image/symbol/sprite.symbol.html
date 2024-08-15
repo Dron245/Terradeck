@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SVG &lt;symbol&gt; sprite preview | svg-sprite</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                color: #666;
+                background: #fafafa;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+
+            header {
+                display: block;
+                padding: 3em 3em 2em;
+                background-color: #fff;
+            }
+
+            header p {
+                margin: 2em 0 0;
+            }
+
+            section {
+                border-top: 1px solid #eee;
+                padding: 2em 3em 0;
+            }
+
+            section ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            section li {
+                display: inline-block;
+                background-color: #fff;
+                position: relative;
+                margin: 0 2em 2em 0;
+                vertical-align: top;
+                border: 1px solid #ccc;
+                padding: 1em 1em 3em;
+                cursor: default;
+            }
+
+            .icon-box {
+                margin: 0;
+                width: 144px;
+                height: 144px;
+                position: relative;
+                background: #ccc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath fill='%23fff' d='M6 0h6v6H6zM0 6h6v6H0z'/%3E%3C/svg%3E") top left repeat;
+                border: 1px solid #ccc;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            .icon {
+                display: inline-block;
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 1em;
+                font-weight: 400;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                position: absolute;
+                left: 1em;
+                right: 1em;
+                bottom: 1em;
+            }
+
+            footer {
+                display: block;
+                margin: 0;
+                padding: 0 3em 3em;
+            }
+
+            footer p {
+                margin: 0;
+                font-size: .7em;
+            }
+
+            footer a {
+                color: #0f7595;
+                margin-left: 0;
+            }
+        </style>
+
+<!--
+Sprite shape dimensions
+====================================================================================================
+You will need to set the sprite shape dimensions via CSS when you use them as inline SVG, otherwise
+they would become a huge 100% in size. You may use the following dimension classes for doing so.
+They might well be outsourced to an external stylesheet of course.
+-->
+
+<style>
+ .svg-add-dims { width: 20px; height: 20px; }
+ .svg-arrow-bottom-dims { width: 12px; height: 8px; }
+ .svg-arrow-left-dims { width: 8px; height: 12px; }
+ .svg-arrow-orange-dims { width: 7px; height: 10px; }
+ .svg-arrow-top-dims { width: 16px; height: 10px; }
+ .svg-catalog-dims { width: 20px; height: 20px; }
+ .svg-check-dims { width: 50px; height: 50px; }
+ .svg-copy-dims { width: 20px; height: 20px; }
+ .svg-group-dims { width: 36px; height: 36px; }
+ .svg-main-dims { width: 20px; height: 20px; }
+ .svg-menu-dims { width: 17px; height: 14px; }
+ .svg-next-arrow-dims { width: 16px; height: 10px; }
+ .svg-percent-dims { width: 8.926px; height: 10.24px; }
+ .svg-prev-dims { width: 40px; height: 40px; }
+ .svg-prev-arrow-dims { width: 16px; height: 10px; }
+ .svg-search-1-dims { width: 16px; height: 16px; }
+ .svg-search-2-dims { width: 16px; height: 16px; }
+ .svg-setting-dims { width: 4px; height: 20px; }
+ .svg-union-dims { width: 16px; height: 10px; }
+</style>
+
+<!--
+====================================================================================================
+-->
+
+    </meta></head>
+    <body>
+
+<!--
+Inline <symbol> SVG sprite
+====================================================================================================
+This is an inlined version of the generated SVG sprite. The single images may be <use>d everywhere
+below within this document. Please see
+
+    https://github.com/svg-sprite/svg-sprite/blob/main/docs/configuration.md#defs--symbol-mode
+
+for further details on how to create this embeddable sprite variant.
+-->
+
+<svg width="0" height="0">
+     <symbol viewBox="0 0 20 20" id="add" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18 .998H2a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-16a1 1 0 0 0-1-1Zm-16-1a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-16a2 2 0 0 0-2-2H2Zm8 3.5a.5.5 0 0 1 .5.5v5.5H16a.5.5 0 0 1 0 1h-5.5v5.5a.5.5 0 0 1-1 0v-5.5H4a.5.5 0 0 1 0-1h5.5v-5.5a.5.5 0 0 1 .5-.5Z"/></symbol>
+     <symbol viewBox="0 0 12 8" id="arrow-bottom" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.379 7.577a.5.5 0 0 1-.758 0L.157 1.54a.637.637 0 0 1 0-.837L.41.423a.5.5 0 0 1 .758 0L6 5.763l4.832-5.34a.5.5 0 0 1 .758 0l.253.28c.21.23.21.606 0 .837L6.379 7.577Z"/></symbol>
+     <symbol viewBox="0 0 8 12" id="arrow-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.173 6.379a.5.5 0 0 1 0-.758L6.21.157a.637.637 0 0 1 .837 0l.28.253a.5.5 0 0 1 0 .758L1.987 6l5.34 4.832a.5.5 0 0 1 0 .758l-.28.253a.637.637 0 0 1-.837 0L.173 6.379Z"/></symbol>
+     <symbol viewBox="0 0 7 10" id="arrow-orange" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.105 4.684a.417.417 0 0 1 0 .632l-5.03 4.553a.53.53 0 0 1-.698 0l-.232-.21a.417.417 0 0 1 0-.632L4.594 5 .144.973a.417.417 0 0 1 0-.632l.233-.21a.53.53 0 0 1 .698 0l5.03 4.553Z"/></symbol>
+     <symbol viewBox="0 0 16 10" id="arrow-top" xmlns="http://www.w3.org/2000/svg"><path d="M7.49.23c.28-.31.73-.31 1.01 0l7.29 8.05c.28.3.28.8 0 1.11l-.34.37c-.28.31-.73.31-1.01 0L8 2.65 1.55 9.76c-.28.31-.73.31-1.01 0L.2 9.39a.838.838 0 0 1 0-1.11L7.49.23Z" fill-rule="evenodd"/></symbol>
+     <symbol viewBox="0 0 20 20" id="catalog" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 1h4.75a1 1 0 0 1 1 1v4.75a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1ZM0 2a2 2 0 0 1 2-2h4.75a2 2 0 0 1 2 2v4.75a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm13.25-1H18a1 1 0 0 1 1 1v4.75a1 1 0 0 1-1 1h-4.75a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1Zm-2 1a2 2 0 0 1 2-2H18a2 2 0 0 1 2 2v4.75a2 2 0 0 1-2 2h-4.75a2 2 0 0 1-2-2V2ZM18 12.25h-4.75a1 1 0 0 0-1 1V18a1 1 0 0 0 1 1H18a1 1 0 0 0 1-1v-4.75a1 1 0 0 0-1-1Zm-4.75-1a2 2 0 0 0-2 2V18a2 2 0 0 0 2 2H18a2 2 0 0 0 2-2v-4.75a2 2 0 0 0-2-2h-4.75ZM2 12.25h4.75a1 1 0 0 1 1 1V18a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-4.75a1 1 0 0 1 1-1Zm-2 1a2 2 0 0 1 2-2h4.75a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-4.75Z"/></symbol>
+     <symbol viewBox="0 0 50 50" id="check" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="gb" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="#ga" transform="scale(.00195)"/></pattern><image id="ga" width="512" height="512" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:image/png;base64,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"/></defs><path d="M0 0h50v50H0z"/></symbol>
+     <symbol viewBox="0 0 20 20" id="copy" xmlns="http://www.w3.org/2000/svg"><path d="M3 4H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2h2.054a2.001 2.001 0 0 0 1.679-1c.109-.188.188-.397.23-.618q.032-.162.036-.33L20 14V1.939q-.006-.163-.036-.321a1.989 1.989 0 0 0-.671-1.145A2 2 0 0 0 18 0H6a2.004 2.004 0 0 0-1.519.698A2.005 2.005 0 0 0 4 2v2H3Zm1 1H2q-.138 0-.266.035-.062.017-.123.043-.082.035-.157.083-.086.057-.161.132-.076.076-.134.165-.047.073-.08.153-.032.073-.05.148Q1 5.876 1 6v12q0 .124.029.241.018.076.05.148.033.08.08.153.058.089.134.165.075.075.161.131.075.049.157.084.06.026.123.043Q1.862 19 2 19h12q.138 0 .266-.035.062-.017.123-.043.083-.035.157-.084.086-.056.161-.13.076-.077.134-.166.047-.073.08-.153.032-.072.05-.148Q15 18.124 15 18V6q0-.124-.029-.241-.018-.075-.05-.148-.033-.08-.08-.153-.057-.089-.134-.165-.075-.075-.161-.132-.074-.048-.157-.083-.06-.026-.123-.043Q14.138 5 14 5H4Zm12 10h2a.996.996 0 0 0 1-1V2a.996.996 0 0 0-1-1H6a.996.996 0 0 0-1 1v2h9a2 2 0 0 1 2 2v9Z" clip-rule="evenodd" fill-rule="evenodd"/></symbol>
+     <symbol viewBox="0 0 36 36" id="group" xmlns="http://www.w3.org/2000/svg"><path d="M36 0H0v36h36V0Z"/><path d="M29.247 14.627h-22.5v6.746h22.5v-6.747Z"/><path d="M21.367 6.753H14.62v22.5h6.747v-22.5Z"/></symbol>
+     <symbol viewBox="0 0 20 20" id="main" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.858 3.44 10.71 1.294a1 1 0 0 0-1.414 0L7.146 3.44a1 1 0 0 0 0 1.413l2.149 2.148a1 1 0 0 0 1.415 0l2.148-2.148a1 1 0 0 0 0-1.413ZM11.417.587a2.001 2.001 0 0 0-2.83 0L6.44 2.734a1.999 1.999 0 0 0 0 2.827L8.588 7.71c.78.781 2.048.781 2.829 0l2.149-2.148a1.999 1.999 0 0 0 0-2.827L11.416.586Zm-6.56 6.553 2.149 2.148a1 1 0 0 1 0 1.413l-2.15 2.148a1 1 0 0 1-1.414 0L1.293 10.7a1 1 0 0 1 0-1.413l2.15-2.148a1 1 0 0 1 1.414 0Zm-2.122-.707a2.001 2.001 0 0 1 2.829 0L7.713 8.58c.781.78.781 2.046 0 2.827l-2.149 2.148c-.781.781-2.048.781-2.83 0L.587 11.407a1.999 1.999 0 0 1 0-2.827l2.149-2.148Zm13.823.707 2.15 2.148a1 1 0 0 1 0 1.413l-2.15 2.148a1 1 0 0 1-1.414 0l-2.15-2.148a1 1 0 0 1 0-1.413l2.15-2.148a1 1 0 0 1 1.414 0Zm-2.122-.707a2.001 2.001 0 0 1 2.83 0l2.148 2.148c.782.78.782 2.046 0 2.827l-2.149 2.148c-.78.781-2.047.781-2.829 0l-2.149-2.148a1.999 1.999 0 0 1 0-2.827l2.15-2.148Zm-3.726 6.563 2.148 2.148a1 1 0 0 1 0 1.414l-2.149 2.148a1 1 0 0 1-1.414 0l-2.149-2.148a1 1 0 0 1 0-1.414l2.149-2.148a1 1 0 0 1 1.415 0Zm-2.122-.707a2.001 2.001 0 0 1 2.829 0l2.149 2.148c.781.781.781 2.047 0 2.828l-2.15 2.148c-.78.78-2.047.78-2.828 0l-2.15-2.148a1.999 1.999 0 0 1 0-2.828l2.15-2.148Z"/></symbol>
+     <symbol viewBox="0 0 17 14" id="menu" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.5 1a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2h-14a1 1 0 0 1-1-1Zm0 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2h-14a1 1 0 0 1-1-1Zm1 5a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2h-14Z"/></symbol>
+     <symbol viewBox="0 0 16 10" id="next-arrow" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.5.707a1 1 0 0 0 0 1.414L12.379 4H1.207a1 1 0 0 0 0 2H12.38L10.5 7.879a1 1 0 0 0 1.414 1.414L15.5 5.707a1 1 0 0 0 0-1.414L11.914.707a1 1 0 0 0-1.414 0Z"/></symbol>
+     <symbol viewBox="0 0 8.926 10.24" id="percent" xmlns="http://www.w3.org/2000/svg"><path d="M.24 1q-.25.46-.25 1.05v.48q0 .71.33 1.21.11.17.26.31.2.2.44.33.45.24 1.02.24.58 0 1.02-.24.24-.13.44-.33.18-.18.3-.39.27-.46.27-1.08v-.49q0-.68-.31-1.18Q3.65.73 3.5.58 3.32.39 3.11.27 2.65 0 2.03 0 1.44 0 1 .25.76.38.56.58.37.77.24 1Zm.89 2.31Q.94 3 .94 2.58v-.5q0-.51.24-.84.02-.04.05-.07.11-.12.24-.2.24-.15.56-.15.33 0 .56.15.14.08.24.2.05.06.1.13.19.32.19.75v.5q0 .56-.27.89-.01.01-.02.03-.12.13-.26.2-.23.13-.53.13-.32 0-.56-.14-.13-.08-.24-.2-.06-.07-.11-.15Zm.48 5.58.72.45 4.86-7.78-.72-.45-4.86 7.78ZM5.09 6.6q-.25.45-.25 1.05v.49q0 .71.33 1.21.11.17.25.31.21.2.45.33.44.25 1.02.25.58 0 1.02-.25.24-.13.44-.33.19-.19.32-.42.25-.46.25-1.06V7.7q0-.72-.33-1.23-.1-.16-.24-.3-.2-.19-.42-.32-.46-.25-1.05-.25-.6 0-1.05.25-.23.13-.42.33-.19.19-.32.42Zm.9 2.34q-.21-.31-.21-.76v-.5q0-.53.26-.85.02-.03.05-.06.12-.14.27-.22.23-.12.52-.12.32 0 .55.14.14.08.24.2.05.05.09.12.21.31.21.76v.51q0 .56-.28.9 0 .01-.01.02-.11.12-.24.2-.24.13-.55.13-.32 0-.56-.14-.14-.08-.25-.2-.05-.06-.09-.13Z" fill-rule="evenodd"/></symbol>
+     <symbol viewBox="0 0 40 40" id="prev" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8"/><path fill-rule="evenodd" clip-rule="evenodd" d="M17.5 15.707a1 1 0 0 1 0 1.414L15.621 19h11.172a1 1 0 1 1 0 2H15.62l1.879 1.879a1 1 0 1 1-1.414 1.414L12.5 20.707a1 1 0 0 1 0-1.414l3.586-3.586a1 1 0 0 1 1.414 0Z"/></symbol>
+     <symbol viewBox="0 0 16 10" id="prev-arrow" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.5.707a1 1 0 0 1 0 1.414L3.621 4h11.172a1 1 0 1 1 0 2H3.62L5.5 7.879a1 1 0 0 1-1.414 1.414L.5 5.707a1 1 0 0 1 0-1.414L4.086.707a1 1 0 0 1 1.414 0Z"/></symbol>
+     <symbol viewBox="0 0 16 16" id="search-1" xmlns="http://www.w3.org/2000/svg"><path d="M0 6a6 6 0 1 1 10.582 3.875l4.771 4.771a.495.495 0 0 1 0 .707.494.494 0 0 1-.707 0l-4.771-4.771A6 6 0 0 1 0 6Zm1 0a5 5 0 1 1 10 0A5 5 0 0 1 1 6Z" clip-rule="evenodd" fill-rule="evenodd"/></symbol>
+     <symbol viewBox="0 0 16 16" id="search-2" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 6A5 5 0 1 1 1 6a5 5 0 0 1 10 0Zm-1.126 4.582a6 6 0 1 1 .707-.707l4.773 4.771a.5.5 0 0 1-.708.708l-4.772-4.772Z"/></symbol>
+     <symbol viewBox="0 0 4 20" id="setting" xmlns="http://www.w3.org/2000/svg"><path d="M0 2a2 2 0 1 1 3.999-.001A2 2 0 0 1 0 2Zm0 8a2 2 0 1 1 3.999-.001A2 2 0 0 1 0 10Zm2 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 2 16Z" clip-rule="evenodd" fill-rule="evenodd"/></symbol>
+     <symbol viewBox="0 0 16 10" id="union" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.5.707a1 1 0 0 1 0 1.414L3.621 4h11.172a1 1 0 1 1 0 2H3.62L5.5 7.879a1 1 0 0 1-1.414 1.414L.5 5.707a1 1 0 0 1 0-1.414L4.086.707a1 1 0 0 1 1.414 0Z"/></symbol>
+</svg>
+
+<!--
+====================================================================================================
+-->
+
+        <header>
+            <h1>SVG <code>&lt;symbol&gt;</code> sprite preview</h1>
+            <p>This preview features two methods of using the generated sprite in conjunction with inline SVG. Please have a look at the HTML source for further details and be aware of the following constraints:</p>
+            <ul>
+                <li>Your browser has to <a href="https://caniuse.com/svg-html5" target="_blank" rel="noopener noreferrer">support inline SVG</a> for these techniques to work.</li>
+                <li>The embedded sprite (A) slightly differs from the generated external one. Please <a href="https://github.com/svg-sprite/svg-sprite/blob/main/docs/configuration.md#defs--symbol-mode" target="_blank" rel="noopener noreferrer">see the documentation</a> for details on how to create such an embeddable sprite.</li>
+            </ul>
+        </header>
+        <section>
+
+<!--
+A) Inline SVG with embedded sprite
+====================================================================================================
+These SVG images make use of fragment identifiers (IDs) and are extracted out of the inline sprite
+embedded above. They may be styled via CSS.
+-->
+
+            <h3>A) Inline SVG with embedded sprite</h3>
+            <ul>
+
+             <li title="add">
+                    <div class="icon-box">
+                        <svg class="svg-add-dims">
+                            <use xlink:href="#add"/>
+                        </svg>
+                    </div>
+                    <h2>add, </h2>
+                </li>
+             <li title="arrow-bottom">
+                    <div class="icon-box">
+                        <svg class="svg-arrow-bottom-dims">
+                            <use xlink:href="#arrow-bottom"/>
+                        </svg>
+                    </div>
+                    <h2>arrow-bottom, </h2>
+                </li>
+             <li title="arrow-left">
+                    <div class="icon-box">
+                        <svg class="svg-arrow-left-dims">
+                            <use xlink:href="#arrow-left"/>
+                        </svg>
+                    </div>
+                    <h2>arrow-left, </h2>
+                </li>
+             <li title="arrow-orange">
+                    <div class="icon-box">
+                        <svg class="svg-arrow-orange-dims">
+                            <use xlink:href="#arrow-orange"/>
+                        </svg>
+                    </div>
+                    <h2>arrow-orange, </h2>
+                </li>
+             <li title="arrow-top">
+                    <div class="icon-box">
+                        <svg class="svg-arrow-top-dims">
+                            <use xlink:href="#arrow-top"/>
+                        </svg>
+                    </div>
+                    <h2>arrow-top, </h2>
+                </li>
+             <li title="catalog">
+                    <div class="icon-box">
+                        <svg class="svg-catalog-dims">
+                            <use xlink:href="#catalog"/>
+                        </svg>
+                    </div>
+                    <h2>catalog, </h2>
+                </li>
+             <li title="check">
+                    <div class="icon-box">
+                        <svg class="svg-check-dims">
+                            <use xlink:href="#check"/>
+                        </svg>
+                    </div>
+                    <h2>check, </h2>
+                </li>
+             <li title="copy">
+                    <div class="icon-box">
+                        <svg class="svg-copy-dims">
+                            <use xlink:href="#copy"/>
+                        </svg>
+                    </div>
+                    <h2>copy, </h2>
+                </li>
+             <li title="group">
+                    <div class="icon-box">
+                        <svg class="svg-group-dims">
+                            <use xlink:href="#group"/>
+                        </svg>
+                    </div>
+                    <h2>group, </h2>
+                </li>
+             <li title="main">
+                    <div class="icon-box">
+                        <svg class="svg-main-dims">
+                            <use xlink:href="#main"/>
+                        </svg>
+                    </div>
+                    <h2>main, </h2>
+                </li>
+             <li title="menu">
+                    <div class="icon-box">
+                        <svg class="svg-menu-dims">
+                            <use xlink:href="#menu"/>
+                        </svg>
+                    </div>
+                    <h2>menu, </h2>
+                </li>
+             <li title="next-arrow">
+                    <div class="icon-box">
+                        <svg class="svg-next-arrow-dims">
+                            <use xlink:href="#next-arrow"/>
+                        </svg>
+                    </div>
+                    <h2>next-arrow, </h2>
+                </li>
+             <li title="percent">
+                    <div class="icon-box">
+                        <svg class="svg-percent-dims">
+                            <use xlink:href="#percent"/>
+                        </svg>
+                    </div>
+                    <h2>percent, </h2>
+                </li>
+             <li title="prev">
+                    <div class="icon-box">
+                        <svg class="svg-prev-dims">
+                            <use xlink:href="#prev"/>
+                        </svg>
+                    </div>
+                    <h2>prev, </h2>
+                </li>
+             <li title="prev-arrow">
+                    <div class="icon-box">
+                        <svg class="svg-prev-arrow-dims">
+                            <use xlink:href="#prev-arrow"/>
+                        </svg>
+                    </div>
+                    <h2>prev-arrow, </h2>
+                </li>
+             <li title="search-1">
+                    <div class="icon-box">
+                        <svg class="svg-search-1-dims">
+                            <use xlink:href="#search-1"/>
+                        </svg>
+                    </div>
+                    <h2>search-1, </h2>
+                </li>
+             <li title="search-2">
+                    <div class="icon-box">
+                        <svg class="svg-search-2-dims">
+                            <use xlink:href="#search-2"/>
+                        </svg>
+                    </div>
+                    <h2>search-2, </h2>
+                </li>
+             <li title="setting">
+                    <div class="icon-box">
+                        <svg class="svg-setting-dims">
+                            <use xlink:href="#setting"/>
+                        </svg>
+                    </div>
+                    <h2>setting, </h2>
+                </li>
+             <li title="union">
+                    <div class="icon-box">
+                        <svg class="svg-union-dims">
+                            <use xlink:href="#union"/>
+                        </svg>
+                    </div>
+                    <h2>union, </h2>
+                </li>
+         </ul>
+
+<!--
+====================================================================================================
+-->
+
+        </section>
+        <section>
+
+<!--
+B) Inline SVG with external sprite
+====================================================================================================
+These SVG images make use of an URL + fragment identifiers (IDs) and refer to the regular external
+SVG sprite. They may be styled via CSS.
+-->
+
+            <h3>B) Inline SVG with external sprite</h3>
+            <ul>
+
+             <li title="add">
+                    <div class="icon-box">
+                        <svg class="svg-add-dims">
+                            <use xlink:href="../icons.svg#add"/>
+                        </svg>
+                    </div>
+                    <h2>add</h2>
+                </li>
+             <li title="arrow-bottom">
+                    <div class="icon-box">
+                        <svg class="svg-arrow-bottom-dims">
+                            <use xlink:href="../icons.svg#arrow-bottom"/>
+                        </svg>
+                    </div>
+                    <h2>arrow-bottom</h2>
+                </li>
+             <li title="arrow-left">
+                    <div class="icon-box">
+                        <svg class="svg-arrow-left-dims">
+                            <use xlink:href="../icons.svg#arrow-left"/>
+                        </svg>
+                    </div>
+                    <h2>arrow-left</h2>
+                </li>
+             <li title="arrow-orange">
+                    <div class="icon-box">
+                        <svg class="svg-arrow-orange-dims">
+                            <use xlink:href="../icons.svg#arrow-orange"/>
+                        </svg>
+                    </div>
+                    <h2>arrow-orange</h2>
+                </li>
+             <li title="arrow-top">
+                    <div class="icon-box">
+                        <svg class="svg-arrow-top-dims">
+                            <use xlink:href="../icons.svg#arrow-top"/>
+                        </svg>
+                    </div>
+                    <h2>arrow-top</h2>
+                </li>
+             <li title="catalog">
+                    <div class="icon-box">
+                        <svg class="svg-catalog-dims">
+                            <use xlink:href="../icons.svg#catalog"/>
+                        </svg>
+                    </div>
+                    <h2>catalog</h2>
+                </li>
+             <li title="check">
+                    <div class="icon-box">
+                        <svg class="svg-check-dims">
+                            <use xlink:href="../icons.svg#check"/>
+                        </svg>
+                    </div>
+                    <h2>check</h2>
+                </li>
+             <li title="copy">
+                    <div class="icon-box">
+                        <svg class="svg-copy-dims">
+                            <use xlink:href="../icons.svg#copy"/>
+                        </svg>
+                    </div>
+                    <h2>copy</h2>
+                </li>
+             <li title="group">
+                    <div class="icon-box">
+                        <svg class="svg-group-dims">
+                            <use xlink:href="../icons.svg#group"/>
+                        </svg>
+                    </div>
+                    <h2>group</h2>
+                </li>
+             <li title="main">
+                    <div class="icon-box">
+                        <svg class="svg-main-dims">
+                            <use xlink:href="../icons.svg#main"/>
+                        </svg>
+                    </div>
+                    <h2>main</h2>
+                </li>
+             <li title="menu">
+                    <div class="icon-box">
+                        <svg class="svg-menu-dims">
+                            <use xlink:href="../icons.svg#menu"/>
+                        </svg>
+                    </div>
+                    <h2>menu</h2>
+                </li>
+             <li title="next-arrow">
+                    <div class="icon-box">
+                        <svg class="svg-next-arrow-dims">
+                            <use xlink:href="../icons.svg#next-arrow"/>
+                        </svg>
+                    </div>
+                    <h2>next-arrow</h2>
+                </li>
+             <li title="percent">
+                    <div class="icon-box">
+                        <svg class="svg-percent-dims">
+                            <use xlink:href="../icons.svg#percent"/>
+                        </svg>
+                    </div>
+                    <h2>percent</h2>
+                </li>
+             <li title="prev">
+                    <div class="icon-box">
+                        <svg class="svg-prev-dims">
+                            <use xlink:href="../icons.svg#prev"/>
+                        </svg>
+                    </div>
+                    <h2>prev</h2>
+                </li>
+             <li title="prev-arrow">
+                    <div class="icon-box">
+                        <svg class="svg-prev-arrow-dims">
+                            <use xlink:href="../icons.svg#prev-arrow"/>
+                        </svg>
+                    </div>
+                    <h2>prev-arrow</h2>
+                </li>
+             <li title="search-1">
+                    <div class="icon-box">
+                        <svg class="svg-search-1-dims">
+                            <use xlink:href="../icons.svg#search-1"/>
+                        </svg>
+                    </div>
+                    <h2>search-1</h2>
+                </li>
+             <li title="search-2">
+                    <div class="icon-box">
+                        <svg class="svg-search-2-dims">
+                            <use xlink:href="../icons.svg#search-2"/>
+                        </svg>
+                    </div>
+                    <h2>search-2</h2>
+                </li>
+             <li title="setting">
+                    <div class="icon-box">
+                        <svg class="svg-setting-dims">
+                            <use xlink:href="../icons.svg#setting"/>
+                        </svg>
+                    </div>
+                    <h2>setting</h2>
+                </li>
+             <li title="union">
+                    <div class="icon-box">
+                        <svg class="svg-union-dims">
+                            <use xlink:href="../icons.svg#union"/>
+                        </svg>
+                    </div>
+                    <h2>union</h2>
+                </li>
+         </ul>
+
+<!--
+====================================================================================================
+-->
+
+        </section>
+        <footer>
+            <p>Generated at Thu, 15 Aug 2024 11:04:45 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+        </footer>
+    </body>
+</html>

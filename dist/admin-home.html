@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Office</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="panel">
+        <button class="button panel__button">Перейти на сайт</button>
+        <h4 class="panel__title">Управление магазином</h4>
+
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <svg width="20" height="20" fill="#fff">
+              <use xlink:href="./image/icons.svg#catalog"></use>
+            </svg>
+            <span>Каталог</span>
+          </a>
+          <ul class="panel__list">
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Товары</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Атрибуты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Группы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Прайс-листы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Товары</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Категории</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <img src="./image/panel-orders.png" />
+            <span>Заказы</span>
+          </a>
+        </div>
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <svg width="20" height="20" fill="#fff">
+              <use xlink:href="./image/icons.svg#catalog"></use>
+            </svg>
+            <span>Контрагенты</span>
+          </a>
+          <ul class="panel__list">
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Контрагенты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Контакты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Ценовые группы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Менеджеры</a>
+            </li>
+          </ul>
+        </div>
+        <h4 class="panel__title">Общие настройки</h4>
+        <ul class="panel__setings">
+          <li class="panel__item panel__item--active">
+            <a class="panel__link" href="#">
+              <svg width="20" height="20" fill="#ff8100">
+                <use xlink:href="./image/icons.svg#main"></use>
+              </svg>
+              <span>Главное</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <img class="panel__item-icon" src="./image/domain.png" />
+              <span>Домен</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <img class="panel__item-icon" src="./image/still.png" />
+              <span>Ещё</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <svg width="20" height="20" fill="#fff">
+                <use xlink:href="./image/icons.svg#add"></use>
+              </svg>
+              <span>Интеграции</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row__content">
+        <header class="admin-header">
+    <div class="admin-container admin-header__inner">
+        <div class="admin-header__status">
+            <div class="admin-header__icon"></div>
+            <span>Активен, не индексируется</span>
+        </div>
+        <button class="admin-header__button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <button class="admin-header__profile">
+             <img class="admin-header__sign"  src="./image/admin-sign.png"/>
+            <svg width="10" height="6" fill="#ff8100">
+                <use xlink:href="./image/icons.svg#arrow-bottom"></use>
+            </svg>
+        </button>
+    </div>
+</header>
+        <main class="admin-main">
+          <section class="admin admin-home">
+            <div class="admin-container">
+              <h3 class="title-s">Главное</h3>
+              <form class="admin__form">
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Общая информация</span>
+
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content admin__content--between">
+                    <div class="admin__items admin-home__items">
+                      <div class="admin__form-item admin-item-count">
+                        <div class="admin__item-top">
+                          <h5 class="admin__input-title">Название сайта</h5>
+                          <span class="admin__text-count"></span>
+                        </div>
+                        <input
+                          class="input"
+                          type="text"
+                          value="B2B - TERRADECK"
+                          maxlength="100"
+                        />
+                      </div>
+                      <div class="admin__form-item admin-item-count">
+                        <div class="admin__item-top">
+                          <h5 class="admin__input-title">Компания</h5>
+                          <span class="admin__text-count"></span>
+                        </div>
+                        <input
+                          class="input"
+                          type="text"
+                          maxlength="100"
+                          value="ООО Террасные решения"
+                        />
+                      </div>
+                      <div class="admin__form-item admin-item-count">
+                        <div class="admin__item-top">
+                          <h5 class="admin__input-title">Отрасль</h5>
+                          <span class="admin__text-count"></span>
+                        </div>
+                        <input
+                          class="input"
+                          type="text"
+                          value="Строительство"
+                          maxlength="100"
+                        />
+                      </div>
+                      <div class="admin__form-item admin-item-count">
+                        <div class="admin__item-top">
+                          <h5 class="admin__input-title">Описание</h5>
+                          <span class="admin__text-count"></span>
+                        </div>
+                        <textarea
+                          class="input-textarea"
+                          maxlength="500"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="admin-home__files">
+                      <div class="admin-home__file-wrapper">
+                        <label class="admin-home__file-label">
+                          <div class="admin-home__file">
+                            <span class="admin-home__file-text"
+                              >Выберите файл или перетащите его в эту
+                              область</span
+                            >
+                            <input class="admin-home__file-input" type="file" />
+                          </div>
+                        </label>
+                        <p class="admin-home__wrapper-text">
+                          Будет отображаться в шапке вашего магазина
+                        </p>
+                      </div>
+                      <div class="admin-home__file-wrapper">
+                        <label class="admin-home__file-label">
+                          <div class="admin-home__file">
+                            <span class="admin-home__file-text"
+                              >Выберите файл или перетащите его в эту
+                              область</span
+                            >
+                            <input class="admin-home__file-input" type="file" />
+                          </div>
+                        </label>
+                        <p class="admin-home__wrapper-text">
+                          Будет отображаться во вкладке браузера в магазине
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Контактная информация</span>
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content admin__content--between">
+                    <div class="admin__items admin-home__items">
+                      <h5 class="admin__items-title">Общая информация</h5>
+                      <div class="admin__form-item admin-item-count">
+                        <div class="admin__item-top">
+                          <h5 class="admin__input-title">
+                            Адрес магазина или склада
+                          </h5>
+                          <span class="admin__text-count"></span>
+                        </div>
+                        <input
+                          class="input"
+                          type="text"
+                          maxlength="100"
+                          value=""
+                          placeholder="Введите адрес"
+                        />
+                      </div>
+                      <div class="admin__form-item">
+                        <div class="admin__item-top">
+                          <h5 class="admin__input-title">Телефон</h5>
+                        </div>
+                        <input
+                          class="input admin-home__number"
+                          type="text"
+                          placeholder="+7 (___)-___-__-__"
+                        />
+                      </div>
+                      <div class="admin__form-item">
+                        <div class="admin__item-top">
+                          <h5 class="admin__input-title">Часы</h5>
+                        </div>
+                        <div class="admin-home__graphic">
+                          <div class="admin-home__graphic-item">
+                            <span class="admin-home__graphic-days">ПН-ПТ</span>
+                            <input
+                              class="input admin-home__graphic-input"
+                              type="text"
+                              placeholder="00:00"
+                            />
+                            <span>-</span>
+                            <input
+                              class="input admin-home__graphic-input"
+                              type="text"
+                              placeholder="00:00"
+                            />
+                          </div>
+                          <div class="admin-home__graphic-item">
+                            <span class="admin-home__graphic-days">СБ-ВС</span>
+                            <input
+                              class="input admin-home__graphic-input"
+                              type="text"
+                              placeholder="00:00"
+                            />
+                            <span>-</span>
+                            <input
+                              class="input admin-home__graphic-input"
+                              type="text"
+                              placeholder="00:00"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="admin__items admin-home__items">
+                      <h5 class="admin__items-title">Ссылки на соц. сети</h5>
+                      <div class="admin__form-item">
+                        <div class="admin__item-top">
+                          <h5 class="admin__input-title">ВКонтакте</h5>
+                        </div>
+                        <input class="input" type="text" />
+                      </div>
+                      <div class="admin__form-item">
+                        <div class="admin__item-top">
+                          <h5 class="admin__input-title">Telegram</h5>
+                        </div>
+                        <input class="input" type="text" />
+                      </div>
+                      <div class="admin__form-item">
+                        <div class="admin__item-top">
+                          <h5 class="admin__input-title">YouTube</h5>
+                        </div>
+                        <input class="input" type="text" />
+                      </div>
+                      <div class="admin__form-item">
+                        <div class="admin__item-top">
+                          <h5 class="admin__input-title">WhatsApp</h5>
+                        </div>
+                        <input class="input" type="text" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Настройки</span>
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content admin__content--between">
+                    <div class="admin-home__all-switch">
+                      <div class="admin-home__switch">
+                        <label class="admin-home__label">
+                          <input
+                            class="admin__switch-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <div class="admin__switch"></div>
+                          <p class="admin-home__switch-text">
+                            Опубликовать магазин
+                          </p>
+                        </label>
+                      </div>
+                      <div class="admin-home__switch">
+                        <label class="admin-home__label">
+                          <input
+                            class="admin__switch-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <div class="admin__switch"></div>
+                          <p class="admin-home__switch-text">
+                            Закрыть для неавторизованных пользователей
+                          </p>
+                        </label>
+                      </div>
+                      <div class="admin-home__switch">
+                        <label class="admin-home__label">
+                          <input
+                            class="admin__switch-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <div class="admin__switch"></div>
+                          <p class="admin-home__switch-text">
+                            Разрешить индексацию
+                          </p>
+                        </label>
+                      </div>
+                      <div class="admin-home__switch">
+                        <label class="admin-home__label">
+                          <input
+                            class="admin__switch-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <div class="admin__switch"></div>
+                          <p class="admin-home__switch-text">
+                            Скрывать точные значения остатков в магазине
+                          </p>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="admin-home__currencies">
+                      <label class="admin-home__label">
+                        <input
+                          class="admin-home__currency-input"
+                          type="radio"
+                          name="currency"
+                          checked
+                        />
+                        <div class="admin-home__currency"></div>
+                        <span class="admin-home__currency-value">Рубли, ₽</span>
+                      </label>
+                      <label class="admin-home__label">
+                        <input
+                          class="admin-home__currency-input"
+                          type="radio"
+                          name="currency"
+                        />
+                        <div class="admin-home__currency"></div>
+                        <span class="admin-home__currency-value">Тенге, ₸</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Каталог</span>
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <div class="admin-home__catalog">
+                      <div class="admin-home__catalog-item">
+                        <button class="button">Удалить все товары</button>
+                        <p class="admin-home__catalog-text">
+                          При нажатии на кнопку все товары удалятся из каталога
+                        </p>
+                      </div>
+                      <div class="admin-home__catalog-item">
+                        <button class="button">Удалить все товары</button>
+                        <p class="admin-home__catalog-text">
+                          При нажатии на кнопку все атрибуты удалятся из
+                          каталога
+                        </p>
+                      </div>
+                      <div class="admin-home__catalog-item">
+                        <button class="button">Удалить все товары</button>
+                        <p class="admin-home__catalog-text">
+                          При нажатии на кнопку все группы удалятся из каталога
+                        </p>
+                      </div>
+                      <div class="admin-home__catalog-item">
+                        <button class="button">Удалить все товары</button>
+                        <p class="admin-home__catalog-text">
+                          При нажатии на кнопку все категории удалятся из
+                          каталога
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Заказы</span>
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <div class="admin-home__form-select">
+                      <div class="admin__item-top">
+                        <h5 class="admin__input-title">Отображение заказов</h5>
+                      </div>
+                      <button class="button-select" type="button">
+                        <span> </span>
+                        <svg width="12" height="8">
+                          <use
+                            xlink:href="./image/icons.svg#arrow-bottom"
+                          ></use>
+                        </svg>
+                      </button>
+                      <div class="select-wrapper">
+                        <button class="select-wrapper__button select-wrapper__button--active" type="button">
+                          3 месяца
+                        </button>
+                        <button class="select-wrapper__button" type="button">
+                          6 месяца
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Информация по товару</span>
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <div class="admin__items admin__items--mw">
+                      <div class="admin__items-item">
+                        <div class="admin__form-item">
+                          <div class="admin__item-top">
+                            <h5 class="admin__items-title">Информация №1</h5>
+                          </div>
+                          <input
+                            class="input"
+                            type="text"
+                            placeholder="Характеристики"
+                          />
+                        </div>
+                        <div class="admin-home__info-select">
+                          <div class="admin__item-top">
+                            <h5 class="admin__items-title">Вид</h5>
+                          </div>
+                          <button class="button-select" type="button" data-placeholder="Пункты">
+                            <span> </span>
+                            <svg width="12" height="8">
+                              <use
+                                xlink:href="./image/icons.svg#arrow-bottom"
+                              ></use>
+                            </svg>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 1
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 2
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="admin__items-item">
+                        <div class="admin__form-item">
+                          <div class="admin__item-top">
+                            <h5 class="admin__items-title">Информация №2</h5>
+                          </div>
+                          <input
+                            class="input"
+                            type="text"
+                            placeholder="Полезная информация"
+                          />
+                        </div>
+                        <div class="admin-home__info-select">
+                          <div class="admin__item-top">
+                            <h5 class="admin__items-title">Вид</h5>
+                          </div>
+                          <button class="button-select" type="button" data-placeholder="Текст">
+                            <span> </span>
+                            <svg width="12" height="8">
+                              <use
+                                xlink:href="./image/icons.svg#arrow-bottom"
+                              ></use>
+                            </svg>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 1
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 2
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="admin__items-item">
+                        <div class="admin__form-item">
+                          <div class="admin__item-top">
+                            <h5 class="admin__items-title">Информация №3</h5>
+                          </div>
+                          <input class="input" type="text" placeholder="Документы" />
+                        </div>
+                        <div class="admin-home__info-select">
+                          <div class="admin__item-top">
+                            <h5 class="admin__items-title">Вид</h5>
+                          </div>
+                          <button class="button-select" type="button" data-placeholder="Файлы">
+                            <span> </span>
+                            <svg width="12" height="8">
+                              <use
+                                xlink:href="./image/icons.svg#arrow-bottom"
+                              ></use>
+                            </svg>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 1
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 2
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 2
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 2
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 2
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="button admin__add-button">Добавить</button>
+                </div>
+
+                <button class="button admin__form-submit">Сохранить</button>
+              </form>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="js/main.min.js"></script>
+    <script src="js/admin-home/home.min.js"></script>
+  </body>
+</html>

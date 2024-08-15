@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Office</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header__inner">
+    <nav class="header__nav">
+      <a class="logo" href="index.html">
+        <img class="logo__image" src="./image/logo.png" />
+      </a>
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__link" href="#">
+            <img class="header__link-icon" src="./image/orders.png" />
+            <span>Мои заказы</span></a
+          >
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">
+            <img class="header__link-icon" src="./image/info.png" />
+            <span> Мои данные</span>
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">
+            <img class="header__link-icon" src="./image/act.png" />
+            <span>Акт сверки</span></a
+          >
+        </li>
+      </ul>
+      <div class="header__wrapper">
+        <a class="header__search">
+          <img class="header__search-icon" src="./image/search-orange.png" />
+        </a>
+        <a class="header__sign" href="#">
+          <picture>
+            <source srcset="./image/sign-m.png" media="(max-width:768px)" />
+            <img class="header__sign-icon" src="./image/sign.png" />
+          </picture>
+          <span> Войти </span></a
+        >
+        <a class="header__link-basket" href="./basket.html">
+          <img src="./image/basket.png" alt="basket" />
+        </a>
+      </div>
+      <button class="header__button header__button-m">
+        <div class="header__button-icon">
+          <span></span><span></span><span></span>
+        </div>
+      </button>
+    </nav>
+  </div>
+  <div class="header__bottom">
+    <div class="container header__bottom-inner">
+      <button class="header__button">
+        <div class="header__button-icon">
+          <span></span><span></span><span></span>
+        </div>
+        <span>Каталог</span>
+      </button>
+      <form class="header__form">
+        <div class="header__form-item">
+          <input class="header__input" type="text" placeholder="Поиск" />
+        </div>
+      </form>
+      <a class="header__basket" href="./basket.html">
+        <div class="header__basket-icon">
+          <img src="./image/basket.png" alt="basket" />
+        </div>
+        <span>Корзина</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="container header__menu"><div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__link-list">
+      <li class="menu__link-item">
+        <a class="menu__link" href="#">
+          <img class="menu__link-icon" src="./image/orders.png" />
+          <span>Мои заказы</span></a
+        >
+      </li>
+      <li class="menu__link-item">
+        <a class="menu__link" href="#">
+          <img class="menu__link-icon" src="./image/info.png" />
+          <span> Мои данные</span>
+        </a>
+      </li>
+      <li class="menu__link-item">
+        <a class="menu__link" href="#">
+          <img class="menu__link-icon" src="./image/act.png" />
+          <span>Акт сверки</span></a
+        >
+      </li>
+    </ul>
+
+    <div class="menu__block">
+      <span>Каталог</span>
+    </div>
+    <div class="menu__content">
+      <div class="menu__nav-item">
+        <button class="menu__title">
+          <span>Торговый ассортимент</span>
+          <svg class="menu__arrow" width="12" height="8">
+            <use xlink:href="image/icons.svg#arrow-bottom"></use>
+          </svg>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Террасная доска ДПК</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Ступени ДПК</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Керамогранит Italon</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Керамогранит Atlas Concorde</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Керамогранит V&B</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Клеммы</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu__nav-item">
+        <button class="menu__title">
+          
+           <span>  Комплектующие для настилов</span>
+           <svg class="menu__arrow" width="12" height="8">
+            <use xlink:href="image/icons.svg#arrow-bottom"></use>
+          </svg>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Торцевые элементы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#"
+              >Профили (стартовые, угловые) для ДПК</a
+            >
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Лага</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Клеммы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Перфорированный крепёж</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Металлопрокат</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Регулируемые опоры Basis</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Метизы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Подкладки</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Нот</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu__nav-item">
+        <button class="menu__title">
+       
+         <span>     Декоративные ограждения</span>
+         <svg class="menu__arrow" width="12" height="8">
+            <use xlink:href="image/icons.svg#arrow-bottom"></use>
+          </svg>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Заборные системы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Polivan Denpasar</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Polivan</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Bulros</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#"
+              >Ограждения (крепёж для Bulros)</a
+            >
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Polivan 3D</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu__nav-item">
+        <button class="menu__title">
+            
+            <span>Фасады из ДПК</span>
+            <svg class="menu__arrow" width="12" height="8">
+                <use xlink:href="image/icons.svg#arrow-bottom"></use>
+              </svg>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">Фасад</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+</div>
+</header>
+
+    <main class="main">
+      <section class="bread">
+        <div class="container">
+          <div class="bread__content">
+            <a class="bread__link" href="assortment.html"> Каталог </a>
+            <span>/</span>
+            <a class="bread__link bread__link" href="orers.html">
+              Мои заказы
+            </a>
+            <span>/</span>
+            <a class="bread__link bread__link--active" href="#"> Заказ №346 </a>
+          </div>
+        </div>
+      </section>
+      <section class="information">
+        <div class="container">
+          <div class="information__title-wrapper">
+            <h3 class="information__title">Заказ №346</h3>
+            <span class="information__title-date">от 20.03.2024, 09:08</span>
+          </div>
+          <div class="status status--unopened information__status">
+            <span>Закрыт</span>
+          </div>
+          <div class="information__content">
+            <div class="information__item information__order grey-wrapper">
+              <h5 class="information__item-title">Информация по заказу</h5>
+              <ul class="information__order-list">
+                <li class="information__order-item">
+                  <span class="information__order-key">Итого</span>
+                  <span class="information__order-price">90 868 ₽</span>
+                </li>
+                <li class="information__order-item">
+                  <span class="information__order-key">Срок выполнения</span>
+                  <span>От 2 дней</span>
+                </li>
+                <li class="information__order-item">
+                  <span class="information__order-key">Способ получения</span>
+                  <span>Доставка</span>
+                </li>
+                <li class="information__order-item">
+                  <span class="information__order-key">Адрес</span>
+                  <span>Самовывоз</span>
+                </li>
+                <li class="information__order-item">
+                  <span class="information__order-key">Компания</span>
+                  <span>КОМПАНИЯ ЛИДЕРСМ ООО, 7816314163</span>
+                </li>
+              </ul>
+              <h5 class="information__item-title">Документы</h5>
+              <ul class="information__documents">
+                <li class="information__document list-point">
+                  <a class="information__document-link" href="#"
+                    >Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03
+                    09:10).pdf</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="information__item-wrapper">
+              <form class="grey-wrapper information__item information__form">
+                <h5 class="information__item-title">Состав заказа</h5>
+                <button class="information__submit">
+                  <img
+                    class="information__submit-icon"
+                    src="./image/delete.png"
+                  />
+                  <span>Удалить выбранное</span>
+                </button>
+                <div class="information__table">
+                  <div class="information__table-top">
+                    <span>Товар</span>
+                    <span>Описание</span><span>Количество</span
+                    ><span>Стоимость</span>
+                  </div>
+                  <div class="information__table-item">
+                    <div class="information__table-check">
+                      <label class="information__table-label">
+                        <input
+                          class="information__table-input"
+                          type="checkbox"
+                          name="product"
+                          checked
+                        />
+                        <div class="information__check-block"></div>
+                      </label>
+                    </div>
+                    <img
+                      class="information__table-image"
+                      src="./image/information/image.png"
+                    />
+                    <div class="information__table-wrapper">
+                      <h5 class="information__table-title">
+                        Террасная доска TERRADECK MASSIVE ARAGON 150x21, Россия
+                        (6.45), 3000 мм (Серый)
+                      </h5>
+                      <p class="information__table-subtitle">
+                        Арт. 100-10-massive-3000/sl23
+                      </p>
+                    </div>
+                    <span class="information__table-count">
+                      <span class="information__count-title">Количество:</span>
+                      42 шт.</span
+                    >
+                    <span class="information__table-price">14 910 ₽</span>
+                  </div>
+                  <div class="information__table-item">
+                    <div class="information__table-check">
+                      <label class="information__table-label">
+                        <input
+                          class="information__table-input"
+                          type="checkbox"
+                          name="product"
+                        />
+                        <div class="information__check-block"></div>
+                      </label>
+                    </div>
+                    <img
+                      class="information__table-image"
+                      src="./image/information/image.png"
+                    />
+                    <div class="information__table-wrapper">
+                      <h5 class="information__table-title">
+                        Террасная доска TERRADECK MASSIVE ARAGON 150x21, Россия
+                        (6.45), 3000 мм (Серый)
+                      </h5>
+                      <p class="information__table-subtitle">
+                        Арт. 100-10-massive-3000/sl23
+                      </p>
+                    </div>
+                    <span class="information__table-count">
+                      <span class="information__count-title">Количество:</span>
+                      42 шт.</span
+                    >
+                    <span class="information__table-price">14 910 ₽</span>
+                  </div>
+                  <div class="information__table-item">
+                    <div class="information__table-check">
+                      <label class="information__table-label">
+                        <input
+                          class="information__table-input"
+                          type="checkbox"
+                          name="product"
+                        />
+                        <div class="information__check-block"></div>
+                      </label>
+                    </div>
+                    <img
+                      class="information__table-image"
+                      src="./image/information/image.png"
+                    />
+                    <div class="information__table-wrapper">
+                      <h5 class="information__table-title">
+                        Террасная доска TERRADECK MASSIVE ARAGON 150x21, Россия
+                        (6.45), 3000 мм (Серый)
+                      </h5>
+                      <p class="information__table-subtitle">
+                        Арт. 100-10-massive-3000/sl23
+                      </p>
+                    </div>
+                    <span class="information__table-count">
+                      <span class="information__count-title">Количество:</span>
+                      42 шт.</span
+                    >
+                    <span class="information__table-price">14 910 ₽</span>
+                  </div>
+                  <div class="information__table-item">
+                    <div class="information__table-check">
+                      <label class="information__table-label">
+                        <input
+                          class="information__table-input"
+                          type="checkbox"
+                          name="product"
+                        />
+                        <div class="information__check-block"></div>
+                      </label>
+                    </div>
+                    <img
+                      class="information__table-image"
+                      src="./image/information/image.png"
+                    />
+                    <div class="information__table-wrapper">
+                      <h5 class="information__table-title">
+                        Террасная доска TERRADECK MASSIVE ARAGON 150x21, Россия
+                        (6.45), 3000 мм (Серый)
+                      </h5>
+                      <p class="information__table-subtitle">
+                        Арт. 100-10-massive-3000/sl23
+                      </p>
+                    </div>
+                    <span class="information__table-count">
+                      <span class="information__count-title">Количество:</span>
+                      42 шт.</span
+                    >
+                    <span class="information__table-price">14 910 ₽</span>
+                  </div>
+                  <div class="information__table-item">
+                    <div class="information__table-check">
+                      <label class="information__table-label">
+                        <input
+                          class="information__table-input"
+                          type="checkbox"
+                          name="product"
+                        />
+                        <div class="information__check-block"></div>
+                      </label>
+                    </div>
+                    <img
+                      class="information__table-image"
+                      src="./image/information/image.png"
+                    />
+                    <div class="information__table-wrapper">
+                      <h5 class="information__table-title">
+                        Террасная доска TERRADECK MASSIVE ARAGON 150x21, Россия
+                        (6.45), 3000 мм (Серый)
+                      </h5>
+                      <p class="information__table-subtitle">
+                        Арт. 100-10-massive-3000/sl23
+                      </p>
+                    </div>
+                    <span class="information__table-count">
+                      <span class="information__count-title">Количество:</span>
+                      42 шт.</span
+                    >
+                    <span class="information__table-price">14 910 ₽</span>
+                  </div>
+                </div>
+              </form>
+              <button class="button information__button">
+                Повторить заказ
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recommendations">
+        <div class="container">
+          <h3 class="title">Рекомендуем</h3>
+          
+    <div class="recommendations__item">
+      <h5 class="recommendations__item-title">Клеммы</h5>
+      <ul class="recommendations__products products">
+        <li class="products__item">
+          <div class="images">
+            <img
+              class="image image--one"
+              src="./image/recommendations/image.png"
+            />
+          </div>
+          <div class="products__title-wrapper">
+            <h5 class="products__item-title">
+              Клемма монтажная 205, TERRADECK, Россия, 100 шт./уп
+            </h5>
+            <p class="products__item-subtitle">Арт. 100-10-eco-3000/sl29</p>
+          </div>
+          <div class="recommendations__status-wrapper">
+            <div class="products__status">
+              <div class="products__status-icon">
+                <img class="products__status-image" src="./image/check.png" />
+              </div>
+              <span>В наличии</span>
+            </div>
+            <div class="products__shipped">
+              <img class="products__status-shipped" src="./image/shipped.png" />
+              <span>Под заказ</span>
+            </div>
+          </div>
+          <div class="recommendations__wrapper">
+            <div class="recommendations__wrapper-top">
+              <span class="recommendations__count">Доступно на складе: 607</span>
+              <span class="recommendations__price">900 ₽</span>
+            </div>
+            <form class="recommendations__form">
+              <div class="input-controller recommendations__controller">
+                <button class="input-controller__minus" type="button">
+                  -
+                </button>
+                <input
+                  class="input-controller__number"
+                  type="text"
+                  value="0"
+                />
+                <button class="input-controller__plus" type="button">
+                  +
+                </button>
+              </div>
+              <button class="button recommendations__button">
+                В корзину
+              </button>
+            </form>
+          </div>
+        </li>
+        <li class=" products__item">
+          <div class="images">
+            <img
+              class="image image--one"
+              src="./image/recommendations/image.png"
+            />
+          </div>
+          <div class="products__title-wrapper">
+            <h5 class="products__item-title">
+              Клемма монтажная 205, TERRADECK, Россия, 100 шт./уп
+            </h5>
+            <p class="products__item-subtitle">Арт. 100-10-eco-3000/sl29</p>
+          </div>
+          <div class="recommendations__status-wrapper">
+            <div class="products__status">
+              <div class="products__status-icon">
+                <img class="products__status-image" src="./image/check.png" />
+              </div>
+              <span>В наличии</span>
+            </div>
+            <div class="products__shipped">
+              <img class="products__status-shipped" src="./image/shipped.png" />
+              <span>Под заказ</span>
+            </div>
+          </div>
+          <div class="recommendations__wrapper">
+            <div class="recommendations__wrapper-top">
+              <span class="recommendations__count">Доступно на складе: 607</span>
+              <span class="recommendations__price">900 ₽</span>
+            </div>
+            <form class="recommendations__form">
+              <div class="input-controller recommendations__controller">
+                <button class="input-controller__minus" type="button">
+                  -
+                </button>
+                <input
+                  class="input-controller__number"
+                  type="text"
+                  value="0"
+                />
+                <button class="input-controller__plus" type="button">
+                  +
+                </button>
+              </div>
+              <button class="button recommendations__button">
+                В корзину
+              </button>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="recommendations__item">
+      <h5 class="recommendations__item-title">Лага</h5>
+
+      <ul class="recommendations__products products">
+        <li class="recommendations__product">
+          <div class="recommendations__top products__item">
+            <div class="images">
+              <img
+                class="image image--one"
+                src="./image/recommendations/image2.png"
+              />
+            </div>
+            <div class="products__title-wrapper">
+              <h5 class="products__item-title">
+                Клемма монтажная 205, TERRADECK, Россия, 100 шт./уп
+              </h5>
+              <p class="products__item-subtitle">Арт. 100-10-eco-3000/sl29</p>
+            </div>
+            <div class="recommendations__status-wrapper">
+              <div class="products__status">
+                <div class="products__status-icon">
+                  <img class="products__status-image" src="./image/check.png" />
+                </div>
+                <span>В наличии</span>
+              </div>
+              <div class="products__shipped">
+                <img class="products__status-shipped" src="./image/shipped.png" />
+                <span>Под заказ</span>
+              </div>
+            </div>
+          </div>
+          <div class="recommendations__form-wrapper">
+            <form class="recommendations__form">
+              <div class="recommendations__table">
+                <div class="recommendations__table-item">
+                  <div class="recommendations__table-point">
+                    <span class="recommendations__table-fw">Размер:</span>  <span>300 см</span>
+                  </div>  
+                  <div class="recommendations__table-point">
+                    <span class="recommendations__table-fw">Дилерская цена:</span>  <span>500,0 ₽ </span>
+                  </div>
+                  <div class="recommendations__table-point">
+                    <span class="recommendations__table-fw">Остаток:</span>  <span>900 </span>
+                  </div>
+                  <div class="recommendations__table-point">
+                    <span class="recommendations__table-fw">Ед. изм.:</span>  <span>пог.м. </span>
+                  </div>
+                  <div class="recommendations__table-end">
+                    <div class="input-controller">
+                      <button class="input-controller__minus" type="button">
+                        -
+                      </button>
+                      <input
+                        class="input-controller__number"
+                        type="text"
+                        value="0"
+                      />
+                      <button class="input-controller__plus" type="button">
+                        +
+                      </button>
+                    </div>
+                    <button class="button recommendations__button" type="submit">В корзину</button>
+                  </div>
+                </div>
+                <div class="recommendations__table-item">
+                  <div class="recommendations__table-point">
+                    <span class="recommendations__table-fw">Размер:</span>  <span>300 см</span>
+                  </div>  
+                  <div class="recommendations__table-point">
+                    <span class="recommendations__table-fw">Дилерская цена:</span>  <span>500,0 ₽ </span>
+                  </div>
+                  <div class="recommendations__table-point">
+                    <span class="recommendations__table-fw">Остаток:</span>  <span>900 </span>
+                  </div>
+                  <div class="recommendations__table-point">
+                    <span class="recommendations__table-fw">Ед. изм.:</span>  <span>пог.м. </span>
+                  </div>
+                  <div class="recommendations__table-end">
+                    <div class="input-controller">
+                      <button class="input-controller__minus" type="button">
+                        -
+                      </button>
+                      <input
+                        class="input-controller__number"
+                        type="text"
+                        value="0"
+                      />
+                      <button class="input-controller__plus" type="button">
+                        +
+                      </button>
+                    </div>
+                    <button class="button recommendations__button" type="submit">В корзину</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <nav class="footer__nav">
+      <a class="logo footer__logo" href="#">
+        <img class="logo__image" src="./image/logo.png" />
+      </a>
+      <div class="footer__item">
+        <h5 class="footer__item-title">Каталог</h5>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Торговый ассортимент</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Комплектующие для настилов</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Декоративные ограждения</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Фасады из ДПК</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <h5 class="footer__item-title">Дилерам</h5>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Условия</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Специальные предложения</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Программы лояльности</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <h5 class="footer__item-title">О нас</h5>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Адреса филиалов</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">О компании</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer__bottom">
+      <p class="footer__copyrights">&copy; 2024 Relume. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

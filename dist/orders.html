@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header__inner">
+    <nav class="header__nav">
+      <a class="logo" href="index.html">
+        <img class="logo__image" src="./image/logo.png" />
+      </a>
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__link" href="#">
+            <img class="header__link-icon" src="./image/orders.png" />
+            <span>Мои заказы</span></a
+          >
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">
+            <img class="header__link-icon" src="./image/info.png" />
+            <span> Мои данные</span>
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">
+            <img class="header__link-icon" src="./image/act.png" />
+            <span>Акт сверки</span></a
+          >
+        </li>
+      </ul>
+      <div class="header__wrapper">
+        <a class="header__search">
+          <img class="header__search-icon" src="./image/search-orange.png" />
+        </a>
+        <a class="header__sign" href="#">
+          <picture>
+            <source srcset="./image/sign-m.png" media="(max-width:768px)" />
+            <img class="header__sign-icon" src="./image/sign.png" />
+          </picture>
+          <span> Войти </span></a
+        >
+        <a class="header__link-basket" href="./basket.html">
+          <img src="./image/basket.png" alt="basket" />
+        </a>
+      </div>
+      <button class="header__button header__button-m">
+        <div class="header__button-icon">
+          <span></span><span></span><span></span>
+        </div>
+      </button>
+    </nav>
+  </div>
+  <div class="header__bottom">
+    <div class="container header__bottom-inner">
+      <button class="header__button">
+        <div class="header__button-icon">
+          <span></span><span></span><span></span>
+        </div>
+        <span>Каталог</span>
+      </button>
+      <form class="header__form">
+        <div class="header__form-item">
+          <input class="header__input" type="text" placeholder="Поиск" />
+        </div>
+      </form>
+      <a class="header__basket" href="./basket.html">
+        <div class="header__basket-icon">
+          <img src="./image/basket.png" alt="basket" />
+        </div>
+        <span>Корзина</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="container header__menu"><div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__link-list">
+      <li class="menu__link-item">
+        <a class="menu__link" href="#">
+          <img class="menu__link-icon" src="./image/orders.png" />
+          <span>Мои заказы</span></a
+        >
+      </li>
+      <li class="menu__link-item">
+        <a class="menu__link" href="#">
+          <img class="menu__link-icon" src="./image/info.png" />
+          <span> Мои данные</span>
+        </a>
+      </li>
+      <li class="menu__link-item">
+        <a class="menu__link" href="#">
+          <img class="menu__link-icon" src="./image/act.png" />
+          <span>Акт сверки</span></a
+        >
+      </li>
+    </ul>
+
+    <div class="menu__block">
+      <span>Каталог</span>
+    </div>
+    <div class="menu__content">
+      <div class="menu__nav-item">
+        <button class="menu__title">
+          <span>Торговый ассортимент</span>
+          <svg class="menu__arrow" width="12" height="8">
+            <use xlink:href="image/icons.svg#arrow-bottom"></use>
+          </svg>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Террасная доска ДПК</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Ступени ДПК</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Керамогранит Italon</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Керамогранит Atlas Concorde</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Керамогранит V&B</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Клеммы</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu__nav-item">
+        <button class="menu__title">
+          
+           <span>  Комплектующие для настилов</span>
+           <svg class="menu__arrow" width="12" height="8">
+            <use xlink:href="image/icons.svg#arrow-bottom"></use>
+          </svg>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Торцевые элементы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#"
+              >Профили (стартовые, угловые) для ДПК</a
+            >
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Лага</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Клеммы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Перфорированный крепёж</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Металлопрокат</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Регулируемые опоры Basis</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Метизы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Подкладки</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Нот</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu__nav-item">
+        <button class="menu__title">
+       
+         <span>     Декоративные ограждения</span>
+         <svg class="menu__arrow" width="12" height="8">
+            <use xlink:href="image/icons.svg#arrow-bottom"></use>
+          </svg>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Заборные системы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Polivan Denpasar</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Polivan</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Bulros</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#"
+              >Ограждения (крепёж для Bulros)</a
+            >
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Polivan 3D</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu__nav-item">
+        <button class="menu__title">
+            
+            <span>Фасады из ДПК</span>
+            <svg class="menu__arrow" width="12" height="8">
+                <use xlink:href="image/icons.svg#arrow-bottom"></use>
+              </svg>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">Фасад</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+</div>
+</header>
+
+    <main class="main">
+      <section class="bread">
+        <div class="container">
+          <div class="bread__content">
+            <a class="bread__link" href="assortment.html"> Каталог </a>
+            <span>/</span>
+            <a class="bread__link bread__link--active" href="assortment.html">
+              Мои заказы
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="orders">
+        <div class="container">
+          <h3 class="title">Мои заказы</h3>
+          <ul class="products orders__list">
+            <li class="products__item orders__item">
+              <div class="images">
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+              </div>
+              <div class="orders__wrapper">
+                <div class="orders__wrapper-top">
+                  <h5 class="orders__title">Заказ №346</h5>
+                  <div class="orders__count">4 товара</div>
+                </div>
+                <div class="orders__data">
+                  <span>Дата и время:</span>
+                  <span>20.03.2024, 09:08</span>
+                </div>
+                <div class="orders__condition">
+                  <span>Статус:</span>
+                  <div class="status status--approval">
+                    <span>На согласовании</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders__wrapper-documents">
+                  <h5 class="orders__title">Документы</h5>
+                  <div class="orders__documents">
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                  </div>
+              </div>
+              <div class="orders__wrapper-price">
+                <h5 class="orders__price-title">Сумма заказа:</h5>
+                <span class="orders__price">90 868 ₽</span>
+                <a class="orders__link" href="#"><span>Подробнее</span>
+                <svg width="5" height="8" fill="#ff8100">
+                  <use xlink:href="image/icons.svg#arrow-orange"></use>
+                </svg>
+                </a>
+              </div>
+            </li>
+            <li class="products__item orders__item">
+              <div class="images">
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+              </div>
+              <div class="orders__wrapper">
+                <div class="orders__wrapper-top">
+                  <h5 class="orders__title">Заказ №346</h5>
+                  <div class="orders__count">4 товара</div>
+                </div>
+                <div class="orders__data">
+                  <span>Дата и время:</span>
+                  <span>20.03.2024, 09:08</span>
+                </div>
+                <div class="orders__condition">
+                  <span>Статус:</span>
+                  <div class="status status--panding">
+                    <span>Ожидает аванс</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders__wrapper-documents">
+                  <h5 class="orders__title">Документы</h5>
+                  <div class="orders__documents">
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                  </div>
+              </div>
+              <div class="orders__wrapper-price">
+                <h5 class="orders__price-title">Сумма заказа:</h5>
+                <span class="orders__price">90 868 ₽</span>
+                <a class="orders__link" href="#"><span>Подробнее</span>
+                <svg width="5" height="8" fill="#ff8100">
+                  <use xlink:href="image/icons.svg#arrow-orange"></use>
+                </svg>
+                </a>
+              </div>
+            </li>
+            <li class="products__item orders__item">
+              <div class="images">
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+              </div>
+              <div class="orders__wrapper">
+                <div class="orders__wrapper-top">
+                  <h5 class="orders__title">Заказ №346</h5>
+                  <div class="orders__count">4 товара</div>
+                </div>
+                <div class="orders__data">
+                  <span>Дата и время:</span>
+                  <span>20.03.2024, 09:08</span>
+                </div>
+                <div class="orders__condition">
+                  <span>Статус:</span>
+                  <div class="status status--ready-provide">
+                    <span>Готов к обеспечению</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders__wrapper-documents">
+                  <h5 class="orders__title">Документы</h5>
+                  <div class="orders__documents">
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                  </div>
+              </div>
+              <div class="orders__wrapper-price">
+                <h5 class="orders__price-title">Сумма заказа:</h5>
+                <span class="orders__price">90 868 ₽</span>
+                <a class="orders__link" href="#"><span>Подробнее</span>
+                <svg width="5" height="8" fill="#ff8100">
+                  <use xlink:href="image/icons.svg#arrow-orange"></use>
+                </svg>
+                </a>
+              </div>
+            </li>
+            <li class="products__item orders__item">
+              <div class="images">
+                <img
+                  class="image--one"
+                  src="image/orders/image.png"
+                  alt="table"
+                />
+              </div>
+              <div class="orders__wrapper">
+                <div class="orders__wrapper-top">
+                  <h5 class="orders__title">Заказ №346</h5>
+                  <div class="orders__count">4 товара</div>
+                </div>
+                <div class="orders__data">
+                  <span>Дата и время:</span>
+                  <span>20.03.2024, 09:08</span>
+                </div>
+                <div class="orders__condition">
+                  <span>Статус:</span>
+                  <div class="status status--ready">
+                    <span>Готов к отгрузке</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders__wrapper-documents">
+                  <h5 class="orders__title">Документы</h5>
+                  <div class="orders__documents">
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                  </div>
+              </div>
+              <div class="orders__wrapper-price">
+                <h5 class="orders__price-title">Сумма заказа:</h5>
+                <span class="orders__price">90 868 ₽</span>
+                <a class="orders__link" href="#"><span>Подробнее</span>
+                <svg width="5" height="8" fill="#ff8100">
+                  <use xlink:href="image/icons.svg#arrow-orange"></use>
+                </svg>
+                </a>
+              </div>
+            </li>
+            <li class="products__item orders__item">
+              <div class="images">
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+              </div>
+              <div class="orders__wrapper">
+                <div class="orders__wrapper-top">
+                  <h5 class="orders__title">Заказ №346</h5>
+                  <div class="orders__count">4 товара</div>
+                </div>
+                <div class="orders__data">
+                  <span>Дата и время:</span>
+                  <span>20.03.2024, 09:08</span>
+                </div>
+                <div class="orders__condition">
+                  <span>Статус:</span>
+                  <div class="status status--unopened">
+                    <span>Закрыт</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders__wrapper-documents">
+                  <h5 class="orders__title">Документы</h5>
+                  <div class="orders__documents">
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                  </div>
+              </div>
+              <div class="orders__wrapper-price">
+                <h5 class="orders__price-title">Сумма заказа:</h5>
+                <span class="orders__price">90 868 ₽</span>
+                <a class="orders__link" href="#"><span>Подробнее</span>
+                <svg width="5" height="8" fill="#ff8100">
+                  <use xlink:href="image/icons.svg#arrow-orange"></use>
+                </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <nav class="footer__nav">
+      <a class="logo footer__logo" href="#">
+        <img class="logo__image" src="./image/logo.png" />
+      </a>
+      <div class="footer__item">
+        <h5 class="footer__item-title">Каталог</h5>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Торговый ассортимент</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Комплектующие для настилов</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Декоративные ограждения</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Фасады из ДПК</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <h5 class="footer__item-title">Дилерам</h5>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Условия</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Специальные предложения</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Программы лояльности</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <h5 class="footer__item-title">О нас</h5>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Адреса филиалов</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">О компании</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer__bottom">
+      <p class="footer__copyrights">&copy; 2024 Relume. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
