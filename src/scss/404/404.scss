@@ -1,0 +1,72 @@
+	.page-404 {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		@media (max-width: 768px) {
+			padding-block: 20px;
+		}
+		&__wrapper {
+			flex: 1 1 auto;
+			display: grid;
+			place-items: center;
+		}
+		&__container {
+			text-align: center;
+		}
+		&__title {
+			font-weight: 700;
+			font-size: 120px;
+			color: #202020;
+			@media (max-width: 768px) {
+				font-size: 100px;
+			}
+			@media (max-width: 480px) {
+				font-size: 96px;
+			}
+			&:not(:last-child) {
+				margin-bottom: 1.25rem;
+			}
+		}
+
+		&__subtitle {
+			font-size: 22px;
+			line-height: 150%;
+			color: #303030;
+			margin-bottom: 10px;
+			@media (max-width: 768px) {
+				font-size: 20px;
+			}
+			@media (max-width: 480px) {
+				font-size: 16px;
+			}
+		}
+
+		&__text {
+			font-size: 16px;
+			line-height: 1.5;
+			color: #202020;
+			margin-bottom: 40px;
+			@media (max-width: 768px) {
+				font-size: 14px;
+			}
+			@media (max-width: 480px) {
+				font-size: 12px;
+			}
+		}
+
+		&__button {
+			background: #ff8100;
+			border-radius: 8px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+			color: #fff;
+			display: inline-grid;
+			place-items: center;
+			padding: 12px 25px;
+			@media (max-width: 768px) {
+				display: grid;
+			}
+		}
+	}
+

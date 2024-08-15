@@ -1,0 +1,62 @@
+.prices {
+  .prices__item {
+    display: flex;
+    align-items: center;
+    gap: 17px 10px;
+  }
+
+  .prices__contractors,
+  .prices__sort {
+    font-size: 16px;
+    color: $grey60;
+  }
+  .prices__sort {
+    margin: 0 56px 0 66px;
+  }
+  .prices__contractors {
+    margin-left: auto;
+  }
+
+  .prices__switch {
+    margin-right: 20px;
+  }
+
+  .prices__title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .prices {
+    .prices__item {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 17px 20px;
+
+    }
+
+    .prices__setting {
+      order: -1;
+    }
+
+    .prices__switch {
+      order: -1;
+
+      flex-grow: 1;
+      align-self: flex-end;
+    }
+    .prices__title {
+      font-size: 14px;
+      order: -1;
+      margin-right: auto;
+    }
+    .prices__contractors,
+    .prices__sort {
+        flex-shrink: 0;
+      width: calc(50% - 15px);
+      margin: 0;
+    }
+
+
+  }
+}

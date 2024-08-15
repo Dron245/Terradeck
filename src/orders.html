@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main class="main">
+      <section class="bread">
+        <div class="container">
+          <div class="bread__content">
+            <a class="bread__link" href="assortment.html"> Каталог </a>
+            <span>/</span>
+            <a class="bread__link bread__link--active" href="assortment.html">
+              Мои заказы
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="orders">
+        <div class="container">
+          <h3 class="title">Мои заказы</h3>
+          <ul class="products orders__list">
+            <li class="products__item orders__item">
+              <div class="images">
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+              </div>
+              <div class="orders__wrapper">
+                <div class="orders__wrapper-top">
+                  <h5 class="orders__title">Заказ №346</h5>
+                  <div class="orders__count">4 товара</div>
+                </div>
+                <div class="orders__data">
+                  <span>Дата и время:</span>
+                  <span>20.03.2024, 09:08</span>
+                </div>
+                <div class="orders__condition">
+                  <span>Статус:</span>
+                  <div class="status status--approval">
+                    <span>На согласовании</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders__wrapper-documents">
+                  <h5 class="orders__title">Документы</h5>
+                  <div class="orders__documents">
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                  </div>
+              </div>
+              <div class="orders__wrapper-price">
+                <h5 class="orders__price-title">Сумма заказа:</h5>
+                <span class="orders__price">90 868 ₽</span>
+                <a class="orders__link" href="#"><span>Подробнее</span>
+                <svg width="5" height="8" fill="#ff8100">
+                  <use xlink:href="image/icons.svg#arrow-orange"></use>
+                </svg>
+                </a>
+              </div>
+            </li>
+            <li class="products__item orders__item">
+              <div class="images">
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+              </div>
+              <div class="orders__wrapper">
+                <div class="orders__wrapper-top">
+                  <h5 class="orders__title">Заказ №346</h5>
+                  <div class="orders__count">4 товара</div>
+                </div>
+                <div class="orders__data">
+                  <span>Дата и время:</span>
+                  <span>20.03.2024, 09:08</span>
+                </div>
+                <div class="orders__condition">
+                  <span>Статус:</span>
+                  <div class="status status--panding">
+                    <span>Ожидает аванс</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders__wrapper-documents">
+                  <h5 class="orders__title">Документы</h5>
+                  <div class="orders__documents">
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                  </div>
+              </div>
+              <div class="orders__wrapper-price">
+                <h5 class="orders__price-title">Сумма заказа:</h5>
+                <span class="orders__price">90 868 ₽</span>
+                <a class="orders__link" href="#"><span>Подробнее</span>
+                <svg width="5" height="8" fill="#ff8100">
+                  <use xlink:href="image/icons.svg#arrow-orange"></use>
+                </svg>
+                </a>
+              </div>
+            </li>
+            <li class="products__item orders__item">
+              <div class="images">
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+              </div>
+              <div class="orders__wrapper">
+                <div class="orders__wrapper-top">
+                  <h5 class="orders__title">Заказ №346</h5>
+                  <div class="orders__count">4 товара</div>
+                </div>
+                <div class="orders__data">
+                  <span>Дата и время:</span>
+                  <span>20.03.2024, 09:08</span>
+                </div>
+                <div class="orders__condition">
+                  <span>Статус:</span>
+                  <div class="status status--ready-provide">
+                    <span>Готов к обеспечению</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders__wrapper-documents">
+                  <h5 class="orders__title">Документы</h5>
+                  <div class="orders__documents">
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                  </div>
+              </div>
+              <div class="orders__wrapper-price">
+                <h5 class="orders__price-title">Сумма заказа:</h5>
+                <span class="orders__price">90 868 ₽</span>
+                <a class="orders__link" href="#"><span>Подробнее</span>
+                <svg width="5" height="8" fill="#ff8100">
+                  <use xlink:href="image/icons.svg#arrow-orange"></use>
+                </svg>
+                </a>
+              </div>
+            </li>
+            <li class="products__item orders__item">
+              <div class="images">
+                <img
+                  class="image--one"
+                  src="image/orders/image.png"
+                  alt="table"
+                />
+              </div>
+              <div class="orders__wrapper">
+                <div class="orders__wrapper-top">
+                  <h5 class="orders__title">Заказ №346</h5>
+                  <div class="orders__count">4 товара</div>
+                </div>
+                <div class="orders__data">
+                  <span>Дата и время:</span>
+                  <span>20.03.2024, 09:08</span>
+                </div>
+                <div class="orders__condition">
+                  <span>Статус:</span>
+                  <div class="status status--ready">
+                    <span>Готов к отгрузке</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders__wrapper-documents">
+                  <h5 class="orders__title">Документы</h5>
+                  <div class="orders__documents">
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                  </div>
+              </div>
+              <div class="orders__wrapper-price">
+                <h5 class="orders__price-title">Сумма заказа:</h5>
+                <span class="orders__price">90 868 ₽</span>
+                <a class="orders__link" href="#"><span>Подробнее</span>
+                <svg width="5" height="8" fill="#ff8100">
+                  <use xlink:href="image/icons.svg#arrow-orange"></use>
+                </svg>
+                </a>
+              </div>
+            </li>
+            <li class="products__item orders__item">
+              <div class="images">
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+                <img
+                  class="image"
+                  src="image/orders/image-s.png"
+                  alt="table"
+                />
+              </div>
+              <div class="orders__wrapper">
+                <div class="orders__wrapper-top">
+                  <h5 class="orders__title">Заказ №346</h5>
+                  <div class="orders__count">4 товара</div>
+                </div>
+                <div class="orders__data">
+                  <span>Дата и время:</span>
+                  <span>20.03.2024, 09:08</span>
+                </div>
+                <div class="orders__condition">
+                  <span>Статус:</span>
+                  <div class="status status--unopened">
+                    <span>Закрыт</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders__wrapper-documents">
+                  <h5 class="orders__title">Документы</h5>
+                  <div class="orders__documents">
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                    <a class="orders__documents-link" href="#">Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03 09:10).pdf</a>
+                  </div>
+              </div>
+              <div class="orders__wrapper-price">
+                <h5 class="orders__price-title">Сумма заказа:</h5>
+                <span class="orders__price">90 868 ₽</span>
+                <a class="orders__link" href="#"><span>Подробнее</span>
+                <svg width="5" height="8" fill="#ff8100">
+                  <use xlink:href="image/icons.svg#arrow-orange"></use>
+                </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

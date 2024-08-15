@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>404</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet" />
+		<link href="css/main.min.css" rel="stylesheet" />
+	</head>
+	<body>
+		@@include('blocks/header.html')
+		<main class="page-404">
+			<section class="page-404__wrapper">
+				<div class="page-404__container container">
+					<h2 class="page-404__title">404</h2>
+					<p class="page-404__subtitle">Страница не найдена...</p>
+					<p class="page-404__text">
+						Страница, на которую вы пытаетесь попасть, не существует или была удалена.
+					</p>
+					<a href="index.html" class="page-404__button">Вернуться на главную</a>
+				</div>
+			</section>
+		</main>
+		@@include('blocks/footer.html')
+
+		<script src="js/main.min.js"></script>
+	</body>
+</html>

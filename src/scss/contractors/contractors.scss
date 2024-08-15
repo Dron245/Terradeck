@@ -1,0 +1,142 @@
+.contractors {
+  .contractors__item {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+
+    .admin__switch-label {
+      padding-top: 0;
+    }
+  }
+
+  .contractors__orders {
+    margin-left: auto;
+    margin-right: 40px;
+  }
+
+  .contractors__setting {
+    margin-left: 20px;
+  }
+
+  .contractors__select {
+    position: relative;
+  }
+
+  .contractors__content {
+    display: flex;
+    gap: 0 20px;
+    align-items: flex-start;
+  }
+
+  .admin__switch-label {
+    padding-top: 32px;
+  }
+
+  .contractors__change {
+    margin-top: 48px;
+    display: flex;
+    min-height: 230px;
+    position: relative;
+
+    svg  {
+      display: none;
+    }
+  }
+
+  .contractors__change-item {
+    position: absolute;
+    left: 0;
+    margin-top: 20px;
+    max-width: 560px;
+
+    width: 100%;
+  }
+
+  .contractors__delete {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    color: #ec0909;
+
+    img {
+      max-width: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contractors {
+    .contractors__item {
+      flex-wrap: wrap;
+  
+      justify-content: space-between;
+   
+
+    }
+    .change-contents__item.contractors__change-item {
+      display: block;
+    }
+
+    .contractors__change-item {
+      max-width: 100%;
+      position: static;
+      max-height: 0;
+      overflow: hidden;
+      transition: .8s all linear;
+    }
+    .change-contents__item--active {
+
+      max-height: 300px;
+      transition: .8s all linear;
+    }
+
+    .contractors__setting {
+      order: -1;
+    }
+
+    .contractors__title {
+      order: -1;
+    }
+
+    .contractors__orders {
+      width: 60%;
+      margin-left: 0;
+    }
+
+    .admin__switch-label {
+      margin-left: auto;
+    }
+
+    .contractors__content {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .admin__switch-label {
+        margin-left: 0;
+      }
+    }
+
+    .contractors__change {
+      svg {
+        display: block;
+      }
+    }
+
+    .contractors__change-button {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 0 8px;
+    }
+
+    .contractors__change {
+      min-height: auto;
+      flex-direction: column;
+      width: 100%;
+      gap: 16px 0;
+    }
+
+
+  }
+}

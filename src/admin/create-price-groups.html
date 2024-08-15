@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="panel">
+        <button class="button panel__button">Перейти на сайт</button>
+        <h4 class="panel__title">Управление магазином</h4>
+
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <svg width="20" height="20" fill="#fff">
+              <use xlink:href="./image/icons.svg#catalog"></use>
+            </svg>
+            <span>Каталог</span>
+          </a>
+          <ul class="panel__list">
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Товары</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Атрибуты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Группы</a>
+            </li>
+            <li class="panel__list-item panel__item--active">
+              <a class="panel__list-link" href="#">Прайс-листы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Товары</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Категории</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <img src="./image/panel-orders.png" />
+            <span>Заказы</span>
+          </a>
+        </div>
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <svg width="20" height="20" fill="#fff">
+              <use xlink:href="./image/icons.svg#catalog"></use>
+            </svg>
+            <span>Контрагенты</span>
+          </a>
+          <ul class="panel__list">
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Контрагенты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Контакты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Ценовые группы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Менеджеры</a>
+            </li>
+          </ul>
+        </div>
+        <h4 class="panel__title">Общие настройки</h4>
+        <ul class="panel__setings">
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <svg width="20" height="20" fill="#fff">
+                <use xlink:href="./image/icons.svg#main"></use>
+              </svg>
+              <span>Главное</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <img class="panel__item-icon" src="./image/domain.png" />
+              <span>Домен</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <img class="panel__item-icon" src="./image/still.png" />
+              <span>Ещё</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <svg width="20" height="20" fill="#fff">
+                <use xlink:href="./image/icons.svg#add"></use>
+              </svg>
+              <span>Интеграции</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row__content">
+        @@include("../blocks/admin-header.html")
+        <main class="admin-main">
+          <section class="admin price-groups">
+            <div class="admin-container">
+              <a class="admin__back" href="#">
+                <svg width="12" height="8" fill="#FF8100">
+                  <use xlink:href="./image/icons.svg#arrow-left"></use>
+                </svg>
+                <span>Вернуться назад</span>
+              </a>
+              <h3 class="title-s">Добавление ценовой группы</h3>
+              <form class="admin__form">
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Настройки</span>
+
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <div class="admin__items">
+                      <div class="price-groups__wrapper">
+                        <div class="price-groups__item">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Наименование
+                          </h5>
+                          <input
+                            class="input"
+                            type="text"
+                            value=""
+                            placeholder="Введите наименование"
+                          />
+                        </div>
+                        <label class="admin__switch-label">
+                          <input
+                            class="admin__switch-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <div class="admin__switch"></div>
+                          <span class="admin__switch-text">Активна</span>
+                        </label>
+                      </div>
+                      <div class="price-groups__form-item">
+                        <h5 class="admin__input-title admin__input-title--mb">
+                          Сортировка
+                        </h5>
+                        <input class="input" type="text" value="1" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Условия</span>
+
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <h5 class="price-groups__wrapper-title">
+                      Группа условий №1
+                    </h5>
+                    <div class="price-groups__conditions-top">
+                      <div class="price-groups__select">
+                        <h5 class="admin__input-title admin__input-title--mb">
+                          Прайс-лист
+                        </h5>
+                        <button
+                          class="button-select"
+                          type="button"
+                          data-placeholder="Выберите прайс-лист"
+                        >
+                          <span> Выберите прайс-лист</span>
+                          <svg width="12" height="8">
+                            <use
+                              xlink:href="./image/icons.svg#arrow-bottom"
+                            ></use>
+                          </svg>
+                        </button>
+                        <div class="select-wrapper">
+                          <button class="select-wrapper__button" type="button">
+                            Пункты 1
+                          </button>
+                          <button class="select-wrapper__button" type="button">
+                            Пункты 2
+                          </button>
+                        </div>
+                      </div>
+                      <label class="admin__upload">
+                        <img
+                          class="admin__upload-icon"
+                          src="./image/upload.png"
+                        />
+                        <span class="admin__upload-text"
+                          >Загрузить прайс-лист из файла
+                        </span>
+                        <input class="admin__upload-input" type="file" />
+                      </label>
+                    </div>
+                    <div
+                      class="price-groups__conditions-item price-groups__conditions-item--first"
+                    >
+                      <div class="price-groups__conditions-wrapper">
+                        <h5 class="admin__input-title admin__input-title--mb">
+                          Уточнение параметров
+                        </h5>
+                        <button class="price-groups__main-button" type="button">
+                          <span></span>
+                          <svg width="12" height="8" fill="#fff">
+                            <use
+                              xlink:href="./image/icons.svg#arrow-bottom"
+                            ></use>
+                          </svg>
+                        </button>
+                        <div class="price-groups__conditions-buttons">
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button"
+                              checked
+                            />
+                            <button
+                              class="price-groups__conditions-button"
+                              type="button"
+                            >
+                              Все товары
+                            </button>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button"
+                            />
+                            <button
+                              class="price-groups__conditions-button"
+                              type="button"
+                            >
+                              Группа
+                            </button>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button"
+                            />
+                            <button
+                              class="price-groups__conditions-button"
+                              type="button"
+                            >
+                              Категория
+                            </button>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button"
+                            />
+                            <button
+                              class="price-groups__conditions-button"
+                              type="button"
+                            >
+                              Атрибут
+                            </button>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button"
+                            />
+                            <button
+                              class="price-groups__conditions-button"
+                              type="button"
+                            >
+                              Выбранные товары
+                            </button>
+                          </label>
+                        </div>
+                      </div>
+                      <button class="price-groups__delete">
+                        <img
+                          class="price-groups__delete-icon"
+                          src="./image/delete.png"
+                        />
+                        <span>Удалить параметр</span>
+                      </button>
+                      <div class="price-groups__bottom">
+                        <h5 class="admin__input-title admin__input-title--mb">
+                          Все товары
+                        </h5>
+                        <p class="price-groups__bottom-text">
+                          Выбранный прайс-лист будет использован для всех
+                          товаров в нем. <br />
+                          Назначьте к нему дополнительную скидку или наценку,
+                          или оставьте поле пустым
+                        </p>
+                      </div>
+                      <div class="price-groups__discount">
+                        <div class="price-groups__percent-wrapper">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Дисконт
+                          </h5>
+                          <div class="price-groups__discount-percent">
+                            <input class="input price-groups__discount-number" placeholder="Например 10" />
+                            <svg
+                              class="price-groups__percent-icon"
+                              width="10"
+                              height="12"
+                            >
+                              <use xlink:href="./image/icons.svg#percent"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="price-groups__discount-select">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Вид дисконта
+                          </h5>
+                          <button class="button-select" type="button">
+                            <span> Текст</span>
+                            <svg width="12" height="8">
+                              <use
+                                xlink:href="./image/icons.svg#arrow-bottom"
+                              ></use>
+                            </svg>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button select-wrapper__button--active"
+                              type="button"
+                            >
+                              Скидка
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 2
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price-groups__conditions-item">
+                      <div class="price-groups__conditions-wrapper">
+                        <button class="price-groups__main-button" type="button">
+                          <span></span>
+                          <svg width="12" height="8" fill="#fff">
+                            <use
+                              xlink:href="./image/icons.svg#arrow-bottom"
+                            ></use>
+                          </svg>
+                        </button>
+                        <div class="price-groups__conditions-buttons">
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button2"
+                            />
+                            <div class="price-groups__conditions-button">
+                              Все товары
+                            </div>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button2"
+                              checked
+                            />
+                            <div class="price-groups__conditions-button">
+                              Группа
+                            </div>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button2"
+                            />
+                            <div class="price-groups__conditions-button">
+                              Категория
+                            </div>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button2"
+                            />
+                            <div class="price-groups__conditions-button">
+                              Атрибут
+                            </div>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button2"
+                            />
+                            <div class="price-groups__conditions-button">
+                              Выбранные товары
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                      <button class="price-groups__delete">
+                        <img
+                          class="price-groups__delete-icon"
+                          src="./image/delete.png"
+                        />
+                        <span>Удалить параметр</span>
+                      </button>
+                      <div class="price-groups__bottom">
+                        <div class="price-groups__select">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Группа
+                          </h5>
+                          <button
+                            class="button-select"
+                            type="button"
+                            data-placeholder="Выберите прайс-лист"
+                          >
+                            <span> </span>
+                            <svg width="12" height="8">
+                              <use
+                                xlink:href="./image/icons.svg#arrow-bottom"
+                              ></use>
+                            </svg>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 1
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 2
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="price-groups__discount">
+                        <div class="price-groups__percent-wrapper">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Дисконт
+                          </h5>
+                          <div class="price-groups__discount-percent">
+                            <input class="input price-groups__discount-number" placeholder="Например 10" />
+                            <svg
+                              class="price-groups__percent-icon"
+                              width="10"
+                              height="12"
+                            >
+                              <use xlink:href="./image/icons.svg#percent"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="price-groups__discount-select">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Вид дисконта
+                          </h5>
+                          <button class="button-select" type="button">
+                            <span> </span>
+                            <svg width="12" height="8">
+                              <use
+                                xlink:href="./image/icons.svg#arrow-bottom"
+                              ></use>
+                            </svg>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button select-wrapper__button--active"
+                              type="button"
+                            >
+                              Скидка
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 2
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price-groups__conditions-item">
+                      <div class="price-groups__conditions-wrapper">
+                        <button class="price-groups__main-button" type="button">
+                          <span></span>
+                          <svg width="12" height="8" fill="#fff">
+                            <use
+                              xlink:href="./image/icons.svg#arrow-bottom"
+                            ></use>
+                          </svg>
+                        </button>
+                        <div class="price-groups__conditions-buttons">
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button3"
+                            />
+                            <div class="price-groups__conditions-button">
+                              Все товары
+                            </div>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button3"
+                            />
+                            <div class="price-groups__conditions-button">
+                              Группа
+                            </div>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button3"
+                              checked
+                            />
+                            <div class="price-groups__conditions-button">
+                              Категория
+                            </div>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button3"
+                            />
+                            <div class="price-groups__conditions-button">
+                              Атрибут
+                            </div>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button3"
+                            />
+                            <div class="price-groups__conditions-button">
+                              Выбранные товары
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                      <button class="price-groups__delete">
+                        <img
+                          class="price-groups__delete-icon"
+                          src="./image/delete.png"
+                        />
+                        <span>Удалить параметр</span>
+                      </button>
+                      <div class="price-groups__bottom">
+                        <div class="price-groups__select">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Категория
+                          </h5>
+                          <button class="button-select" type="button" data-placeholder="Выберите категорию">
+                            <span></span>
+                            <svg width="12" height="8">
+                              <use
+                                xlink:href="./image/icons.svg#arrow-bottom"
+                              ></use>
+                            </svg>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 1
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 2
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="price-groups__discount">
+                        <div class="price-groups__percent-wrapper">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Дисконт
+                          </h5>
+                          <div class="price-groups__discount-percent">
+                            <input class="input price-groups__discount-number" placeholder="Например 10" />
+                            <svg
+                              class="price-groups__percent-icon"
+                              width="10"
+                              height="12"
+                            >
+                              <use xlink:href="./image/icons.svg#percent"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="price-groups__discount-select">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Вид дисконта
+                          </h5>
+                          <button class="button-select" type="button">
+                            <span> Текст</span>
+                            <svg width="12" height="8">
+                              <use
+                                xlink:href="./image/icons.svg#arrow-bottom"
+                              ></use>
+                            </svg>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button select-wrapper__button--active"
+                              type="button"
+                            >
+                            Скидка
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 2
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price-groups__conditions-item">
+                      <div class="price-groups__conditions-wrapper">
+                        <button class="price-groups__main-button" type="button" >
+                          <span></span>
+                          <svg width="12" height="8" fill="#fff">
+                            <use
+                              xlink:href="./image/icons.svg#arrow-bottom"
+                            ></use>
+                          </svg>
+                        </button>
+                        <div class="price-groups__conditions-buttons">
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button4"
+                            />
+                            <div class="price-groups__conditions-button">
+                              Все товары
+                            </div>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button4"
+                            />
+                            <div class="price-groups__conditions-button">
+                              Группа
+                            </div>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button4"
+                            />
+                            <div class="price-groups__conditions-button">
+                              Категория
+                            </div>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button4"
+                              checked
+                            />
+                            <div class="price-groups__conditions-button">
+                              Атрибут
+                            </div>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button4"
+                            />
+                            <div class="price-groups__conditions-button">
+                              Выбранные товары
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                      <button class="price-groups__delete">
+                        <img
+                          class="price-groups__delete-icon"
+                          src="./image/delete.png"
+                        />
+                        <span>Удалить параметр</span>
+                      </button>
+                      <div class="price-groups__bottom">
+                        <div class="price-groups__select">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Атрибут
+                          </h5>
+                          <button class="button-select" type="button" data-placeholder="Выберите атрибут">
+                            <span> </span>
+                            <svg width="12" height="8">
+                              <use
+                                xlink:href="./image/icons.svg#arrow-bottom"
+                              ></use>
+                            </svg>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 1
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 2
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="price-groups__discount">
+                        <div class="price-groups__percent-wrapper">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Дисконт
+                          </h5>
+                          <div class="price-groups__discount-percent">
+                            <input class="input price-groups__discount-number" placeholder="Например 10" />
+                            <svg
+                              class="price-groups__percent-icon"
+                              width="10"
+                              height="12"
+                            >
+                              <use xlink:href="./image/icons.svg#percent"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="price-groups__discount-select">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Вид дисконта
+                          </h5>
+                          <button class="button-select" type="button">
+                            <span> Текст</span>
+                            <svg width="12" height="8">
+                              <use
+                                xlink:href="./image/icons.svg#arrow-bottom"
+                              ></use>
+                            </svg>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button select-wrapper__button--active"
+                              type="button"
+                            >
+                            Скидка
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 2
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="price-groups__conditions-select">
+                        <h5 class="admin__input-title admin__input-title--mb">
+                          Значения атрибута
+                        </h5>
+                        <button class="button-select" type="button" data-placeholder="Выберите варианты">
+                          <span> Текст</span>
+                          <svg width="12" height="8">
+                            <use
+                              xlink:href="./image/icons.svg#arrow-bottom"
+                            ></use>
+                          </svg>
+                        </button>
+                        <div class="select-wrapper">
+                          <button class="select-wrapper__button" type="button">
+                            Пункты 1
+                          </button>
+                          <button class="select-wrapper__button" type="button">
+                            Пункты 2
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price-groups__conditions-item">
+                      <div class="price-groups__conditions-wrapper">
+                        <button class="price-groups__main-button" type="button">
+                          <span></span>
+                          <svg width="12" height="8" fill="#fff">
+                            <use
+                              xlink:href="./image/icons.svg#arrow-bottom"
+                            ></use>
+                          </svg>
+                        </button>
+                        <div class="price-groups__conditions-buttons">
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button5"
+                            />
+                            <div class="price-groups__conditions-button">
+                              Все товары
+                            </div>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button5"
+                            />
+                            <div class="price-groups__conditions-button">
+                              Группа
+                            </div>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button5"
+                            />
+                            <div class="price-groups__conditions-button">
+                              Категория
+                            </div>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button5"
+                            />
+                            <div class="price-groups__conditions-button">
+                              Атрибут
+                            </div>
+                          </label>
+                          <label class="price-groups__conditions-label">
+                            <input
+                              class="price-groups__conditions-input"
+                              type="radio"
+                              name="button5"
+                              checked
+                            />
+                            <div class="price-groups__conditions-button">
+                              Выбранные товары
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                      <button class="price-groups__delete">
+                        <img
+                          class="price-groups__delete-icon"
+                          src="./image/delete.png"
+                        />
+                        <span>Удалить параметр</span>
+                      </button>
+                      <div class="price-groups__products">
+                        <div class="price-groups__products-wrapper">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Выбранные товары
+                          </h5>
+                          <button
+                            class="price-groups__products-button"
+                            type="button"
+                          >
+                            Выбранные товары
+                          </button>
+                        </div>
+                        <p class="price-groups__products-text">
+                          К выбранным товарам будут применены особые условия
+                        </p>
+                      </div>
+                      <div class="price-groups__discount">
+                        <div class="price-groups__percent-wrapper">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Дисконт
+                          </h5>
+                          <div class="price-groups__discount-percent">
+                            <input class="input price-groups__discount-number" placeholder="Например 10" />
+                            <svg
+                              class="price-groups__percent-icon"
+                              width="10"
+                              height="12"
+                            >
+                              <use xlink:href="./image/icons.svg#percent"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="price-groups__discount-select">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Вид дисконта
+                          </h5>
+                          <button class="button-select" type="button">
+                            <span> Текст</span>
+                            <svg width="12" height="8">
+                              <use
+                                xlink:href="./image/icons.svg#arrow-bottom"
+                              ></use>
+                            </svg>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button select-wrapper__button--active"
+                              type="button"
+                            >
+                            Скидка
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 2
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="button" type="button">
+                        Добавить параметр
+                      </button>
+                    </div>
+                    <button class="button price-groups__add" type="button">
+                      Добавить группу условий
+                    </button>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Контрагенты</span>
+
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <div class="admin__items">
+                      <label class="admin__switch-label">
+                        <input
+                          class="admin__switch-input"
+                          type="checkbox"
+                          checked
+                        />
+                        <div class="admin__switch"></div>
+                        <span class="admin__switch-text"
+                          >Добавлять по умолчанию новых пользователей</span
+                        >
+                      </label>
+                      <div class="price-groups__wrapper">
+                        <div class="price-groups__select">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Контрагенты
+                          </h5>
+                          <button class="button-select" type="button" data-placeholder="Выберите варианты">
+                            <span> Текст</span>
+                            <svg width="12" height="8">
+                              <use
+                                xlink:href="./image/icons.svg#arrow-bottom"
+                              ></use>
+                            </svg>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 1
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              Пункты 2
+                            </button>
+                          </div>
+                        </div>
+                        <button class="button admin__add-button">
+                          Добавить
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="button admin__form-submit">Сохранить</button>
+              </form>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="js/main.min.js"></script>
+    <script src="js/price-groups/groups.min.js"></script>
+  </body>
+</html>

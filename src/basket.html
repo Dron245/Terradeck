@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Office</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main class="main">
+      <section class="bread">
+        <div class="container">
+          <div class="bread__content">
+            <a class="bread__link" href="assortment.html"> Каталог </a>
+            <span>/</span>
+            <a class="bread__link bread__link--active" href="assortment.html">
+              Корзина
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="basket">
+        <div class="container">
+          <h3 class="title-s">Корзина</h3>
+          <form class="basket__form">
+            <ul class="basket__products products">
+              <li class="basket__product products__item">
+                <div class="images">
+                  <img
+                    class="image image--one"
+                    src="./image//basket/image.png"
+                  />
+                </div>
+                <div class="products__title-wrapper">
+                  <h5 class="products__item-title basket__item-title">
+                    Террасная доска TERRADECK ECO 155х28, Россия (6.25),
+                    <span> Односторонний, 3000 мм (101, Коричневый)</span>
+                  </h5>
+                  <p class="products__item-subtitle">
+                    Арт. 100-10-massive-3000/sl23
+                  </p>
+                </div>
+                <div class="basket__status-wrapper">
+                  <div class="products__status">
+                    <div class="products__status-icon">
+                      <img
+                        class="products__status-image"
+                        src="./image/check.png"
+                      />
+                    </div>
+                    <div class="basket__count-wrapper">
+                      <span>В наличии</span>
+                      <span class="basket__count">2241 шт.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-controller basket__count-controller">
+                  <button class="input-controller__minus" type="button">
+                    -
+                  </button>
+                  <input
+                    class="input-controller__number"
+                    type="text"
+                    value="0"
+                  />
+                  <button class="input-controller__plus" type="button">
+                    +
+                  </button>
+                </div>
+                <span class="basket__product-price"> 3 900 ₽</span>
+                <button class="basket__delete" type="button">
+                  <img class="basket__delete-image" src="./image/delete.png" />
+                </button>
+              </li>
+            </ul>
+            <div class="basket__wrapper grey-wrapper">
+              <div class="basket__wrapper-top">
+                <span class="basket__position">1 позиция</span>
+                <span class="basket__price"
+                  >Итого:
+                  <span class="basket__price--orange">3 900 ₽</span></span
+                >
+              </div>
+              <button class="button basket__button" type="submit">
+                Перейти к оформлению
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="recommendations">
+        <div class="container">
+          <h3 class="title">Рекомендуем</h3>
+          @@include('blocks/recommendations.html')
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

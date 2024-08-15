@@ -1,0 +1,148 @@
+.arrange {
+  padding: 100px 0 60px;
+
+  .arrange__back {
+    color: $orange;
+    fill: $orange;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 1.5;
+    gap: 0 6px;
+    svg {
+      transform: rotate(180deg);
+      margin-right: 6px;
+    }
+  }
+
+  .arrange__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 14px 20px;
+    margin-top: 20px;
+  }
+
+  .arrange__form-item {
+    max-width: 620px;
+    padding: 32px;
+    flex-grow: 1;
+  }
+
+  .arrange__title {
+    text-align: center;
+  }
+
+  .arrange__wrapper {
+    position: relative;
+  }
+  .arrange__point-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 40px;
+  }
+
+  .arrange__methods {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .arrange__method {
+    padding: 0 32px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .arrange__method--active {
+    border-bottom: 3px solid $orange;
+  }
+
+  .arrange__item {
+    margin-top: 20px;
+  }
+
+  .arrange__textarea {
+    resize: none;
+    height: 80px;
+  }
+
+  .arrange__product {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px 0;
+  }
+
+  .arrange__product-title {
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 360px;
+    line-height: 1.5;
+  }
+
+  .arrange__product-count {
+    color: $grey60;
+    font-size: 14px;
+  }
+
+  .arrange__price-summary {
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: end;
+    width: 100%;
+    flex-grow: 1;
+    &--orange {
+      color: $orange;
+    }
+  }
+
+  .arrange__submit {
+    background-color: $orange;
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .arrange {
+    padding: 40px 0;
+    .arrange__form {
+      flex-direction: column;
+    }
+
+    .arrange__methods {
+      padding-bottom: 16px;
+    }
+
+    .arrange__form-item {
+      max-width: none;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .arrange__point-title {
+      font-size: 18px;
+    }
+
+    .arrange__product-title {
+      font-size: 14px;
+      width: 100%;
+    }
+
+    .arrange__price-summary {
+      width: 50%;
+
+      font-size: 16px;
+    }
+    .arrange__point-title {
+      margin-top: 32px;
+    }
+  }
+}

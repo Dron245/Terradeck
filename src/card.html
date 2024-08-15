@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main class="main">
+      <section class="bread">
+        <div class="container">
+          <div class="bread__content">
+            <a class="bread__link" href="assortment.html"> Каталог </a>
+            <span>/</span>
+            <a class="bread__link" href="assortment.html">
+              Торговый ассортимент
+            </a>
+            <span>/</span>
+            <a class="bread__link" href="assortment.html"> Керамогранит V&B </a>
+            <span>/</span>
+
+            <a class="bread__link bread__link--active" href="#">
+              Террасная доска TERRADECK ECO 155x28, Россия (6.25),
+              Односторонний, 3000 мм (101, Коричневый)
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="container">
+          <div class="card__content">
+            <div class="card__descr">
+              <p class="card__top-title">Арт. 100-10-eco-3000/sl29</p>
+              <h3 class="card__title">
+                Террасная доска TERRADECK ECO 155x28, Россия (6.25),
+                Односторонний, 3000 мм (101, Коричневый)
+              </h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                commodo diam libero vitae erat.
+              </p>
+            </div>
+            <div class="card__slider-wrapper">
+              <div class="card__slider">
+                <div class="swiper-wrapper card__wrapper">
+                  <div class="swiper-slide card__slide">
+                    <img class="card__slide-img" src="./image/card/image.png" />
+                  </div>
+                  <div class="swiper-slide card__slide">
+                    <img class="card__slide-img" src="./image/card/image.png" />
+                  </div>
+                  <div class="swiper-slide card__slide">
+                    <img class="card__slide-img" src="./image/card/image.png" />
+                  </div>
+                  <div class="swiper-slide card__slide">
+                    <img class="card__slide-img" src="./image/card/image.png" />
+                  </div>
+                  <div class="swiper-slide card__slide">
+                    <img class="card__slide-img" src="./image/card/image.png" />
+                  </div>
+                  <div class="swiper-slide card__slide">
+                    <img class="card__slide-img" src="./image/card/image.png" />
+                  </div>
+                </div>
+                <div class="card__bottom">
+                  <button class="card__slider-button card__slider-prev">
+                    <svg width="17.296997" height="10.593994" fill="#ff8100">
+                      <use xlink:href="./image/icons.svg#prev-arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="card__pagination swiper-pagination"></div>
+                  <button class="card__slider-button card__slider-next">
+                    <svg width="17.296997" height="10.593994" fill="#ff8100">
+                      <use xlink:href="./image/icons.svg#next-arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="card__image-slider swiper">
+                <div class="swiper-wrapper card__pagination-wrapper">
+                  <div class="swiper-slide card__pagination-slide">
+                    <button class="card__button-bullet">
+                      <img
+                        class="card__image-bullet"
+                        src="./image/card/image.png"
+                      />
+                    </button>
+                  </div>
+                  <div class="swiper-slide card__pagination-slide">
+                    <button class="card__button-bullet">
+                      <img
+                        class="card__image-bullet"
+                        src="./image/card/image.png"
+                      />
+                    </button>
+                  </div>
+                  <div class="swiper-slide card__pagination-slide">
+                    <button class="card__button-bullet">
+                      <img
+                        class="card__image-bullet"
+                        src="./image/card/image.png"
+                      />
+                    </button>
+                  </div>
+                  <div class="swiper-slide card__pagination-slide">
+                    <button class="card__button-bullet">
+                      <img
+                        class="card__image-bullet"
+                        src="./image/card/image.png"
+                      />
+                    </button>
+                  </div>
+                  <div class="swiper-slide card__pagination-slide">
+                    <button class="card__button-bullet">
+                      <img
+                        class="card__image-bullet"
+                        src="./image/card/image.png"
+                      />
+                    </button>
+                  </div>
+                  <div class="swiper-slide card__pagination-slide">
+                    <button class="card__button-bullet">
+                      <img
+                        class="card__image-bullet"
+                        src="./image/card/image.png"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__table">
+            <div class="card__table-top">
+              <span>Размер</span>
+              <div class="card__table-point">
+                <span>Цвет</span>
+                <span>Дилерская цена</span>
+                <span>РРЦ</span>
+                <span>Остаток</span>
+                <span>Заказ</span>
+                <span>Ед. изм.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="card__table-item">
+              <div class="card__table-size">3000 мм</div>
+              <div class="card__table-points">
+                <form class="card__table-form">
+                  <div class="card__table-point">
+                    <button class="card__table-color" type="button">
+                      <span>Коричневый</span>
+                      <svg
+                        class="card__arrow"
+                        width="12"
+                        height="8"
+                        fill="#202020"
+                      >
+                        <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                      </svg>
+                    </button>
+
+                    <div class="card__point-item">
+                      <span class="card__point-key">Дилерская цена</span>
+                      <span>325 ₽</span>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Дилерская цена</span>
+                      <span>720 ₽</span>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Остаток</span>
+                      <span>Более 2000</span>
+                    </div>
+                    <div class="input-controller card__controller">
+                      <button class="input-controller__minus" type="button">
+                        -
+                      </button>
+                      <input
+                        class="input-controller__number"
+                        type="text"
+                        value="0"
+                      />
+                      <button class="input-controller__plus" type="button">
+                        +
+                      </button>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Ед. изм.</span>
+                      <span>Пог. м.</span>
+                    </div>
+
+                    <button class="button card__table-button" type="submit">
+                      В корзину
+                    </button>
+                  </div>
+                </form>
+                <form class="card__table-form">
+                  <div class="card__table-point">
+                    <button class="card__table-color" type="button">
+                      <span>Серый</span>
+                      <svg
+                        class="card__arrow"
+                        width="12"
+                        height="8"
+                        fill="#202020"
+                      >
+                        <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                      </svg>
+                    </button>
+
+                    <div class="card__point-item">
+                      <span class="card__point-key">Дилерская цена</span>
+                      <span>325 ₽</span>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Дилерская цена</span>
+                      <span>720 ₽</span>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Остаток</span>
+                      <span>Более 2000</span>
+                    </div>
+                    <div class="input-controller card__controller">
+                      <button class="input-controller__minus" type="button">
+                        -
+                      </button>
+                      <input
+                        class="input-controller__number"
+                        type="text"
+                        value="0"
+                      />
+                      <button class="input-controller__plus" type="button">
+                        +
+                      </button>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Ед. изм.</span>
+                      <span>Пог. м.</span>
+                    </div>
+
+                    <button class="button card__table-button" type="submit">
+                      В корзину
+                    </button>
+                  </div>
+                </form>
+                <form class="card__table-form">
+                  <div class="card__table-point">
+                    <button
+                      class="card__table-color content-overflow__button"
+                      type="button"
+                    >
+                      <span>Карамельный</span>
+                      <svg
+                        class="card__arrow"
+                        width="12"
+                        height="8"
+                        fill="#202020"
+                      >
+                        <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                      </svg>
+                    </button>
+
+                    <div class="card__point-item">
+                      <span class="card__point-key">Дилерская цена</span>
+                      <span>325 ₽</span>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Дилерская цена</span>
+                      <span>720 ₽</span>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Остаток</span>
+                      <span>Более 2000</span>
+                    </div>
+                    <div class="input-controller card__controller">
+                      <button class="input-controller__minus" type="button">
+                        -
+                      </button>
+                      <input
+                        class="input-controller__number"
+                        type="text"
+                        value="0"
+                      />
+                      <button class="input-controller__plus" type="button">
+                        +
+                      </button>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Ед. изм.</span>
+                      <span>Пог. м.</span>
+                    </div>
+
+                    <button class="button card__table-button" type="submit">
+                      В корзину
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="card__table-item">
+              <div class="card__table-size">4000 мм</div>
+              <div class="card__table-points">
+                <form class="card__table-form">
+                  <div class="card__table-point">
+                    <button class="card__table-color" type="button">
+                      <span>Коричневый</span>
+                      <svg
+                        class="card__arrow"
+                        width="12"
+                        height="8"
+                        fill="#202020"
+                      >
+                        <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                      </svg>
+                    </button>
+
+                    <div class="card__point-item">
+                      <span class="card__point-key">Дилерская цена</span>
+                      <span>325 ₽</span>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Дилерская цена</span>
+                      <span>720 ₽</span>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Остаток</span>
+                      <span>Более 2000</span>
+                    </div>
+                    <div class="input-controller card__controller">
+                      <button class="input-controller__minus" type="button">
+                        -
+                      </button>
+                      <input
+                        class="input-controller__number"
+                        type="text"
+                        value="0"
+                      />
+                      <button class="input-controller__plus" type="button">
+                        +
+                      </button>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Ед. изм.</span>
+                      <span>Пог. м.</span>
+                    </div>
+
+                    <button class="button card__table-button" type="submit">
+                      В корзину
+                    </button>
+                  </div>
+                </form>
+
+                <form class="card__table-form">
+                  <div class="card__table-point">
+                    <button class="card__table-color" type="button">
+                      <span>Серый</span>
+                      <svg
+                        class="card__arrow"
+                        width="12"
+                        height="8"
+                        fill="#202020"
+                      >
+                        <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                      </svg>
+                    </button>
+
+                    <div class="card__point-item">
+                      <span class="card__point-key">Дилерская цена</span>
+                      <span>325 ₽</span>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Дилерская цена</span>
+                      <span>720 ₽</span>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Остаток</span>
+                      <span>Более 2000</span>
+                    </div>
+                    <div class="input-controller card__controller">
+                      <button class="input-controller__minus" type="button">
+                        -
+                      </button>
+                      <input
+                        class="input-controller__number"
+                        type="text"
+                        value="0"
+                      />
+                      <button class="input-controller__plus" type="button">
+                        +
+                      </button>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Ед. изм.</span>
+                      <span>Пог. м.</span>
+                    </div>
+
+                    <button class="button card__table-button" type="submit">
+                      В корзину
+                    </button>
+                  </div>
+                </form>
+
+                <form class="card__table-form">
+                  <div class="card__table-point">
+                    <button class="card__table-color" type="button">
+                      <span>Карамельный</span>
+                      <svg
+                        class="card__arrow"
+                        width="12"
+                        height="8"
+                        fill="#202020"
+                      >
+                        <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                      </svg>
+                    </button>
+
+                    <div class="card__point-item">
+                      <span class="card__point-key">Дилерская цена</span>
+                      <span>325 ₽</span>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Дилерская цена</span>
+                      <span>720 ₽</span>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Остаток</span>
+                      <span>Более 2000</span>
+                    </div>
+                    <div class="input-controller card__controller">
+                      <button class="input-controller__minus" type="button">
+                        -
+                      </button>
+                      <input
+                        class="input-controller__number"
+                        type="text"
+                        value="0"
+                      />
+                      <button class="input-controller__plus" type="button">
+                        +
+                      </button>
+                    </div>
+                    <div class="card__point-item">
+                      <span class="card__point-key">Ед. изм.</span>
+                      <span>Пог. м.</span>
+                    </div>
+
+                    <button class="button card__table-button" type="submit">
+                      В корзину
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="card__about change-contents">
+            <div class="card__about-item">
+              <button
+                class="card__about-button change-contents__button change-contents__button--active"
+                data-index="1"
+              >
+                <span>Характеристики</span>
+                <svg width="12" height="8">
+                  <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                </svg>
+              </button>
+              <div
+                class="card__about-wrapper change-contents__item change-contents__item--active"
+                data-index="1"
+              >
+                <ul class="card__about-list">
+                  <li class="card__list-item">
+                    <span class="card__about-key">Размер</span>
+                    <span>4000</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__about-key">Цвет</span>
+                    <span>Коричневый</span>
+                  </li>
+
+                  <li class="card__list-item">
+                    <span class="card__about-key">Вес</span>
+                    <span>0 кг</span>
+                  </li>
+
+                  <li class="card__list-item">
+                    <span class="card__about-key">Объем</span>
+                    <span>0 л</span>
+                  </li>
+
+                  <li class="card__list-item">
+                    <span class="card__about-key">Длина</span>
+                    <span>0 см</span>
+                  </li>
+
+                  <li class="card__list-item">
+                    <span class="card__about-key">Ширина</span>
+                    <span>0 см</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__about-key">Высота</span>
+                    <span>0 см</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__about-item">
+              <button
+                class="card__about-button change-contents__button"
+                data-index="2"
+              >
+                <span>Полезная информация</span>
+                <svg width="12" height="8">
+                  <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                </svg>
+              </button>
+              <div
+                class="card__about-wrapper change-contents__item"
+                data-index="2"
+              >
+                <ul class="card__about-list">
+                  <li class="card__list-item">
+                    <span class="card__about-key">Размер</span>
+                    <span>4000</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__about-key">Цвет</span>
+                    <span>Коричневый</span>
+                  </li>
+
+                  <li class="card__list-item">
+                    <span class="card__about-key">Вес</span>
+                    <span>0 кг</span>
+                  </li>
+
+                  <li class="card__list-item">
+                    <span class="card__about-key">Объем</span>
+                    <span>0 л</span>
+                  </li>
+
+                  <li class="card__list-item">
+                    <span class="card__about-key">Длина</span>
+                    <span>0 см</span>
+                  </li>
+
+                  <li class="card__list-item">
+                    <span class="card__about-key">Ширина</span>
+                    <span>0 см</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__about-key">Высота</span>
+                    <span>0 см</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card__about-item">
+              <button
+                class="card__about-button change-contents__button"
+                data-index="3"
+              >
+                <span>Документы</span>
+                <svg width="12" height="8">
+                  <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                </svg>
+              </button>
+              <div
+                class="card__about-wrapper change-contents__item"
+                data-index="3"
+              >
+                <ul class="card__about-list">
+                  <li class="card__list-item">
+                    <span class="card__about-key">Размер</span>
+                    <span>4000</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__about-key">Цвет</span>
+                    <span>Коричневый</span>
+                  </li>
+
+                  <li class="card__list-item">
+                    <span class="card__about-key">Вес</span>
+                    <span>0 кг</span>
+                  </li>
+
+                  <li class="card__list-item">
+                    <span class="card__about-key">Объем</span>
+                    <span>0 л</span>
+                  </li>
+
+                  <li class="card__list-item">
+                    <span class="card__about-key">Длина</span>
+                    <span>0 см</span>
+                  </li>
+
+                  <li class="card__list-item">
+                    <span class="card__about-key">Ширина</span>
+                    <span>0 см</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__about-key">Высота</span>
+                    <span>0 см</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recommendations">
+        <div class="container">
+          <h3 class="title">Связанные товары</h3>
+          @@include('blocks/recommendations.html')
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+
+    <script src="js/main.min.js"></script>
+    <script src="js/card/card.min.js"></script>
+  </body>
+</html>

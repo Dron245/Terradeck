@@ -1,0 +1,330 @@
+.price-groups {
+  .price-groups__contractors {
+    margin-left: auto;
+    width: 130px;
+  }
+
+  .price-groups__list-item {
+    display: flex;
+  }
+
+  .price-groups__sort {
+    width: 130px;
+    margin: 0 66px 0 56px;
+  }
+
+  .price-groups__setting {
+    margin-left: 20px;
+  }
+
+  .price-groups__item {
+    max-width: 560px;
+    width: 100%;
+  }
+
+  .price-groups__wrapper {
+    display: flex;
+    gap: 0 20px;
+    align-items: center;
+
+    .admin__switch-label {
+      padding-top: 20px;
+    }
+  }
+
+  .price-groups__form-item {
+    max-width: 270px;
+  }
+
+  .price-groups__wrapper-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .price-groups__conditions-top {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 0 20px;
+  }
+
+  .price-groups__select {
+    width: 100%;
+    max-width: 560px;
+    position: relative;
+  }
+
+
+  .price-groups__conditions-item {
+    border-bottom: 1px solid #bba89c;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    &--first {
+      padding-top: 0;
+      margin-top: 16px;
+      .price-groups__delete {
+        padding-top: 20px;
+      }
+    }
+  }
+
+  .price-groups__conditions-buttons {
+    display: flex;
+    gap: 0 16px;
+  }
+
+  .price-groups__conditions-select {
+    width: 100%;
+  }
+
+  .price-groups__conditions-input {
+    display: none;
+  }
+
+  .price-groups__conditions-label {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .price-groups__conditions-button,
+  .price-groups__main-button {
+    padding: 13px 24px;
+    border: 1px solid $orange;
+    pointer-events: none;
+    border-radius: 100px;
+  }
+  .price-groups__conditions-input:checked + .price-groups__conditions-button {
+    background-color: $orange;
+    color: $white;
+  }
+
+  .price-groups__delete-icon {
+    max-width: 15px;
+  }
+
+  .price-groups__main-button {
+    pointer-events: painted;
+    background-color: $orange;
+    color: $white;
+    width: 100%;
+    display: none;
+  }
+
+  .price-groups__delete {
+    display: flex;
+    gap: 0 12px;
+    color: #ec0909;
+  }
+
+  .price-groups__bottom {
+    max-width: 560px;
+    width: 100%;
+  }
+
+  .price-groups__bottom-text {
+    font-size: 14px;
+    line-height: 1.3;
+    color: $grey60;
+  }
+
+  .price-groups__discount {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .price-groups__percent-wrapper,
+  .price-groups__discount-select {
+    width: calc(50% - 10px);
+  }
+
+  .price-groups__discount-percent,
+  .price-groups__conditions-select {
+    position: relative;
+  }
+  .price-groups__percent-icon {
+    position: absolute;
+    top: 13px;
+
+    right: 10px;
+  }
+  .price-groups__discount-select {
+    position: relative;
+  }
+
+  .price-groups__products {
+    display: flex;
+    gap: 0 12px;
+    align-items: flex-end;
+  }
+  .price-groups__products-button {
+    padding: 13px 20px;
+    border-radius: 8px;
+    border: 1px solid $orange;
+  }
+
+  .price-groups__products-text {
+    color: $grey60;
+    font-size: 16px;
+    max-width: 309px;
+  }
+
+  .price-groups__add {
+    margin-top: 20px;
+  }
+
+ 
+}
+
+@media (max-width: 768px) {
+  .price-groups {
+    .price-groups__list-item {
+      flex-wrap: wrap;
+      gap: 17px 0;
+
+      .admin__switch-label {
+        order: -1;
+        margin-left: auto;
+      }
+    }
+
+    .price-groups__setting {
+      order: -1;
+      margin-left: 20px;
+  
+    }
+
+    .price-groups__title {
+      order: -1;
+
+      width: 80%;
+    }
+
+    .price-groups__contractors {
+      margin: 0;
+    }
+
+    .price-groups__sort {
+      margin: 0;
+      margin-left: auto;
+      width: auto;
+    }
+
+    .price-groups__wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .price-groups__form-item {
+      max-width: 100%;
+    }
+
+    .price-groups__wrapper-title {
+      font-size: 16px;
+    }
+
+    .price-groups__conditions-top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .admin__upload-icon {
+      width: 16px;
+      height: 16px;
+    }
+
+    .admin__upload-text {
+      font-size: 14px;
+    }
+    .price-groups__conditions-wrapper {
+      flex-grow: 1;
+      width: 100%;
+    }
+
+    .price-groups__main-button {
+      display: flex;
+      gap: 0 10px;
+      justify-content: center;
+      align-items: center;
+
+      & {
+        svg {
+          pointer-events: none;
+        }
+      }
+      &--active {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .price-groups__conditions-buttons {
+      max-height: 0;
+      overflow: hidden;
+      flex-direction: column;
+      gap: 10px 0;
+      width: 100%;
+      transition: 1.2s all linear;
+    }
+
+    .price-groups__conditions-label:first-child {
+      margin-top: 20px;
+    }
+
+    .price-groups__conditions-button {
+      text-align: center;
+    }
+    .price-groups__conditions-buttons--active {
+      max-height: 600px;
+      transition: 1.2s all linear;
+    }
+
+    .price-groups__conditions-button {
+      width: 100%;
+    }
+
+    .price-groups__discount {
+      flex-direction: column;
+      width: 100%;
+    }
+    .price-groups__percent-wrapper,
+    .price-groups__discount-select {
+      width: 100%;
+    }
+
+    .price-groups__delete {
+      order: 1;
+      padding: 0;
+    }
+
+    .price-groups__products {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px 0;
+    }
+
+    .price-groups__products-text {
+      font-size: 14px;
+    }
+
+    .price-groups__products-button,
+    .price-groups__bottom-add {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+
+@media (max-width:400px) {
+  .price-groups {
+    .price-groups__title {
+      width: 40%;
+    }
+  }
+}

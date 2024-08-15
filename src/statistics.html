@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main class="main">
+      <section class="statistics">
+        <div class="container">
+          <h3 class="title">Статистика</h3>
+          <form class="statistics__form">
+            <div class="statistics__form-item">
+              <span class="statistics__form-icon">
+                <svg width="16" height="16">
+                  <use xlink:href="./image/icons.svg#search-1"></use>
+                </svg>
+              </span>
+              <input class="statistics__search" type="text" placeholder="Поиск"/>
+            </div>
+            <button class="statistics__filter-button" type="button">
+              <img class="statistics__filter-icon" src="./image/filter.png" />
+            </button>
+            <div class="statistics__filter">
+              <div class="statistics__form-wrapper">
+                <button
+                  class="statistics__form-button button-select"
+                  type="button"
+                  data-placeholder="Виберите периуд"
+                >
+                  <span></span>
+                  <svg width="12" height="7">
+                    <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                  </svg>
+                </button>
+                <div class="select-wrapper">
+                  <button class="select-wrapper__button" type="button">
+                    Периуд
+                  </button>
+                  <button class="select-wrapper__button" type="button">
+                    Периуд 2
+                  </button>
+                </div>
+              </div>
+
+              <div class="statistics__form-wrapper">
+                <button
+                  class="statistics__form-button button-select"
+                  type="button"
+                  data-placeholder="Выберите контрагента"
+                >
+                  <span></span>
+                  <svg width="12" height="7">
+                    <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                  </svg>
+                </button>
+                <div class="select-wrapper">
+                  <button class="select-wrapper__button" type="button">
+                    Периуд
+                  </button>
+                  <button class="select-wrapper__button" type="button">
+                    Периуд 2
+                  </button>
+                </div>
+              </div>
+              <button class="button statistics__filter-submit" type="submit">
+                Применить
+              </button>
+            </div>
+          </form>
+
+          <table class="statistics__table">
+            <tr class="statistics__table-item">
+              <th>Контрагент</th>
+              <th>Кол-во заказов</th>
+              <th>Реализованные заказы</th>
+              <th>Отказ от заказа</th>
+              <th>Средний чек</th>
+              <th>Сумма опл. за период</th>
+              <th>Последний заказ</th>
+            </tr>
+            <tr class="statistics__table-item">
+              <td>
+                <button class="statistics__contractor">
+                  <div class="statistics__contractor-content">
+                    <span class="statistics__contractor-top">Мастердек</span>
+                    <span class="statistics__contractor-person"
+                      >Пупкин Иван Иванович ИП</span
+                    >
+                  </div>
+                  <svg
+                    class="statistics__contractor-icon"
+                    width="12"
+                    height="8"
+                    fill="#fff"
+                  >
+                    <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                  </svg>
+                </button>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Кол-во заказов</span>
+                <span>123</span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value"
+                  >Реализованные заказы</span
+                >
+                <span>
+                  102
+                  <span class="statistics__percent">72%</span>
+                </span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Отказ от заказа</span>
+                <span> 21 <span class="statistics__percent">27%</span> </span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Средний чек</span>
+                <span class="statistics__price">365 ₽</span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value"
+                  >Сумма опл. за период</span
+                >
+                <span class="statistics__price">365 ₽</span>
+              </td>
+              <td class="">
+                <div class="statistics__data-wrapper">
+                  <span class="statistics__table-value">Последний заказ</span>
+                  <div class="statistics__data-flex">
+                    <p class="statistics__data">
+                      <span class="statistics__data-fw"> Размещён: </span>
+                      23.03.2024
+                    </p>
+                    <p class="statistics__data">
+                      <span class="statistics__data-fw"> Оплачен: </span>
+                      23.03.2024
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="statistics__table-item">
+              <td>
+                <button class="statistics__contractor">
+                  <div class="statistics__contractor-content">
+                    <span class="statistics__contractor-top">Мастердек</span>
+                    <span class="statistics__contractor-person"
+                      >Пупкин Иван Иванович ИП</span
+                    >
+                  </div>
+                  <svg
+                    class="statistics__contractor-icon"
+                    width="12"
+                    height="8"
+                    fill="#fff"
+                  >
+                    <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                  </svg>
+                </button>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Кол-во заказов</span>
+                <span>123</span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value"
+                  >Реализованные заказы</span
+                >
+                <span>
+                  102
+                  <span class="statistics__percent">72%</span>
+                </span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Отказ от заказа</span>
+                <span> 21 <span class="statistics__percent">27%</span> </span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Средний чек</span>
+                <span class="statistics__price">365 ₽</span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value"
+                  >Сумма опл. за период</span
+                >
+                <span class="statistics__price">365 ₽</span>
+              </td>
+              <td class="">
+                <div class="statistics__data-wrapper">
+                  <span class="statistics__table-value">Последний заказ</span>
+                  <div class="statistics__data-flex">
+                    <p class="statistics__data">
+                      <span class="statistics__data-fw"> Размещён: </span>
+                      23.03.2024
+                    </p>
+                    <p class="statistics__data">
+                      <span class="statistics__data-fw"> Оплачен: </span>
+                      23.03.2024
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="statistics__table-item">
+              <td>
+                <button class="statistics__contractor">
+                  <div class="statistics__contractor-content">
+                    <span class="statistics__contractor-top">Мастердек</span>
+                    <span class="statistics__contractor-person"
+                      >Пупкин Иван Иванович ИП</span
+                    >
+                  </div>
+                  <svg
+                    class="statistics__contractor-icon"
+                    width="12"
+                    height="8"
+                    fill="#fff"
+                  >
+                    <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                  </svg>
+                </button>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Кол-во заказов</span>
+                <span>123</span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value"
+                  >Реализованные заказы</span
+                >
+                <span>
+                  102
+                  <span class="statistics__percent">72%</span>
+                </span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Отказ от заказа</span>
+                <span> 21 <span class="statistics__percent">27%</span> </span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Средний чек</span>
+                <span class="statistics__price">365 ₽</span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value"
+                  >Сумма опл. за период</span
+                >
+                <span class="statistics__price">365 ₽</span>
+              </td>
+              <td class="">
+                <div class="statistics__data-wrapper">
+                  <span class="statistics__table-value">Последний заказ</span>
+                  <div class="statistics__data-flex">
+                    <p class="statistics__data">
+                      <span class="statistics__data-fw"> Размещён: </span>
+                      23.03.2024
+                    </p>
+                    <p class="statistics__data">
+                      <span class="statistics__data-fw"> Оплачен: </span>
+                      23.03.2024
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="statistics__table-item">
+              <td>
+                <button class="statistics__contractor">
+                  <div class="statistics__contractor-content">
+                    <span class="statistics__contractor-top">Мастердек</span>
+                    <span class="statistics__contractor-person"
+                      >Пупкин Иван Иванович ИП</span
+                    >
+                  </div>
+                  <svg
+                    class="statistics__contractor-icon"
+                    width="12"
+                    height="8"
+                    fill="#fff"
+                  >
+                    <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                  </svg>
+                </button>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Кол-во заказов</span>
+                <span>123</span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value"
+                  >Реализованные заказы</span
+                >
+                <span>
+                  102
+                  <span class="statistics__percent">72%</span>
+                </span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Отказ от заказа</span>
+                <span> 21 <span class="statistics__percent">27%</span> </span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Средний чек</span>
+                <span class="statistics__price">365 ₽</span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value"
+                  >Сумма опл. за период</span
+                >
+                <span class="statistics__price">365 ₽</span>
+              </td>
+              <td class="">
+                <div class="statistics__data-wrapper">
+                  <span class="statistics__table-value">Последний заказ</span>
+                  <div class="statistics__data-flex">
+                    <p class="statistics__data">
+                      <span class="statistics__data-fw"> Размещён: </span>
+                      23.03.2024
+                    </p>
+                    <p class="statistics__data">
+                      <span class="statistics__data-fw"> Оплачен: </span>
+                      23.03.2024
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="statistics__table-item">
+              <td>
+                <button class="statistics__contractor">
+                  <div class="statistics__contractor-content">
+                    <span class="statistics__contractor-top">Мастердек</span>
+                    <span class="statistics__contractor-person"
+                      >Пупкин Иван Иванович ИП</span
+                    >
+                  </div>
+                  <svg
+                    class="statistics__contractor-icon"
+                    width="12"
+                    height="8"
+                    fill="#fff"
+                  >
+                    <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                  </svg>
+                </button>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Кол-во заказов</span>
+                <span>123</span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value"
+                  >Реализованные заказы</span
+                >
+                <span>
+                  102
+                  <span class="statistics__percent">72%</span>
+                </span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Отказ от заказа</span>
+                <span> 21 <span class="statistics__percent">27%</span> </span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Средний чек</span>
+                <span class="statistics__price">365 ₽</span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value"
+                  >Сумма опл. за период</span
+                >
+                <span class="statistics__price">365 ₽</span>
+              </td>
+              <td class="">
+                <div class="statistics__data-wrapper">
+                  <span class="statistics__table-value">Последний заказ</span>
+                  <div class="statistics__data-flex">
+                    <p class="statistics__data">
+                      <span class="statistics__data-fw"> Размещён: </span>
+                      23.03.2024
+                    </p>
+                    <p class="statistics__data">
+                      <span class="statistics__data-fw"> Оплачен: </span>
+                      23.03.2024
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="statistics__table-item">
+              <td>
+                <button class="statistics__contractor">
+                  <div class="statistics__contractor-content">
+                    <span class="statistics__contractor-top">Мастердек</span>
+                    <span class="statistics__contractor-person"
+                      >Пупкин Иван Иванович ИП</span
+                    >
+                  </div>
+                  <svg
+                    class="statistics__contractor-icon"
+                    width="12"
+                    height="8"
+                    fill="#fff"
+                  >
+                    <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                  </svg>
+                </button>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Кол-во заказов</span>
+                <span>123</span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value"
+                  >Реализованные заказы</span
+                >
+                <span>
+                  102
+                  <span class="statistics__percent">72%</span>
+                </span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Отказ от заказа</span>
+                <span> 21 <span class="statistics__percent">27%</span> </span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value">Средний чек</span>
+                <span class="statistics__price">365 ₽</span>
+              </td>
+              <td class="statistics__item--line">
+                <span class="statistics__table-value"
+                  >Сумма опл. за период</span
+                >
+                <span class="statistics__price">365 ₽</span>
+              </td>
+              <td class="">
+                <div class="statistics__data-wrapper">
+                  <span class="statistics__table-value">Последний заказ</span>
+                  <div class="statistics__data-flex">
+                    <p class="statistics__data">
+                      <span class="statistics__data-fw"> Размещён: </span>
+                      23.03.2024
+                    </p>
+                    <p class="statistics__data">
+                      <span class="statistics__data-fw"> Оплачен: </span>
+                      23.03.2024
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+          @@include('blocks/navbar.html')
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+    <script src="js/main.min.js"></script>
+    <script src="js/statistics/statistics.min.js"></script>
+  </body>
+</html>

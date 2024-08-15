@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Office</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    @@include("blocks/header.html")
+    <main class="main">
+      <section class="bread">
+        <div class="container">
+          <div class="bread__content">
+            <a class="bread__link" href="assortment.html"> Личный кабинет </a>
+          </div>
+        </div>
+      </section>
+      <section class="stocks">
+        <div class="container">
+          <h3 class="title">Акции</h3>
+          <div class="stocks__slider">
+            <div class="stocks__wrapper swiper-wrapper">
+              <div class="stocks__slide grey-wrapper swiper-slide">
+                <img class="stocks__image" src="image/stocks/image.png" />
+                <h5 class="stocks__title">Скидки 50% на фасады из ДПК</h5>
+                <p class="stocks__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros.Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Suspendisse varius enim in
+                  eros.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit...
+                </p>
+                <a class="stocks__link" href="#"
+                  ><span>Посмотреть</span>
+                  <svg width="5" height="9">
+                    <use xlink:href="./image/icons.svg#arrow-orange"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="stocks__slide grey-wrapper swiper-slide">
+                <img class="stocks__image" src="image/stocks/image.png" />
+                <h5 class="stocks__title">Скидки 50% на фасады из ДПК</h5>
+                <p class="stocks__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros.Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Suspendisse varius enim in
+                  eros.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit...
+                </p>
+                <a class="stocks__link" href="#"
+                  ><span>Посмотреть</span>
+                  <svg width="5" height="9">
+                    <use xlink:href="./image/icons.svg#arrow-orange"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="stocks__slide grey-wrapper swiper-slide">
+                <img class="stocks__image" src="image/stocks/image.png" />
+                <h5 class="stocks__title">Скидки 50% на фасады из ДПК</h5>
+                <p class="stocks__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros.Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Suspendisse varius enim in
+                  eros.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit...
+                </p>
+                <a class="stocks__link" href="#"
+                  ><span>Посмотреть</span>
+                  <svg width="5" height="9">
+                    <use xlink:href="./image/icons.svg#arrow-orange"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="stocks__slide grey-wrapper swiper-slide">
+                <img class="stocks__image" src="image/stocks/image.png" />
+                <h5 class="stocks__title">Скидки 50% на фасады из ДПК</h5>
+                <p class="stocks__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros.Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Suspendisse varius enim in
+                  eros.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit...
+                </p>
+                <a class="stocks__link" href="#"
+                  ><span>Посмотреть</span>
+                  <svg width="5" height="9">
+                    <use xlink:href="./image/icons.svg#arrow-orange"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="stocks__pagination swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="office">
+        <div class="container office__inner">
+          <div class="office__item">
+            <h5 class="title-s">Личные данные</h5>
+            <div class="office__wrapper grey-wrapper">
+              <form class="office__form">
+                <div class="office__form-item">
+                  <label class="input-label">
+                    <h5 class="input-title">Фамилия, имя, отчество</h5>
+                    <input class="input" placeholder="Петров Иван Васильевич" />
+                  </label>
+                </div>
+                <div class="input-flex office__form-flex">
+                  <label class="input-label">
+                    <h5 class="input-title">Телефон</h5>
+                    <input class="input office__form-number" type="text" placeholder="+79211234567" />
+                  </label>
+                  <label class="input-label">
+                    <h5 class="input-title">E-mail</h5>
+                    <input class="input" type="text" placeholder="lidersm@terradeck.ru" />
+                  </label>
+                </div>
+                <button class="button office__submit" type="submit">
+                  Сохранить
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="office__item">
+            <h5 class="title-s">Данные о партнёре</h5>
+            <div class="office__wrapper grey-wrapper">
+              <form class="office__form">
+                <div class="office__info">
+                  <div class="office__info-item">
+                    <span class="office__info-key">Партнёр</span>
+                    <span class="office__info-value">КОМПАНИЯ ЛИДЕРСМ ООО</span>
+                  </div>
+                  <div class="office__info-item">
+                    <span class="office__info-key">Телефон</span>
+                    <span class="office__info-value">+79211234567</span>
+                  </div>
+                  <div class="office__info-item">
+                    <span class="office__info-key">E-mail</span
+                    ><span class="office__info-value"
+                      >lidersm@terradeck.ru</span
+                    >
+                  </div>
+                </div>
+
+                <div class="office__form-item">
+                  <label class="input-label">
+                    <h5 class="input-title">Адрес доставки</h5>
+                    <input class="input" type="text" placeholder="Самовывоз" />
+                  </label>
+                </div>
+                <button class="button office__submit" type="submit">
+                  Сохранить
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="office__item">
+            <h5 class="title-s">Компании</h5>
+            <div class="office__wrapper grey-wrapper change-contents">
+              <div class="office__wrapper-top">
+                <button class="office__companies-title">
+                  <span>КОМПАНИЯ ЛИДЕРСМ ООО</span>
+                  <svg width="12" height="8">
+                    <use xlink:href="./image/icons.svg#arrow-bottom"></use>
+                  </svg>
+                </button>
+                <div class="office__companies change-contents__buttons">
+                  <button
+                    class="change-contents__button  office__companies-button change-contents__button--active"
+                    data-index="1"
+                  >
+                    КОМПАНИЯ ЛИДЕРСМ ООО
+                  </button>
+                  <button class="change-contents__button office__companies-button" data-index="2">
+                    ЛСМ ООО
+                  </button>
+                </div>
+              </div>
+              <div
+                class="change-contents__item change-contents__item--active"
+                data-index="1"
+              >
+                <div class="office__info office__info--second">
+                  <div class="office__info-item">
+                    <span class="office__info-key">Наименование</span>
+                    <span class="office__info-value">КОМПАНИЯ ЛИДЕРСМ ООО</span>
+                  </div>
+                  <div class="office__info-item">
+                    <span class="office__info-key">ИНН</span>
+                    <span class="office__info-value">1234567890</span>
+                  </div>
+                </div>
+              </div>
+              <div class="change-contents__item" data-index="2">
+                <div class="office__info office__info--second">
+                  <div class="office__info-item">
+                    <span class="office__info-key">Наименоddddвание</span>
+                    <span class="office__info-value"
+                      >КОМПАНИЯ ЛИdddddДЕРСМ ООО</span
+                    >
+                  </div>
+                  <div class="office__info-item">
+                    <span class="office__info-key">ИddddНН</span>
+                    <span class="office__info-value">123456ddd7890</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="office__item">
+            <h5 class="title-s">Смена пароля</h5>
+            <form class="office__wrapper grey-wrapper">
+              <div class="office__password">
+                <div class="office__form-item">
+                  <label class="input-label">
+                    <h5 class="input-title">Текущий пароль</h5>
+                    <input
+                      class="input"
+                      type="password"
+                      placeholder="Введите текущий пароль"
+                    />
+                  </label>
+                </div>
+                <div class="office__form-item">
+                  <label class="input-label">
+                    <h5 class="input-title">Новый пароль</h5>
+                    <input
+                      class="input"
+                      type="password"
+                      placeholder="Введите новый пароль"
+                    />
+                  </label>
+                </div>
+                <div class="office__form-item">
+                  <label class="input-label">
+                    <h5 class="input-title">Повторите новый пароль</h5>
+                    <input
+                      class="input"
+                      type="password"
+                      placeholder="Повторите новый пароль"
+                    />
+                  </label>
+                </div>
+              </div>
+              <button class="button office__submit" type="submit">
+                Сохранить
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include("blocks/footer.html")
+
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/office/office.min.js"></script>
+  </body>
+</html>

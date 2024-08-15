@@ -1,0 +1,15 @@
+.price {
+    .price__item {
+        display: flex;
+        align-items: center;
+    }
+
+    .price__setting-checked {
+        margin-left: auto;
+        margin-right: 20px;
+        color: $grey60;
+        font-size: 14px;
+    }
+
+    
+}

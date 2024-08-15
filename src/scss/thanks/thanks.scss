@@ -1,0 +1,47 @@
+.thanks {
+  padding: 222px 0;
+
+  .thanks__wrapper {
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .thanks__icon {
+    width: 100px;
+    height: 100px;
+    background: #3ac137;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .thanks__title {
+    margin-top: 20px;
+  }
+
+  .thanks__texts {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+  }
+
+  .thanks__text {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+
+  .thanks__link {
+    margin-top: 40px;
+    width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .thanks {
+    padding: 100px 0;
+  }
+}

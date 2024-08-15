@@ -1,0 +1,141 @@
+.menu {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  border: 1px solid $orange;
+  border-radius: 0 0 10px 10px;
+  transform: translateY(100%);
+  background-color: $white;
+  z-index: 5;
+  display: none;
+
+  &--active {
+    display: block;
+  }
+
+  .menu__content {
+    display: flex;
+    gap: 0 60px;
+  }
+
+  .menu__title {
+    font-weight: 700;
+    font-size: 16px;
+    pointer-events: none;
+    line-height: 1.3;
+  }
+
+  .menu__list {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
+    transition: 1.2s all linear;
+
+    &--active {
+      transition: 1.2s all linear;
+    }
+  }
+
+  .menu__item-link {
+    font-size: 14px;
+    line-height: 1.5;
+    color: $black;
+    text-decoration: none;
+
+    &:hover {
+    
+      border-bottom: 1px solid $black;
+    }
+  }
+
+  .menu__block,
+  .menu__link-list,
+  .menu__arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    position: static;
+    transform: none;
+    border: none;
+    border-radius: none;
+    padding: 0;
+    margin-top: 20px;
+
+    .menu__block {
+      background-color: #bba89c;
+      padding: 20px 0;
+      display: block;
+      border-radius: 10px;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      color: $white;
+    }
+
+    .menu__link-list {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      background-color: $grey;
+      border-radius: 10px;
+      gap: 10px 0;
+    }
+    .menu__link-item {
+      padding-bottom: 14px;
+      border-bottom: 1px solid #bba89c;
+    }
+
+    .menu__link {
+      text-decoration: none;
+      color: $black;
+      display: flex;
+      gap: 0 8px;
+      align-items: center;
+    }
+
+    .menu__content {
+      flex-direction: column;
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      gap: 24px 0;
+      background-color: $grey;
+    }
+
+    .menu__arrow {
+      display: block;
+    }
+
+    .menu__title {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #bba89c;
+      pointer-events: painted;
+    }
+
+    .menu__list {
+      margin-top: 12px;
+      max-height: 0;
+      overflow: hidden;
+    }
+
+    .menu__list--active {
+      max-height: 500px;
+    }
+
+    .menu__title--active {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

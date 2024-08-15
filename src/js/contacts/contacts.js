@@ -1,0 +1,1 @@
+new ShowContent('.contacts__table-name')

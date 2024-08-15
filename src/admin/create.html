@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="panel">
+        <button class="button panel__button">Перейти на сайт</button>
+        <h4 class="panel__title">Управление магазином</h4>
+
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <svg width="20" height="20" fill="#fff">
+              <use xlink:href="./image/icons.svg#catalog"></use>
+            </svg>
+            <span>Каталог</span>
+          </a>
+          <ul class="panel__list">
+            <li class="panel__list-item panel__item--active">
+              <a class="panel__list-link" href="#">Товары</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Атрибуты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Группы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Прайс-листы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Товары</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Категории</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <img src="./image/panel-orders.png" />
+            <span>Заказы</span>
+          </a>
+        </div>
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <svg width="20" height="20" fill="#fff">
+              <use xlink:href="./image/icons.svg#catalog"></use>
+            </svg>
+            <span>Контрагенты</span>
+          </a>
+          <ul class="panel__list">
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Контрагенты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Контакты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Ценовые группы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Менеджеры</a>
+            </li>
+          </ul>
+        </div>
+        <h4 class="panel__title">Общие настройки</h4>
+        <ul class="panel__setings">
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <svg width="20" height="20" fill="#fff">
+                <use xlink:href="./image/icons.svg#main"></use>
+              </svg>
+              <span>Главное</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <img class="panel__item-icon" src="./image/domain.png" />
+              <span>Домен</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <img class="panel__item-icon" src="./image/still.png" />
+              <span>Ещё</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <svg width="20" height="20" fill="#fff">
+                <use xlink:href="./image/icons.svg#add"></use>
+              </svg>
+              <span>Интеграции</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row__content">
+        @@include("../blocks/admin-header.html")
+        <main class="admin-main">
+          <section class="admin create">
+            <div class="admin-container">
+              <a class="admin__back" href="#">
+                <svg width="12" height="8" fill="#FF8100">
+                  <use xlink:href="./image/icons.svg#arrow-left"></use>
+                </svg>
+                <span>Вернуться назад</span>
+              </a>
+              <h3 class="title-s">Создание товара</h3>
+              <form class="admin__form">
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Общие настройки</span>
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <div class="admin__items">
+                      <div class="create__item-wrapper">
+                        <div class="create__general-name admin-item-count">
+                          <div class="admin__item-top">
+                            <h5 class="admin__input-title">Название товара</h5>
+                            <span class="admin__text-count"></span>
+                          </div>
+                          <input
+                            class="input"
+                            type="text"
+                            maxlength="250"
+                            value=""
+                            placeholder="Введите адрес"
+                          />
+                        </div>
+                        <div class="create__item admin-item-count">
+                          <div class="admin__item-top">
+                            <h5 class="admin__input-title">Артикул товара</h5>
+                            <span class="admin__text-count"></span>
+                          </div>
+                          <input
+                            class="input"
+                            type="text"
+                            maxlength="30"
+                            value=""
+                            placeholder="Введите артикул товара"
+                          />
+                        </div>
+                      </div>
+                      <div class="create__item-wrapper">
+                        <div class="create__item">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Цена, ₽
+                          </h5>
+                          <input
+                            class="input"
+                            type="text"
+                            value=""
+                            placeholder="0"
+                          />
+                        </div>
+                        <div class="create__item">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Сортировка
+                          </h5>
+                          <input
+                            class="input"
+                            type="text"
+                            value=""
+                            placeholder="999"
+                          />
+                        </div>
+                        <div class="create__item">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Сортировка
+                          </h5>
+                          <label class="admin__switch-label">
+                            <input
+                              class="admin__switch-input"
+                              type="checkbox"
+                              checked
+                            />
+                            <div class="admin__switch"></div>
+                            <span class="admin__switch-text">Активен</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Количество и хранение</span>
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <div class="admin__items">
+                      <div class="create__switch">
+                        <h5 class="admin__input-title admin__input-title--mb">
+                          Количество
+                        </h5>
+                        <label class="admin__switch-label">
+                          <input
+                            class="admin__switch-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <div class="admin__switch"></div>
+                          <span class="admin__switch-text">Оформление под заказ</span>
+                        </label>
+                      </div>
+                      <div class="create__item-wrapper">
+                        <div class="create__item">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Остаток на складе
+                          </h5>
+                          <input
+                            class="input"
+                            type="text"
+                            value=""
+                            placeholder="Введите количество"
+                          />
+                        </div>
+                        <div class="create__item">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Ожидается поступление
+                          </h5>
+                          <input
+                            class="input"
+                            type="text"
+                            value=""
+                            placeholder="Введите количество"
+                          />
+                        </div>
+                        <div class="create__item">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Кратность
+                          </h5>
+                          <input
+                            class="input"
+                            type="text"
+                            placeholder="1"
+                            
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Группа и категория</span>
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <div class="create__item-wrapper">
+                      <div class="create__select">
+                        <h5 class="admin__input-title admin__input-title--mb">
+                          Группа
+                        </h5>
+                        <button class="button-select" type="button" data-placeholder="Выберите группу">
+                          <span></span>
+                          <svg width="12" height="8">
+                            <use
+                              xlink:href="./image/icons.svg#arrow-bottom"
+                            ></use>
+                          </svg>
+                        </button>
+                        <div class="select-wrapper">
+                          <button class="select-wrapper__button" type="button">
+                            3 месяца
+                          </button>
+                          <button class="select-wrapper__button" type="button">
+                            6 месяца
+                          </button>
+                        </div>
+                      </div>
+                      <div class="create__select">
+                        <h5 class="admin__input-title admin__input-title--mb">
+                          Категория
+                        </h5>
+                        <button class="button-select" type="button" data-placeholder="Выберите категорию">
+                          <span></span>
+                          <svg width="12" height="8">
+                            <use
+                              xlink:href="./image/icons.svg#arrow-bottom"
+                            ></use>
+                          </svg>
+                        </button>
+                        <div class="select-wrapper">
+                          <button class="select-wrapper__button" type="button">
+                            3 месяца
+                          </button>
+                          <button class="select-wrapper__button" type="button">
+                            6 месяца
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Оформление</span>
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <div class="admin__items">
+                      <div class="create__info">
+                        <h5 class="admin__input-title admin__input-title--mb">
+                          Фото товара
+                        </h5>
+
+                        <ul class="create__info-list">
+                          <li class="create__info-item">
+                            Расширение файла – jpeg или png
+                          </li>
+                          <li class="create__info-item">
+                            Размер фото – 1000 х 750 px, вес – не более 500 кб
+                          </li>
+                          <li class="create__info-item">
+                            Рекомендуемое количество – 10 шт.
+                          </li>
+                        </ul>
+                      </div>
+                      <label class="create__file-label">
+                        <div class="create__file">
+                          <input class="create__file-input" type="file" />
+                          <span class="create__file-text"
+                            >Выберите файл или перетащите его в эту
+                            область</span
+                          >
+                        </div>
+                      </label>
+                      <div class="create__wrapper admin-item-count">
+                        <div class="admin__item-top">
+                          <h5 class="admin__input-title">Название сайта</h5>
+                          <span class="admin__text-count"></span>
+                        </div>
+                        <div class="create__textarea-block">
+                          <div class="create__textarea-top">
+                            <div class="create__textarea-select">
+                              <button class="button-select" type="button">
+                                <span>Normal</span>
+                                <svg width="10" height="7">
+                                  <use
+                                    xlink:href="./image/icons.svg#arrow-bottom"
+                                  ></use>
+                                </svg>
+                              </button>
+                              <div class="select-wrapper">
+                                <button
+                                  class="select-wrapper__button"
+                                  type="button"
+                                >
+                                  3 месяца
+                                </button>
+                                <button
+                                  class="select-wrapper__button"
+                                  type="button"
+                                >
+                                  6 месяца
+                                </button>
+                              </div>
+                            </div>
+                            <button class="create__textarea-button">
+                              <img
+                                class="create__textarea-icon"
+                                type="button"
+                                src="./image/create/bold.png"
+                              />
+                            </button>
+                            <button class="create__textarea-button">
+                              <img
+                                class="create__textarea-icon"
+                                type="button"
+                                src="./image/create/underline.png"
+                              />
+                            </button>
+                            <button class="create__textarea-button">
+                              <img
+                                class="create__textarea-icon"
+                                type="button"
+                                src="./image/create/italic.png"
+                              />
+                            </button>
+                            <button class="create__textarea-button">
+                              <img
+                                class="create__textarea-icon"
+                                type="button"
+                                src="./image/create/eraser.png"
+                              />
+                            </button>
+                            <button class="create__textarea-button">
+                              <img
+                                class="create__textarea-icon"
+                                type="button"
+                                src="./image/create/bullet-list.png"
+                              />
+                            </button>
+                            <button class="create__textarea-button">
+                              <img
+                                class="create__textarea-icon"
+                                type="button"
+                                src="./image/create/number-list.png"
+                              />
+                            </button>
+                            <button class="create__textarea-button">
+                              <img
+                                class="create__textarea-icon"
+                                src="./image/create/link-alt.png"
+                              />
+                            </button>
+                            <button class="create__textarea-button">
+                              <img
+                                class="create__textarea-icon"
+                                src="./image/create/broken-link.png"
+                              />
+                            </button>
+                          </div>
+                          <textarea
+                            class="input-textarea"
+                            maxlength="2000"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Характеристики</span>
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <div class="admin__items">
+                      <h5 class="create__wrapper-title">
+                        Весогабаритные характеристики
+                      </h5>
+                      <div class="create__item-wrapper">
+                        <div class="create__characteristic-select">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Вес
+                          </h5>
+                          <button class="button-select" type="button">
+                            <span>Введите число</span>
+                            <div class="create__characteristic-wrapper">
+                              <span class="create__characteristic">кг</span>
+                              <svg width="8" height="5">
+                                <use
+                                  xlink:href="./image/icons.svg#arrow-bottom"
+                                ></use>
+                              </svg>
+                            </div>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              3 месяца
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              6 месяца
+                            </button>
+                          </div>
+                        </div>
+                        <div class="create__characteristic-select">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Объём
+                          </h5>
+                          <button class="button-select" type="button">
+                            <span>Введите число</span>
+                            <div class="create__characteristic-wrapper">
+                              <span class="create__characteristic">л</span>
+                              <svg width="8" height="5">
+                                <use
+                                  xlink:href="./image/icons.svg#arrow-bottom"
+                                ></use>
+                              </svg>
+                            </div>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              3 месяца
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              6 месяца
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="create__item-wrapper">
+                        <div class="create__characteristic-select">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Длина
+                          </h5>
+                          <button class="button-select" type="button">
+                            <span>Введите число</span>
+                            <div class="create__characteristic-wrapper">
+                              <span class="create__characteristic">см</span>
+                              <svg width="8" height="5">
+                                <use
+                                  xlink:href="./image/icons.svg#arrow-bottom"
+                                ></use>
+                              </svg>
+                            </div>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              3 месяца
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              6 месяца
+                            </button>
+                          </div>
+                        </div>
+                        <div class="create__characteristic-select">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Ширина
+                          </h5>
+                          <button class="button-select" type="button">
+                            <span>Введите число</span>
+                            <div class="create__characteristic-wrapper">
+                              <span class="create__characteristic">см</span>
+                              <svg width="8" height="5">
+                                <use
+                                  xlink:href="./image/icons.svg#arrow-bottom"
+                                ></use>
+                              </svg>
+                            </div>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              3 месяца
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              6 месяца
+                            </button>
+                          </div>
+                        </div>
+                        <div class="create__characteristic-select">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Высота
+                          </h5>
+                          <button class="button-select" type="button">
+                            <span>Введите число</span>
+                            <div class="create__characteristic-wrapper">
+                              <span class="create__characteristic">см</span>
+                              <svg width="8" height="5">
+                                <use
+                                  xlink:href="./image/icons.svg#arrow-bottom"
+                                ></use>
+                              </svg>
+                            </div>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              3 месяца
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              6 месяца
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="create__categories">
+                        <div class="create__categories-top">
+                          <h5 class="create__wrapper-title">Категории</h5>
+                          <a class="create__categories-link" href="#"
+                            >Настроить категории</a
+                          >
+                        </div>
+                        <div class="create__categories-select">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Категория товара
+                          </h5>
+                          <button class="button-select" type="button">
+                            <span></span>
+
+                            <svg width="12" height="8">
+                              <use
+                                xlink:href="./image/icons.svg#arrow-bottom"
+                              ></use>
+                            </svg>
+                          </button>
+                          <div class="select-wrapper">
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              3 месяца
+                            </button>
+                            <button
+                              class="select-wrapper__button"
+                              type="button"
+                            >
+                              6 месяца
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Полезная информация</span>
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <div class="admin__items">
+                      <div class="create__wrapper admin-item-count">
+                        <div class="admin__item-top">
+                          <h5 class="admin__input-title">Название сайта</h5>
+                          <span class="admin__text-count"></span>
+                        </div>
+                        <div class="create__textarea-block">
+                          <div class="create__textarea-top">
+                            <div class="create__textarea-select">
+                              <button class="button-select" type="button">
+                                <span>Normal</span>
+                                <svg width="10" height="7">
+                                  <use
+                                    xlink:href="./image/icons.svg#arrow-bottom"
+                                  ></use>
+                                </svg>
+                              </button>
+                              <div class="select-wrapper">
+                                <button
+                                  class="select-wrapper__button"
+                                  type="button"
+                                >
+                                  3 месяца
+                                </button>
+                                <button
+                                  class="select-wrapper__button"
+                                  type="button"
+                                >
+                                  6 месяца
+                                </button>
+                              </div>
+                            </div>
+                            <button class="create__textarea-button">
+                              <img
+                                class="create__textarea-icon"
+                                type="button"
+                                src="./image/create/bold.png"
+                              />
+                            </button>
+                            <button class="create__textarea-button">
+                              <img
+                                class="create__textarea-icon"
+                                type="button"
+                                src="./image/create/underline.png"
+                              />
+                            </button>
+                            <button class="create__textarea-button">
+                              <img
+                                class="create__textarea-icon"
+                                type="button"
+                                src="./image/create/italic.png"
+                              />
+                            </button>
+                            <button class="create__textarea-button">
+                              <img
+                                class="create__textarea-icon"
+                                type="button"
+                                src="./image/create/eraser.png"
+                              />
+                            </button>
+                            <button class="create__textarea-button">
+                              <img
+                                class="create__textarea-icon"
+                                type="button"
+                                src="./image/create/bullet-list.png"
+                              />
+                            </button>
+                            <button class="create__textarea-button">
+                              <img
+                                class="create__textarea-icon"
+                                type="button"
+                                src="./image/create/number-list.png"
+                              />
+                            </button>
+                            <button class="create__textarea-button">
+                              <img
+                                class="create__textarea-icon"
+                                src="./image/create/link-alt.png"
+                              />
+                            </button>
+                            <button class="create__textarea-button">
+                              <img
+                                class="create__textarea-icon"
+                                src="./image/create/broken-link.png"
+                              />
+                            </button>
+                          </div>
+                          <textarea
+                            class="input-textarea"
+                            maxlength="2000"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Документы</span>
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <div class="admin__items">
+                      <div class="create__info">
+                        <h5 class="admin__input-title admin__input-title--mb">
+                          Добавить документы
+                        </h5>
+
+                        <ul class="create__info-list">
+                          <li class="create__info-item">
+                            Расширение файла – pdf или docx
+                          </li>
+                          <li class="create__info-item">
+                            Размер документа не более 10 мб
+                          </li>
+                          <li class="create__info-item">
+                            Рекомендуемое количество – 10 шт.
+                          </li>
+                        </ul>
+                      </div>
+                      <label class="create__file-label">
+                        <div class="create__file">
+                          <input class="create__file-input" type="file" />
+                          <span class="create__file-text"
+                            >Выберите файл или перетащите его в эту
+                            область</span
+                          >
+                        </div>
+                      </label>
+                      <button class="button create__button">Добавить</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Сопутствующие товары</span>
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <div class="create__item-wrapper">
+                      <button class="button create__button">
+                        Добавить товары
+                      </button>
+                      <p class="create__bottom-text">
+                        Товары, которые будут отображаться в магазине в блоке «с
+                        этим товаром покупают»
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button class="button admin__form-submit">Сохранить</button>
+              </form>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

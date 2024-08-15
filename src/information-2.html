@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Office</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main class="main">
+      <section class="bread">
+        <div class="container">
+          <div class="bread__content">
+            <a class="bread__link" href="assortment.html"> Каталог </a>
+            <span>/</span>
+            <a class="bread__link bread__link" href="orers.html">
+              Мои заказы
+            </a>
+            <span>/</span>
+            <a class="bread__link bread__link--active" href="#"> Заказ №346 </a>
+          </div>
+        </div>
+      </section>
+      <section class="information">
+        <div class="container">
+          <div class="information__title-wrapper">
+            <h3 class="information__title">Заказ №346</h3>
+            <span class="information__title-date">от 20.03.2024, 09:08</span>
+          </div>
+          <div class="status status--unopened information__status">
+            <span>Закрыт</span>
+          </div>
+          <div class="information__content">
+            <div class="information__item information__order grey-wrapper">
+              <h5 class="information__item-title">Информация по заказу</h5>
+              <ul class="information__order-list">
+                <li class="information__order-item">
+                  <span class="information__order-key">Итого</span>
+                  <span class="information__order-price">90 868 ₽</span>
+                </li>
+                <li class="information__order-item">
+                  <span class="information__order-key">Срок выполнения</span>
+                  <span>От 2 дней</span>
+                </li>
+                <li class="information__order-item">
+                  <span class="information__order-key">Способ получения</span>
+                  <span>Доставка</span>
+                </li>
+                <li class="information__order-item">
+                  <span class="information__order-key">Адрес</span>
+                  <span>Самовывоз</span>
+                </li>
+                <li class="information__order-item">
+                  <span class="information__order-key">Компания</span>
+                  <span>КОМПАНИЯ ЛИДЕРСМ ООО, 7816314163</span>
+                </li>
+              </ul>
+              <h5 class="information__item-title">Документы</h5>
+              <ul class="information__documents">
+                <li class="information__document list-point">
+                  <a class="information__document-link" href="#"
+                    >Счет на оплату с факсимиле № 2422 от 20.03.2024 (20.03
+                    09:10).pdf</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="information__item-wrapper">
+              <form class="grey-wrapper information__item information__form">
+                <h5 class="information__item-title">Состав заказа</h5>
+                <button class="information__submit">
+                  <img
+                    class="information__submit-icon"
+                    src="./image/delete.png"
+                  />
+                  <span>Удалить выбранное</span>
+                </button>
+                <div class="information__table">
+                  <div class="information__table-top">
+                    <span>Товар</span>
+                    <span>Описание</span><span>Количество</span
+                    ><span>Стоимость</span>
+                  </div>
+                  <div class="information__table-item">
+                    <div class="information__table-check">
+                      <label class="information__table-label">
+                        <input
+                          class="information__table-input"
+                          type="checkbox"
+                          name="product"
+                          checked
+                        />
+                        <div class="information__check-block"></div>
+                      </label>
+                    </div>
+                    <img
+                      class="information__table-image"
+                      src="./image/information/image.png"
+                    />
+                    <div class="information__table-wrapper">
+                      <h5 class="information__table-title">
+                        Террасная доска TERRADECK MASSIVE ARAGON 150x21, Россия
+                        (6.45), 3000 мм (Серый)
+                      </h5>
+                      <p class="information__table-subtitle">
+                        Арт. 100-10-massive-3000/sl23
+                      </p>
+                    </div>
+                    <span class="information__table-count">
+                      <span class="information__count-title">Количество:</span>
+                      42 шт.</span
+                    >
+                    <span class="information__table-price">14 910 ₽</span>
+                  </div>
+                  <div class="information__table-item">
+                    <div class="information__table-check">
+                      <label class="information__table-label">
+                        <input
+                          class="information__table-input"
+                          type="checkbox"
+                          name="product"
+                        />
+                        <div class="information__check-block"></div>
+                      </label>
+                    </div>
+                    <img
+                      class="information__table-image"
+                      src="./image/information/image.png"
+                    />
+                    <div class="information__table-wrapper">
+                      <h5 class="information__table-title">
+                        Террасная доска TERRADECK MASSIVE ARAGON 150x21, Россия
+                        (6.45), 3000 мм (Серый)
+                      </h5>
+                      <p class="information__table-subtitle">
+                        Арт. 100-10-massive-3000/sl23
+                      </p>
+                    </div>
+                    <span class="information__table-count">
+                      <span class="information__count-title">Количество:</span>
+                      42 шт.</span
+                    >
+                    <span class="information__table-price">14 910 ₽</span>
+                  </div>
+                  <div class="information__table-item">
+                    <div class="information__table-check">
+                      <label class="information__table-label">
+                        <input
+                          class="information__table-input"
+                          type="checkbox"
+                          name="product"
+                        />
+                        <div class="information__check-block"></div>
+                      </label>
+                    </div>
+                    <img
+                      class="information__table-image"
+                      src="./image/information/image.png"
+                    />
+                    <div class="information__table-wrapper">
+                      <h5 class="information__table-title">
+                        Террасная доска TERRADECK MASSIVE ARAGON 150x21, Россия
+                        (6.45), 3000 мм (Серый)
+                      </h5>
+                      <p class="information__table-subtitle">
+                        Арт. 100-10-massive-3000/sl23
+                      </p>
+                    </div>
+                    <span class="information__table-count">
+                      <span class="information__count-title">Количество:</span>
+                      42 шт.</span
+                    >
+                    <span class="information__table-price">14 910 ₽</span>
+                  </div>
+                  <div class="information__table-item">
+                    <div class="information__table-check">
+                      <label class="information__table-label">
+                        <input
+                          class="information__table-input"
+                          type="checkbox"
+                          name="product"
+                        />
+                        <div class="information__check-block"></div>
+                      </label>
+                    </div>
+                    <img
+                      class="information__table-image"
+                      src="./image/information/image.png"
+                    />
+                    <div class="information__table-wrapper">
+                      <h5 class="information__table-title">
+                        Террасная доска TERRADECK MASSIVE ARAGON 150x21, Россия
+                        (6.45), 3000 мм (Серый)
+                      </h5>
+                      <p class="information__table-subtitle">
+                        Арт. 100-10-massive-3000/sl23
+                      </p>
+                    </div>
+                    <span class="information__table-count">
+                      <span class="information__count-title">Количество:</span>
+                      42 шт.</span
+                    >
+                    <span class="information__table-price">14 910 ₽</span>
+                  </div>
+                  <div class="information__table-item">
+                    <div class="information__table-check">
+                      <label class="information__table-label">
+                        <input
+                          class="information__table-input"
+                          type="checkbox"
+                          name="product"
+                        />
+                        <div class="information__check-block"></div>
+                      </label>
+                    </div>
+                    <img
+                      class="information__table-image"
+                      src="./image/information/image.png"
+                    />
+                    <div class="information__table-wrapper">
+                      <h5 class="information__table-title">
+                        Террасная доска TERRADECK MASSIVE ARAGON 150x21, Россия
+                        (6.45), 3000 мм (Серый)
+                      </h5>
+                      <p class="information__table-subtitle">
+                        Арт. 100-10-massive-3000/sl23
+                      </p>
+                    </div>
+                    <span class="information__table-count">
+                      <span class="information__count-title">Количество:</span>
+                      42 шт.</span
+                    >
+                    <span class="information__table-price">14 910 ₽</span>
+                  </div>
+                </div>
+              </form>
+              <button class="button information__button">
+                Повторить заказ
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recommendations">
+        <div class="container">
+          <h3 class="title">Рекомендуем</h3>
+          @@include('blocks/recommendations.html')
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

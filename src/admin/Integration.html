@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="panel">
+        <button class="button panel__button">Перейти на сайт</button>
+        <h4 class="panel__title">Управление магазином</h4>
+
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <svg width="20" height="20" fill="#fff">
+              <use xlink:href="./image/icons.svg#catalog"></use>
+            </svg>
+            <span>Каталог</span>
+          </a>
+          <ul class="panel__list">
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Товары</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Атрибуты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Группы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Прайс-листы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Товары</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Категории</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <img src="./image/panel-orders.png" />
+            <span>Заказы</span>
+          </a>
+        </div>
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <svg width="20" height="20" fill="#fff">
+              <use xlink:href="./image/icons.svg#catalog"></use>
+            </svg>
+            <span>Контрагенты</span>
+          </a>
+          <ul class="panel__list">
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Контрагенты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Контакты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Ценовые группы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Менеджеры</a>
+            </li>
+          </ul>
+        </div>
+        <h4 class="panel__title">Общие настройки</h4>
+        <ul class="panel__setings">
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <svg width="20" height="20" fill="#fff">
+                <use xlink:href="./image/icons.svg#main"></use>
+              </svg>
+              <span>Главное</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <img class="panel__item-icon" src="./image/domain.png" />
+              <span>Домен</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <img class="panel__item-icon" src="./image/still.png" />
+              <span>Ещё</span>
+            </a>
+          </li>
+          <li class="panel__item panel__item--active">
+            <a class="panel__link" href="#">
+              <svg width="20" height="20" fill="#ff8100">
+                <use xlink:href="./image/icons.svg#add"></use>
+              </svg>
+              <span>Интеграции</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row__content">
+        @@include("../blocks/admin-header.html")
+        <main class="admin-main">
+          <section class="admin integration">
+            <div class="admin-container">
+              <h3 class="title-s">Интеграции</h3>
+              <form class="integration__form">
+                <div class="integration__list">
+                  <div class="admin__wrapper integration__item">
+                    <img
+                      class="integration__image"
+                      src="./image/integration/image.png"
+                    />
+                    <div class="integration__wrapper">
+                      <h5 class="integration__title">1C: ERP, УТ, КА, УНФ</h5>
+                      <p class="integration__subtitle">Настройки</p>
+                    </div>
+                    <div class="integration__switch">
+                      <label>
+                        <input
+                          class="admin__switch-input"
+                          type="checkbox"
+                          checked
+                        />
+                        <div class="admin__switch"></div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="admin__wrapper integration__item">
+                    <img
+                      class="integration__image"
+                      src="./image/integration/image.png"
+                    />
+                    <div class="integration__wrapper">
+                      <h5 class="integration__title">API</h5>
+                      <p class="integration__subtitle">Настройки</p>
+                    </div>
+                    <div class="integration__switch">
+                      <label>
+                        <input class="admin__switch-input" type="checkbox" />
+                        <div class="admin__switch"></div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="admin__wrapper integration__item">
+                    <img
+                      class="integration__image"
+                      src="./image/integration/image.png"
+                    />
+                    <div class="integration__wrapper">
+                      <h5 class="integration__title">
+                        Импорт товаров по ссылке
+                      </h5>
+                      <p class="integration__subtitle">Настройки</p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

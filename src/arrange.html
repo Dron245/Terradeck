@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrange</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    @@include("blocks/header.html")
+    <main class="main">
+      <section class="arrange">
+        <div class="container">
+          <a class="arrange__back" href="#">
+            <svg width="5" height="9">
+              <use xlink:href="image/icons.svg#arrow-orange"></use>
+            </svg>
+            <span>Вернуться в корзину</span>
+          </a>
+          <form class="arrange__form">
+            <div class="arrange__form-item grey-wrapper">
+              <h3 class="title-s arrange__title">Оформление заказа</h3>
+              <p class="arrange__point-title">Способ получения</p>
+              <div class="arrange__methods">
+                <button class="arrange__method arrange__method--active">
+                  Доставка
+                </button>
+              </div>
+              <div class="arrange__item">
+                <label class="input-label">
+                  <h5 class="input-title">Адрес доставки</h5>
+                  <input class="input" placeholder="Самовывоз" type="text" />
+                </label>
+              </div>
+              <div class="arrange__item">
+                <label class="input-label">
+                  <h5 class="input-title">Комментарий к заказу</h5>
+
+                  <textarea class="input arrange__textarea"></textarea>
+                </label>
+              </div>
+              <p class="arrange__point-title">Контактные данные</p>
+              <div class="arrange__item">
+                <label class="input-label">
+                  <h5 class="input-title">Фамилия, имя, отчество</h5>
+                  <input class="input" type="text" />
+                </label>
+              </div>
+              <div class="input-flex arrange__item">
+                <label class="input-label">
+                  <h5 class="input-title">Телефон</h5>
+                  <input class="input" type="text" />
+                </label>
+                <label class="input-label">
+                  <h5 class="input-title">E-mail</h5>
+                  <input class="input" type="text" />
+                </label>
+              </div>
+              <div class="arrange__item">
+                <label class="input-label">
+                  <h5 class="input-title">Компания</h5>
+                  <div class="arrange__wrapper">
+                    <button class="button-select" type="button">
+                      <span 
+                        >КОМПАНИЯ ЛИДЕРСМ ООО, 7816314163</span
+                      >
+                      <svg width="10" height="6">
+                        <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                      </svg>
+                    </button>
+                    <div class="select-wrapper">
+                      <button class="select-wrapper__button select-wrapper__button--active" type="button">КОМПАНИЯ ЛИДЕРСМ ООО, 7816314163</button>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="arrange__form-item grey-wrapper">
+              <div class="arrange__product">
+                <h5 class="arrange__product-title">
+                  Террасная доска TERRADECK ECO 155х28, Россия (6.25),
+                  Односторонний, 3000 мм (101, Коричневый)
+                </h5>
+                <span class="arrange__product-count">12 шт.</span>
+                <p class="arrange__price-summary">
+                  <span> Итого:</span>
+                  <span class="arrange__price-summary--orange">3 900 ₽</span>
+                </p>
+              </div>
+
+              <input
+                class="button arrange__submit"
+                type="submit"
+                value="Оформить заказ"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    @@include("blocks/footer.html")
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

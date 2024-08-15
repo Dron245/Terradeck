@@ -1,0 +1,41 @@
+.main {
+}
+.act-sverki {
+	&__wrapper {
+	}
+	& h3.title {
+		margin-bottom: 40px;
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	.statistics__form-wrapper[class] {
+		display: inline-block;
+	}
+
+	&__list {
+		background-color: #f7f7f7;
+		border-radius: 10px;
+		margin-top: 20px;
+		margin-bottom: 40px;
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__item {
+		&:not(:last-child) {
+			border-bottom: 1px solid #bba89c;
+		}
+		padding: 20px;
+	}
+
+	&__link {
+		font-weight: 500;
+		@media (max-width: 768px) {
+			font-size: 14px;
+		}
+	}
+}
+

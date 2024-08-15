@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Office</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="panel">
+        <button class="button panel__button">Перейти на сайт</button>
+        <h4 class="panel__title">Управление магазином</h4>
+
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <svg width="20" height="20" fill="#fff">
+              <use xlink:href="./image/icons.svg#catalog"></use>
+            </svg>
+            <span>Каталог</span>
+          </a>
+          <ul class="panel__list">
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Товары</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Атрибуты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Группы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Прайс-листы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Товары</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Категории</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <img src="./image/panel-orders.png" />
+            <span>Заказы</span>
+          </a>
+        </div>
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <svg width="20" height="20" fill="#fff">
+              <use xlink:href="./image/icons.svg#catalog"></use>
+            </svg>
+            <span>Контрагенты</span>
+          </a>
+          <ul class="panel__list">
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Контрагенты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Контакты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Ценовые группы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Менеджеры</a>
+            </li>
+          </ul>
+        </div>
+        <h4 class="panel__title">Общие настройки</h4>
+        <ul class="panel__setings">
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <svg width="20" height="20" fill="#fff">
+                <use xlink:href="./image/icons.svg#main"></use>
+              </svg>
+              <span>Главное</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <img class="panel__item-icon" src="./image/domain.png" />
+              <span>Домен</span>
+            </a>
+          </li>
+          <li class="panel__item  panel__item--active">
+            <a class="panel__link" href="#">
+              <img class="panel__item-icon" src="./image/still.png" />
+              <span>Ещё</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <svg width="20" height="20" fill="#fff">
+                <use xlink:href="./image/icons.svg#add"></use>
+              </svg>
+              <span>Интеграции</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row__content">
+        @@include("../blocks/admin-header.html")
+        <main class="admin-main">
+          <section class="admin still">
+            <div class="admin-container">
+              <h3 class="title-s">Еще</h3>
+              <form class="admin__form">
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Формы</span>
+
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <div class="still__forms-item">
+                      <div class="admin__item-top">
+                        <h5 class="admin__input-title">Информация о заказах</h5>
+                      </div>
+                      <div class="still__forms">
+                        <input
+                          class="input still__email"
+                          type="email"
+                          placeholder="zakaz@terradeck.ru"
+                        />
+                        <p class="still__forms-text">
+                          Укажите e-mail, на который будут отправляться заказы с
+                          данного сайта
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Header</span>
+
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <div class="admin__items">
+                      <div class="still__wrapper">
+                        <div class="still__item admin-item-count">
+                          <div class="admin__item-top">
+                            <h5 class="admin__input-title">Ссылка №1</h5>
+                            <span class="admin__text-count"></span>
+                          </div>
+                          <input
+                            class="input"
+                            type="text"
+                            placeholder="Мои заказы"
+                            maxlength="30"
+                          />
+                        </div>
+                        <div class="still__item">
+                          <div class="still__select">
+                            <h5
+                              class="admin__input-title admin__input-title--mb"
+                            >
+                              Страница
+                            </h5>
+                            <button
+                              class="button-select"
+                              type="button"
+                              data-placeholder="Выберите страницу"
+                            >
+                              <span></span>
+                              <svg width="12" height="8">
+                                <use
+                                  xlink:href="./image/icons.svg#arrow-bottom"
+                                ></use>
+                              </svg>
+                            </button>
+                            <div class="select-wrapper">
+                              <button
+                                class="select-wrapper__button"
+                                type="button"
+                              >
+                                3 месяца
+                              </button>
+                              <button
+                                class="select-wrapper__button"
+                                type="button"
+                              >
+                                6 месяца
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="still__icon">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Иконка
+                          </h5>
+
+                          <div class="still__icon-wrapper">
+                            <button class="still__icon-button">
+                              <img class="still__img" src="image/orders.png" />
+                            </button>
+                            <p class="still__icon-text">
+                              Выберите файл или перетащите его в эту область
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="still__wrapper">
+                        <div class="still__item admin-item-count">
+                          <div class="admin__item-top">
+                            <h5 class="admin__input-title">Ссылка №2</h5>
+                            <span class="admin__text-count"></span>
+                          </div>
+                          <input
+                            class="input"
+                            type="text"
+                            placeholder="Мои заказы"
+                            maxlength="30"
+                          />
+                        </div>
+                        <div class="still__item">
+                          <div class="still__select">
+                            <h5
+                              class="admin__input-title admin__input-title--mb"
+                            >
+                              Страница
+                            </h5>
+                            <button
+                              class="button-select"
+                              type="button"
+                              data-placeholder="Выберите страницу"
+                            >
+                              <span></span>
+                              <svg width="12" height="8">
+                                <use
+                                  xlink:href="./image/icons.svg#arrow-bottom"
+                                ></use>
+                              </svg>
+                            </button>
+                            <div class="select-wrapper">
+                              <button
+                                class="select-wrapper__button"
+                                type="button"
+                              >
+                                3 месяца
+                              </button>
+                              <button
+                                class="select-wrapper__button"
+                                type="button"
+                              >
+                                6 месяца
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="still__icon">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Иконка
+                          </h5>
+
+                          <div class="still__icon-wrapper">
+                            <button class="still__icon-button">
+                              <img class="still__img" src="image/info.png" />
+                            </button>
+                            <p class="still__icon-text">
+                              Выберите файл или перетащите его в эту область
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="still__wrapper">
+                        <div class="still__item admin-item-count">
+                          <div class="admin__item-top">
+                            <h5 class="admin__input-title">Ссылка №3</h5>
+                            <span class="admin__text-count"></span>
+                          </div>
+                          <input
+                            class="input"
+                            type="text"
+                            placeholder="Мои заказы"
+                            maxlength="30"
+                          />
+                        </div>
+                        <div class="still__item">
+                          <div class="still__select">
+                            <h5
+                              class="admin__input-title admin__input-title--mb"
+                            >
+                              Страница
+                            </h5>
+                            <button
+                              class="button-select"
+                              type="button"
+                              data-placeholder="Выберите страницу"
+                            >
+                              <span></span>
+                              <svg width="12" height="8">
+                                <use
+                                  xlink:href="./image/icons.svg#arrow-bottom"
+                                ></use>
+                              </svg>
+                            </button>
+                            <div class="select-wrapper">
+                              <button
+                                class="select-wrapper__button"
+                                type="button"
+                              >
+                                3 месяца
+                              </button>
+                              <button
+                                class="select-wrapper__button"
+                                type="button"
+                              >
+                                6 месяца
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="still__icon">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Иконка
+                          </h5>
+
+                          <div class="still__icon-wrapper">
+                            <button class="still__icon-button">
+                              <img class="still__img" src="image/act.png" />
+                            </button>
+                            <p class="still__icon-text">
+                              Выберите файл или перетащите его в эту область
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="button admin__add-button">Добавить</button>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Статусы заказа</span>
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <div class="admin__items">
+                      <div class="still__wrapper">
+                        <div class="still__color-item admin-item-count">
+                          <div class="admin__item-top">
+                            <h5 class="admin__input-title">Статус 1</h5>
+                            <span class="admin__text-count"></span>
+                          </div>
+                          <input
+                            class="input"
+                            type="text"
+                            placeholder="Мои заказы"
+                            maxlength="30"
+                          />
+                        </div>
+                        <div class="still__color-item">
+                          <div class="still__select">
+                            <h5
+                              class="admin__input-title admin__input-title--mb"
+                            >
+                              Цвет статуса
+                            </h5>
+                            <button
+                              class="still__button button-select"
+                              type="button"
+                            >
+                              <div
+                                class="still__block-color status--approval"
+                              ></div>
+                              <span></span>
+                              <svg width="12" height="8">
+                                <use
+                                  xlink:href="./image/icons.svg#arrow-bottom"
+                                ></use>
+                              </svg>
+                            </button>
+                            <div class="select-wrapper">
+                              <button
+                                class="select-wrapper__button select-wrapper__button--active"
+                                type="button"
+                              >
+                                Светло-синий
+                              </button>
+                              <button
+                                class="select-wrapper__button"
+                                type="button"
+                              >
+                                Желтый
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="still__color-end">
+                          <div class="status status--approval still__status">
+                            <span>На согласовании</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="still__wrapper">
+                        <div class="still__color-item admin-item-count">
+                          <div class="admin__item-top">
+                            <h5 class="admin__input-title">Статус 2</h5>
+                            <span class="admin__text-count"></span>
+                          </div>
+                          <input
+                            class="input"
+                            type="text"
+                            placeholder="Мои заказы"
+                            maxlength="30"
+                          />
+                        </div>
+                        <div class="still__color-item">
+                          <div class="still__select">
+                            <h5
+                              class="admin__input-title admin__input-title--mb"
+                            >
+                              Цвет статуса
+                            </h5>
+                            <button
+                              class="still__button button-select"
+                              type="button"
+                            >
+                              <div
+                                class="still__block-color status--panding"
+                              ></div>
+                              <span></span>
+                              <svg width="12" height="8">
+                                <use
+                                  xlink:href="./image/icons.svg#arrow-bottom"
+                                ></use>
+                              </svg>
+                            </button>
+                            <div class="select-wrapper">
+                              <button
+                                class="select-wrapper__button select-wrapper__button--active"
+                                type="button"
+                              >
+                                Синий
+                              </button>
+                              <button
+                                class="select-wrapper__button"
+                                type="button"
+                              >
+                                Желтый
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="still__color-end">
+                          <div class="status status--panding still__status">
+                            <span>Ожидает аванс</span>
+                          </div>
+                          <button class="still__delete">
+                            <img
+                              class="still__delete-icon"
+                              src="./image/delete.png"
+                              alt="delete"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="still__wrapper">
+                        <div class="still__color-item admin-item-count">
+                          <div class="admin__item-top">
+                            <h5 class="admin__input-title">Статус 3</h5>
+                            <span class="admin__text-count"></span>
+                          </div>
+                          <input
+                            class="input"
+                            type="text"
+                            placeholder="Мои заказы"
+                            maxlength="30"
+                          />
+                        </div>
+                        <div class="still__color-item">
+                          <div class="still__select">
+                            <h5
+                              class="admin__input-title admin__input-title--mb"
+                            >
+                              Цвет статуса
+                            </h5>
+                            <button
+                              class="still__button button-select"
+                              type="button"
+                            >
+                              <div
+                                class="still__block-color status--ready-provide"
+                              ></div>
+                              <span></span>
+                              <svg width="12" height="8">
+                                <use
+                                  xlink:href="./image/icons.svg#arrow-bottom"
+                                ></use>
+                              </svg>
+                            </button>
+                            <div class="select-wrapper">
+                              <button
+                                class="select-wrapper__button select-wrapper__button--active"
+                                type="button"
+                              >
+                                Светло-зелёный
+                              </button>
+                              <button
+                                class="select-wrapper__button"
+                                type="button"
+                              >
+                                Желтый
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="still__color-end">
+                          <div
+                            class="status status--ready-provide still__status"
+                          >
+                            <span>Готов к обеспечению</span>
+                          </div>
+                          <button class="still__delete">
+                            <img
+                              class="still__delete-icon"
+                              src="./image/delete.png"
+                              alt="delete"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="still__wrapper">
+                        <div class="still__color-item admin-item-count">
+                          <div class="admin__item-top">
+                            <h5 class="admin__input-title">Статус 4</h5>
+                            <span class="admin__text-count"></span>
+                          </div>
+                          <input
+                            class="input"
+                            type="text"
+                            placeholder="Мои заказы"
+                            maxlength="30"
+                          />
+                        </div>
+                        <div class="still__color-item">
+                          <div class="still__select">
+                            <h5
+                              class="admin__input-title admin__input-title--mb"
+                            >
+                              Цвет статуса
+                            </h5>
+                            <button
+                              class="still__button button-select"
+                              type="button"
+                            >
+                              <div
+                                class="still__block-color status--ready"
+                              ></div>
+                              <span></span>
+                              <svg width="12" height="8">
+                                <use
+                                  xlink:href="./image/icons.svg#arrow-bottom"
+                                ></use>
+                              </svg>
+                            </button>
+                            <div class="select-wrapper">
+                              <button
+                                class="select-wrapper__button select-wrapper__button--active"
+                                type="button"
+                              >
+                                Зеленый
+                              </button>
+                              <button
+                                class="select-wrapper__button"
+                                type="button"
+                              >
+                                Желтый
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="still__color-end">
+                          <div class="status status--ready still__status">
+                            <span>Готов к отгрузке</span>
+                          </div>
+                          <button class="still__delete">
+                            <img
+                              class="still__delete-icon"
+                              src="./image/delete.png"
+                              alt="delete"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="still__wrapper">
+                        <div class="still__color-item admin-item-count">
+                          <div class="admin__item-top">
+                            <h5 class="admin__input-title">Статус 5</h5>
+                            <span class="admin__text-count"></span>
+                          </div>
+                          <input
+                            class="input"
+                            type="text"
+                            placeholder="Мои заказы"
+                            maxlength="30"
+                          />
+                        </div>
+                        <div class="still__color-item">
+                          <div class="still__select">
+                            <h5
+                              class="admin__input-title admin__input-title--mb"
+                            >
+                              Цвет статуса
+                            </h5>
+                            <button
+                              class="still__button button-select"
+                              type="button"
+                            >
+                              <div
+                                class="still__block-color status--unopened"
+                              ></div>
+                              <span></span>
+                              <svg width="12" height="8">
+                                <use
+                                  xlink:href="./image/icons.svg#arrow-bottom"
+                                ></use>
+                              </svg>
+                            </button>
+                            <div class="select-wrapper">
+                              <button
+                                class="select-wrapper__button select-wrapper__button--active"
+                                type="button"
+                              >
+                                Светло-серый
+                              </button>
+                              <button
+                                class="select-wrapper__button"
+                                type="button"
+                              >
+                                Желтый
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="still__color-end">
+                          <div class="status status--unopened still__status">
+                            <span>Закрыт</span>
+                          </div>
+                          <button class="still__delete">
+                            <img
+                              class="still__delete-icon"
+                              src="./image/delete.png"
+                              alt="delete"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="button admin__add-button">Добавить</button>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>Цвета</span>
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <div class="admin__items">
+                      <div class="still__wrapper">
+                        <div class="still__color-item">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Цвет заголовков
+                          </h5>
+                          <div class="still__color-wrapper">
+                            <input
+                              class="input still__color-input"
+                              type="text"
+                              value="#202020"
+                            />
+                            <div class="still__color"></div>
+                          </div>
+                        </div>
+                        <div class="still__color-item">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Цвет текста
+                          </h5>
+                          <div class="still__color-wrapper">
+                            <input
+                              class="input still__color-input"
+                              type="text"
+                              value="#303030"
+                            />
+                            <div class="still__color"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="still__wrapper">
+                        <div class="still__color-item">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Цвет ссылок
+                          </h5>
+                          <div class="still__color-wrapper">
+                            <input
+                              class="input still__color-input"
+                              type="text"
+                              value="#2CA3DA"
+                            />
+                            <div class="still__color"></div>
+                          </div>
+                        </div>
+                        <div class="still__color-item">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Цвет фона
+                          </h5>
+                          <div class="still__color-wrapper">
+                            <input
+                              class="input still__color-input"
+                              type="text"
+                              value="#fff"
+                            />
+                            <div class="still__color"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="still__wrapper">
+                        <div class="still__color-item">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Цвет кнопок
+                          </h5>
+                          <div class="still__color-wrapper">
+                            <input
+                              class="input still__color-input"
+                              type="text"
+                              value="#FF8100"
+                            />
+                            <div class="still__color"></div>
+                          </div>
+                        </div>
+                        <div class="still__color-item">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Цвет хедера
+                          </h5>
+                          <div class="still__color-wrapper">
+                            <input
+                              class="input still__color-input"
+                              type="text"
+                              value="#fff"
+                            />
+                            <div class="still__color"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="still__wrapper">
+                        <div class="still__color-item">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Цвет футера
+                          </h5>
+                          <div class="still__color-wrapper">
+                            <input
+                              class="input still__color-input"
+                              type="text"
+                              value="#534439"
+                            />
+                            <div class="still__color"></div>
+                          </div>
+                        </div>
+                        <div class="still__color-item">
+                          <h5 class="admin__input-title admin__input-title--mb">
+                            Цвет текста в кнопке
+                          </h5>
+                          <div class="still__color-wrapper">
+                            <input
+                              class="input still__color-input"
+                              type="text"
+                              value="#fff"
+                            />
+                            <div class="still__color"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin__wrapper">
+                  <button class="admin__wrapper-top" type="button">
+                    <span>HTML код внутри HEAD</span>
+
+                    <svg width="16" height="10">
+                      <use xlink:href="image/icons.svg#arrow-top"></use>
+                    </svg>
+                  </button>
+                  <div class="admin__content">
+                    <button class="button admin__add-button">
+                      Добавить код
+                    </button>
+                  </div>
+                </div>
+
+                <button class="button admin__form-submit">Сохранить</button>
+              </form>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="js/main.min.js"></script>
+    <script src="js/still/still.min.js"></script>
+  </body>
+</html>

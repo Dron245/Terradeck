@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Акт сверки</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet" />
+		<link href="css/main.min.css" rel="stylesheet" />
+	</head>
+	<body>
+		@@include('blocks/header.html')
+		<main class="main act-sverki">
+			<div class="act-sverki__wrapper container statistics">
+				<h3 class="title">Акт сверки</h3>
+				<div class="statistics__form-wrapper">
+					<button
+					  class="statistics__form-button button-select"
+					  type="button"
+					  data-placeholder="Виберите период"
+					>
+					  <span></span>
+					  <svg width="12" height="7">
+						 <use xlink:href="image/icons.svg#arrow-bottom"></use>
+					  </svg>
+					</button>
+					<div class="select-wrapper">
+					  <button class="select-wrapper__button" type="button">
+						 Период
+					  </button>
+					  <button class="select-wrapper__button" type="button">
+						 Период 2
+					  </button>
+					</div>
+				 </div>
+				 <ul class="act-sverki__list">
+					<li class="act-sverki__item"><a href="#" class="act-sverki__link">Акт сверки № 2422 от 20.03.2024 (20.03 09:10).pdf</a></li>
+					<li class="act-sverki__item"><a href="#" class="act-sverki__link">Акт сверки № 2422 от 20.03.2024 (20.03 09:10).pdf</a></li>
+					<li class="act-sverki__item"><a href="#" class="act-sverki__link">Акт сверки № 2422 от 20.03.2024 (20.03 09:10).pdf</a></li>
+					<li class="act-sverki__item"><a href="#" class="act-sverki__link">Акт сверки № 2422 от 20.03.2024 (20.03 09:10).pdf</a></li>
+					<li class="act-sverki__item"><a href="#" class="act-sverki__link">Акт сверки № 2422 от 20.03.2024 (20.03 09:10).pdf</a></li>
+					<li class="act-sverki__item"><a href="#" class="act-sverki__link">Акт сверки № 2422 от 20.03.2024 (20.03 09:10).pdf</a></li>
+					<li class="act-sverki__item"><a href="#" class="act-sverki__link">Акт сверки № 2422 от 20.03.2024 (20.03 09:10).pdf</a></li>
+					<li class="act-sverki__item"><a href="#" class="act-sverki__link">Акт сверки № 2422 от 20.03.2024 (20.03 09:10).pdf</a></li>
+					<li class="act-sverki__item"><a href="#" class="act-sverki__link">Акт сверки № 2422 от 20.03.2024 (20.03 09:10).pdf</a></li>
+					<li class="act-sverki__item"><a href="#" class="act-sverki__link">Акт сверки № 2422 от 20.03.2024 (20.03 09:10).pdf</a></li>
+				</ul>
+				@@include("blocks/navbar.html")
+			</div>
+		</main>
+		@@include('blocks/footer.html')
+
+		<script src="js/main.min.js"></script>
+	</body>
+</html>

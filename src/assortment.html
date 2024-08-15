@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assortment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    @@include("blocks/header.html")
+    <main class="main">
+      <section class="bread">
+        <div class="container">
+          <div class="bread__content">
+            <a class="bread__link" href="assortment.html"> Каталог </a>
+            <span>/</span>
+            <a class="bread__link bread__link--active" href="assortment.html">
+              Торговый ассортимент
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="assortment">
+        <div class="container assortment__row">
+          <form class="assortment__form">
+            <div class="assortment__form-item-m">
+              <input
+                class="assortment__input assortment__search"
+                type="text"
+                placeholder="Поиск"
+              />
+              <span class="assortment__search-icon">
+                <svg width="16" height="16" fill="#202020">
+                  <use xlink:href="./image/icons.svg#search-2"></use>
+                </svg>
+              </span>
+            </div>
+            <button class="assortment__menu-button" type="button">
+              <img class="assortment__menu-icon" src="./image/filter.png">
+            </button>
+            <div class="assortment__form-wrapper">
+              <div class="assortment__form-item">
+                <input
+                  class="assortment__input assortment__search"
+                  type="text"
+                  placeholder="Поиск"
+                />
+                <span class="assortment__search-icon">
+                  <svg width="16" height="16" fill="#202020">
+                    <use xlink:href="./image/icons.svg#search-2"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="assortment__price">
+                <h5 class="assortment__form-title">Цена, ₽</h5>
+                <div class="assortment__price-wrapper">
+                  <input
+                    class="assortment__input assortment__price-input"
+                    type="text"
+                    placeholder="от"
+                  />
+                  <input
+                    class="assortment__input assortment__price-input"
+                    type="text"
+                    placeholder="до"
+                  />
+                </div>
+              </div>
+              <div class="assortment__filter">
+                <h5 class="assortment__form-title">Наличие</h5>
+                <ul class="assortment__filter-list">
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input
+                        class="assortment__filter-input"
+                        type="checkbox"
+                        checked
+                      />
+                      <span class="assortment__filter-value">В наличии</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="assortment__filter">
+                <h5 class="assortment__form-title">Размер</h5>
+                <ul class="assortment__filter-list">
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value">6000</span>
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value">3000</span>
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value">4000</span>
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value">5000</span>
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value">2900</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="assortment__filter">
+                <h5 class="assortment__form-title">Производитель</h5>
+                <ul class="assortment__filter-list">
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value"
+                        >Производитель 1</span
+                      >
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value"
+                        >Производитель 2</span
+                      >
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value"
+                        >Производитель 3</span
+                      >
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value"
+                        >Производитель 4</span
+                      >
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value"
+                        >Производитель 5</span
+                      >
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value"
+                        >Производитель 6</span
+                      >
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value"
+                        >Производитель 7</span
+                      >
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value"
+                        >Производитель 8</span
+                      >
+                    </label>
+                  </li>
+                </ul>
+      
+              </div>
+              <div class="assortment__filter">
+                <h5 class="assortment__form-title">Коллекция</h5>
+                <ul class="assortment__filter-list">
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value">ECO</span>
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value">Velvet</span>
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value">Massive 3.0</span>
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value">Aragon</span>
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value"
+                        >UnoDeck Mogano (Русдекинг)</span
+                      >
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value"
+                        >UnoDeck Mogano (Русдекинг)</span
+                      >
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value"
+                        >UnoDeck Mogano (Русдекинг)</span
+                      >
+                    </label>
+                  </li>
+                </ul>
+            
+              </div>
+              <div class="assortment__filter">
+                <h5 class="assortment__form-title">Цвет</h5>
+                <ul class="assortment__filter-list">
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value">Коричневый</span>
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value">Натур</span>
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value"
+                        >Светло-коричневый</span
+                      >
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value">Серый</span>
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value">Черный</span>
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value">Черный</span>
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value">Черный</span>
+                    </label>
+                  </li>
+                  <li class="assortment__filter-item">
+                    <label class="assortment__filter-label">
+                      <input class="assortment__filter-input" type="checkbox" />
+                      <span class="assortment__filter-value">Черный</span>
+                    </label>
+                  </li>
+                </ul>
+           
+              </div>
+              <button class="button assortment__form-submit" type="submit">
+                Применить
+              </button>
+            </div>
+          </form>
+          <div class="assortment__content">
+            <span class="assortment_count">128 товаров</span>
+            <div class="assortment__items">
+              <div class="assortment__table">
+                <div class="assortment__table-top">
+                  <div class="assortment__table-wrapper">
+                    <img
+                      class="assortment__table-image"
+                      src="./image/assortment/image.png"
+                    />
+                    <div class="assortment__title-wrapper">
+                       <h5 class="assortment__table-title">
+                      Террасная доска TERRADECK ECO 155x28, Россия (6.25),
+                      Односторонний
+                    </h5>
+                    <p class="assortment__subtitle">Арт. 100-10-eco-3000/sl29</p>
+                    </div>
+                   
+                  </div>
+
+                  <span class="assortment__top-key">Ед. изм.</span>
+                  <span class="assortment__top-key">Дилерская цена</span>
+                  <span class="assortment__top-key">РРЦ</span>
+                  <span class="assortment__top-key">Остаток</span>
+                </div>
+                <div class="assortment__table-item">
+                  <button class="assortment__table-button">
+                    <span>3000 мм</span>
+                    <svg
+                      class="assortment__arrow"
+                      width="12"
+                      height="8"
+                      fill="#fff"
+                    >
+                      <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                    </svg>
+                  </button>
+                  <div class="assortment__table-points">
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Коричневый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Серый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Карамельный</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="assortment__table-item">
+                  <button class="assortment__table-button">
+                    <span>4000 мм</span>
+                    <svg
+                      class="assortment__arrow"
+                      width="12"
+                      height="8"
+                      fill="#fff"
+                    >
+                      <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                    </svg>
+                  </button>
+                  <div class="assortment__table-points">
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Коричневый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Серый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Карамельный</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="assortment__table">
+                <div class="assortment__table-top">
+                  <div class="assortment__table-wrapper">
+                    <img
+                      class="assortment__table-image"
+                      src="./image/assortment/image.png"
+                    />
+                    <h5 class="assortment__table-title">
+                      Террасная доска TERRADECK ECO 155x28, Россия (6.25),
+                      Односторонний
+                    </h5>
+                  </div>
+
+                  <span class="assortment__top-key">Ед. изм.</span>
+                  <span class="assortment__top-key">Дилерская цена</span>
+                  <span class="assortment__top-key">РРЦ</span>
+                  <span class="assortment__top-key">Остаток</span>
+                </div>
+                <div class="assortment__table-item">
+                  <button class="assortment__table-button">
+                    <span>3000 мм</span>
+                    <svg
+                      class="assortment__arrow"
+                      width="12"
+                      height="8"
+                      fill="#fff"
+                    >
+                      <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                    </svg>
+                  </button>
+                  <div class="assortment__table-points">
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Коричневый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Серый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Карамельный</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Черный</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="assortment__table-item">
+                  <button class="assortment__table-button">
+                    <span>4000 мм</span>
+                    <svg
+                      class="assortment__arrow"
+                      width="12"
+                      height="8"
+                      fill="#fff"
+                    >
+                      <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                    </svg>
+                  </button>
+                  <div class="assortment__table-points">
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Коричневый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Серый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Карамельный</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Черный</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="assortment__table-item">
+                  <button class="assortment__table-button">
+                    <span>5000 мм</span>
+                    <svg
+                      class="assortment__arrow"
+                      width="12"
+                      height="8"
+                      fill="#fff"
+                    >
+                      <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                    </svg>
+                  </button>
+                  <div class="assortment__table-points">
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Коричневый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Серый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Карамельный</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Черный</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="assortment__table-item">
+                  <button class="assortment__table-button">
+                    <span>6000 мм</span>
+                    <svg
+                      class="assortment__arrow"
+                      width="12"
+                      height="8"
+                      fill="#fff"
+                    >
+                      <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                    </svg>
+                  </button>
+                  <div class="assortment__table-points">
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Коричневый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Серый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Карамельный</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Черный</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="assortment__table">
+                <div class="assortment__table-top">
+                  <div class="assortment__table-wrapper">
+                    <img
+                      class="assortment__table-image"
+                      src="./image/assortment/image.png"
+                    />
+                    <h5 class="assortment__table-title">
+                      Террасная доска TERRADECK ECO 155x28, Россия (6.25),
+                      Односторонний
+                    </h5>
+                  </div>
+
+                  <span class="assortment__top-key">Ед. изм.</span>
+                  <span class="assortment__top-key">Дилерская цена</span>
+                  <span class="assortment__top-key">РРЦ</span>
+                  <span class="assortment__top-key">Остаток</span>
+                </div>
+                <div class="assortment__table-item">
+                  <button class="assortment__table-button">
+                    <span>3000 мм</span>
+                    <svg
+                      class="assortment__arrow"
+                      width="12"
+                      height="8"
+                      fill="#fff"
+                    >
+                      <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                    </svg>
+                  </button>
+                  <div class="assortment__table-points">
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Коричневый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Серый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Карамельный</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="assortment__table-item">
+                  <button class="assortment__table-button">
+                    <span>4000 мм</span>
+                    <svg
+                      class="assortment__arrow"
+                      width="12"
+                      height="8"
+                      fill="#fff"
+                    >
+                      <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                    </svg>
+                  </button>
+                  <div class="assortment__table-points">
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Коричневый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Серый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Карамельный</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="assortment__table">
+                <div class="assortment__table-top">
+                  <div class="assortment__table-wrapper">
+                    <img
+                      class="assortment__table-image"
+                      src="./image/assortment/image.png"
+                    />
+                    <h5 class="assortment__table-title">
+                      Террасная доска TERRADECK ECO 155x28, Россия (6.25),
+                      Односторонний
+                    </h5>
+                  </div>
+
+                  <span class="assortment__top-key">Ед. изм.</span>
+                  <span class="assortment__top-key">Дилерская цена</span>
+                  <span class="assortment__top-key">РРЦ</span>
+                  <span class="assortment__top-key">Остаток</span>
+                </div>
+                <div class="assortment__table-item">
+                  <button class="assortment__table-button">
+                    <span>3000 мм</span>
+                    <svg
+                      class="assortment__arrow"
+                      width="12"
+                      height="8"
+                      fill="#fff"
+                    >
+                      <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                    </svg>
+                  </button>
+                  <div class="assortment__table-points">
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Коричневый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Серый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Карамельный</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="assortment__table-item">
+                  <button class="assortment__table-button">
+                    <span>4000 мм</span>
+                    <svg
+                      class="assortment__arrow"
+                      width="12"
+                      height="8"
+                      fill="#fff"
+                    >
+                      <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                    </svg>
+                  </button>
+                  <div class="assortment__table-points">
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Коричневый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Серый</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                    <div class="assortment__table-point">
+                      <button class="assortment__table-color">
+                        <span>Карамельный</span>
+                        <svg class="assortment__arrow" width="12" height="8">
+                          <use xlink:href="image/icons.svg#arrow-bottom"></use>
+                        </svg>
+                      </button>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Ед. изм.</span>
+                        <span>Пог. м.</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key"
+                          >Дилерская цена</span
+                        >
+                        <span>325,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">РРЦ</span>
+                        <span>720,0 ₽</span>
+                      </div>
+                      <div class="assortment__point-item">
+                        <span class="assortment__point-key">Остаток</span>
+                        <span>1520</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            @@include("blocks/navbar.html")
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include("blocks/footer.html")
+
+    <script src="./js/main.min.js"></script>
+    <script src="./js/assortment/assortment.min.js"></script>
+  </body>
+</html>

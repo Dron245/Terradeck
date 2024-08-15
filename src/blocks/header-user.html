@@ -1,0 +1,84 @@
+<header class="header">
+    <div class="container header__inner">
+      <nav class="header__nav">
+        <a class="logo" href="index.html">
+          <img class="logo__image" src="./image/logo.png" />
+        </a>
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="#">
+              <img class="header__link-icon" src="./image/orders.png" />
+              <span>Мои заказы</span></a
+            >
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">
+              <img class="header__link-icon" src="./image/info.png" />
+              <span> Мои данные</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">
+              <img class="header__link-icon" src="./image/act.png" />
+              <span>Акт сверки</span></a
+            >
+          </li>
+        </ul>
+        <div class="header__wrapper">
+          <a class="header__search">
+            <img class="header__search-icon" src="./image/search-orange.png" />
+          </a>
+          <button class="header__profile" href="#">
+            <picture>
+              <source srcset="./image/sign-m.png" media="(max-width:768px)" />
+              <img class="header__sign-icon" src="./image/sign.png" />
+            </picture>
+            <span> ООО Мастердек </span>
+            <svg width="10" height="6" >
+                <use xlink:href="image/icons.svg#arrow-bottom"></use>
+            </svg>
+            </button
+          >
+          <a class="header__link-basket" href="./basket.html">
+            <img src="./image/basket.png" alt="basket" />
+          </a>
+          <div class="header__profile-menu"> 
+            <a class="header__profile-link" href="#">Личный кабинет</a>
+            <button class="header__profile-exit">
+                <img  src="./image/exit.png" alt="exit"/>
+                <span>Выйти</span>
+            </button>
+          </div>
+        </div>
+        <button class="header__button header__button-m">
+          <div class="header__button-icon">
+            <span></span><span></span><span></span>
+          </div>
+        </button>
+      </nav>
+    </div>
+    <div class="header__bottom">
+      <div class="container header__bottom-inner">
+        <button class="header__button">
+          <div class="header__button-icon">
+            <span></span><span></span><span></span>
+          </div>
+          <span>Каталог</span>
+        </button>
+        <form class="header__form">
+          <div class="header__form-item">
+            <input class="header__input" type="text" placeholder="Поиск" />
+          </div>
+        </form>
+        <a class="header__basket" href="./basket.html">
+          <div class="header__basket-icon">
+            <img src="./image/basket.png" alt="basket" />
+          </div>
+          <span>Корзина</span>
+        </a>
+      </div>
+    </div>
+  
+    <div class="container header__menu">@@include('menu.html')</div>
+  </header>
+  

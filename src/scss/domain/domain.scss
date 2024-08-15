@@ -1,0 +1,45 @@
+.domain {
+  .domain__item {
+    display: flex;
+    gap: 0 10px;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .domain__input {
+    max-width: 160px;
+  }
+
+  .domain__buttons {
+    display: flex;
+    gap: 0 20px;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  .domain__button {
+    max-width: 260px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .domain {
+    .domain__buttons {
+      flex-direction: column;
+      max-width: 360px;
+      width: 100%;
+      margin: 0;
+      gap: 20px 0;
+    }
+
+    .domain__button {
+      max-width: 100%;
+
+      &:first-child {
+        order: 1;
+      }
+    }
+  }
+}

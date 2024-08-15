@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 20px;
+    margin-top: 40px;
+    .navbar__button {
+      padding: 12px;
+      border-radius: 8px;
+      background-color: $orange;
+      width: 40px;
+      height: 40px;
+    }
+  
+    .navbar__list {
+      display: flex;
+      gap: 0 2px;
+    }
+  
+    .navbar__link {
+      display: block;
+      width: 40px;
+      height: 40px;
+  
+      padding: 12px;
+  
+      text-decoration: none;
+      font-size: 14px;
+      text-align: center;
+      line-height: 1;
+      color: $black;
+    }
+  
+    .navbar__link--active {
+      border: 2px solid $orange;
+      border-radius: 8px;
+      color: $orange;
+    }
+  }

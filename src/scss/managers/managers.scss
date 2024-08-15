@@ -1,0 +1,45 @@
+.managers {
+  .managers__item {
+    display: flex;
+    align-items: center;
+  }
+
+  .managers__contractors {
+    margin-left: auto;
+    width: 130px;
+    margin-right: 70px;
+  }
+
+  .admin__switch-label {
+    margin-top: 20px;
+  }
+  .managers__content {
+    display: flex;
+    align-items: end;
+    gap: 0 20px;
+  }
+  .managers__select {
+    width: 100%;
+    position: relative;
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 768px) {
+  .managers {
+    .managers__item {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 17px 0;
+    }
+
+    .managers__contractors {
+      order: 1;
+      width: 100%;
+    }
+
+    .managers__content {
+      flex-direction: column;
+    }
+  }
+}

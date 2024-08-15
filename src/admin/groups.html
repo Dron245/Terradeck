@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groups</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="panel">
+        <button class="button panel__button">Перейти на сайт</button>
+        <h4 class="panel__title">Управление магазином</h4>
+
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <svg width="20" height="20" fill="#fff">
+              <use xlink:href="./image/icons.svg#catalog"></use>
+            </svg>
+            <span>Каталог</span>
+          </a>
+          <ul class="panel__list">
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Товары</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Атрибуты</a>
+            </li>
+            <li class="panel__list-item panel__item--active">
+              <a class="panel__list-link" href="#">Группы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Прайс-листы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Товары</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Категории</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <img src="./image/panel-orders.png" />
+            <span>Заказы</span>
+          </a>
+        </div>
+        <div class="panel__item">
+          <a class="panel__link" href="#">
+            <svg width="20" height="20" fill="#fff">
+              <use xlink:href="./image/icons.svg#catalog"></use>
+            </svg>
+            <span>Контрагенты</span>
+          </a>
+          <ul class="panel__list">
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Контрагенты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Контакты</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Ценовые группы</a>
+            </li>
+            <li class="panel__list-item">
+              <a class="panel__list-link" href="#">Менеджеры</a>
+            </li>
+          </ul>
+        </div>
+        <h4 class="panel__title">Общие настройки</h4>
+        <ul class="panel__setings">
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <svg width="20" height="20" fill="#fff">
+                <use xlink:href="./image/icons.svg#main"></use>
+              </svg>
+              <span>Главное</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <img class="panel__item-icon" src="./image/domain.png" />
+              <span>Домен</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <img class="panel__item-icon" src="./image/still.png" />
+              <span>Ещё</span>
+            </a>
+          </li>
+          <li class="panel__item">
+            <a class="panel__link" href="#">
+              <svg width="20" height="20" fill="#fff">
+                <use xlink:href="./image/icons.svg#add"></use>
+              </svg>
+              <span>Интеграции</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row__content">
+        @@include("../blocks/admin-header.html")
+        <main class="admin-main">
+          <section class="admin groups">
+            <div class="popup">
+              <div class="popup__form">
+                <h3 class="title-s">Создание группы</h3>
+                <div class="popup__form-content">
+                  <div class="popup-form__item">
+                    <h5 class="admin__input-title admin__input-title--mb">
+                      Название
+                    </h5>
+                    <input
+                      class="input"
+                      type="text"
+                      value=""
+                      placeholder="Введите название группы"
+                    />
+                  </div>
+                  <div class="popup-form__item">
+                    <h5 class="admin__input-title admin__input-title--mb">
+                      Сортировка
+                    </h5>
+                    <input
+                      class="input"
+                      type="text"
+                      value="999"
+                      placeholder="Введите название группы"
+                    />
+                  </div>
+                  <label class="groups__file-label">
+                    <h5 class="admin__input-title admin__input-title--mb">
+                      Сортировка
+                    </h5>
+                    <div class="groups__file-wrapper">
+                      <span class="groups__file-text">
+                        Выберите файл или перетащите его в эту область
+                      </span>
+                      <input class="groups__file-input" type="file" />
+                    </div>
+                  </label>
+                  <div class="popup__bottom">
+                    <button class="popup__cancel">Отменить</button>
+                    <button class="popup__save button">Сохранить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="admin-container">
+              <h3 class="title-s">Группы</h3>
+              <form class="admin__form">
+                <div class="admin__top-form">
+                  <button class="button button-popup" type="button">
+                    Создать группы
+                  </button>
+                </div>
+                <div class="admin__list">
+                  <div class="admin__wrapper groups__item">
+                    <span>Торговый ассортимент</span>
+                    <span class="groups__sort">Сортировка:1</span>
+                    <a class="groups__link" href="#">Редактировать</a>
+                  </div>
+                  <div class="admin__wrapper groups__item">
+                    <span>Комплектующие для настилов</span>
+                    <span class="groups__sort">Сортировка:12</span>
+                    <a class="groups__link" href="#">Редактировать</a>
+                  </div>
+                  <div class="admin__wrapper groups__item">
+                    <span>Декоративные ограждения</span>
+                    <span class="groups__sort">Сортировка:123</span>
+                    <a class="groups__link" href="#">Редактировать</a>
+                  </div>
+                  <div class="admin__wrapper groups__item">
+                    <span>Фасады из ДПК</span>
+                    <span class="groups__sort">Сортировка:1234</span>
+                    <a class="groups__link" href="#">Редактировать</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

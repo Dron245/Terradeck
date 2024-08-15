@@ -1,0 +1,133 @@
+.contacts {
+  .contacts__table {
+    background-color: $white;
+    border-radius: 10px;
+  }
+
+  .contacts__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 0 20px;
+
+    .admin__switch-label {
+      padding-top: 35px;
+    }
+  }
+  .contacts__table-top {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 1px solid #bba89c;
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .contacts__table-name {
+    width: 150px;
+    line-height: 1;
+    svg {
+      display: none;
+    }
+  }
+
+  .contacts__contractors {
+    margin-left: 340px;
+    text-wrap: nowrap;
+  }
+
+  .contacts__table-item {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bba89c;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .contractors__select {
+    position: relative;
+  }
+
+  .contacts__switch-label {
+    margin-left: auto;
+  }
+
+  .contacts__setting {
+    margin-left: 20px;
+  }
+
+  .contacts__key {
+    font-weight: 700;
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    .contacts__table-top {
+      display: none;
+    }
+
+    .contacts__content {
+      display: flex;
+      align-items: flex-start;
+      gap: 0 20px;
+      flex-direction: column;
+      gap: 20px 0;
+      .admin__switch-label {
+        padding-top: 0;
+      }
+    }
+
+    .contacts__table-item {
+      flex-wrap: wrap;
+      gap: 20px 0;
+      overflow: hidden;
+      max-height: 62px;
+      position: relative;
+      transition: 1.2s all linear;
+    }
+
+    .contacts__table-item--active {
+      max-height: 300px;
+      transition: 1.2s all linear;
+      svg {
+        transform: rotate(180deg);
+      }
+      .contacts__contractors {
+        &::after {
+          content: "";
+          left: -20px;
+          right: -20px;
+          top: 0;
+          background-color: #bba89c;
+          height: 1px;
+          position: absolute;
+        }
+      }
+    }
+    .contacts__contractors {
+      padding-top: 20px;
+      margin: 0;
+      order: 1;
+      width: 100%;
+      position: relative;
+    }
+
+    .contacts__key {
+      display: block;
+    }
+    .contacts__table-name {
+      width: auto;
+      display: flex;
+      gap: 0 10px;
+      align-items: center;
+      svg {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main class="main">
+      <section class="thanks">
+        <div class="container">
+          <div class="thanks__wrapper">
+            <div class="thanks__icon">
+              <img class="thanks__top-image" src="./image/check.png" />
+            </div>
+            <h3 class="title thanks__title">Спасибо!</h3>
+            <div class="thanks__texts">
+                <p class="thanks__text">Ваш заказ успешно оформлен!</p>
+                <p class="thanks__text">Номер вашего заказа - №346.</p>
+            </div>
+            <a class="button thanks__link" href="orders.html">Перейти в заказы</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
