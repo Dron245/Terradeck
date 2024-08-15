@@ -21,27 +21,16 @@ export function clean() {
 }
 
 export function scripts() {
-	return src(["node_modules/swiper/swiper-bundle.js",'./node_modules/imask/dist/imask.min.js', "src/js/main.js",])
-	  .pipe(uglify())
-	  .pipe(concat("main.js"))
-	  .pipe(src(["src/js/**/*.js",'!src/js/main.js']))
-	  .pipe(uglify())
-	  .pipe(rename({suffix: '.min'}))
-	  .pipe(dest("dist/js"))
-	  .pipe(browserSync.stream());
- }
-
-// export function scripts() {
-//   return src(["node_modules/swiper/swiper-bundle.js",'./node_modules/imask/dist/imask.js', "src/js/main.js",])
-//    //  .pipe(uglify())
-//     .pipe(concat("main.js"))
-//     .pipe(src(["src/js/**/*.js",'!src/js/main.js']))
-//    //  .pipe(uglify())
-// 	 .pipe(concat("main.js"))
-//     .pipe(rename({extname: '.min.js'}))
-//     .pipe(dest("dist/js"))
-//     .pipe(browserSync.stream());
-// }
+  return src(["node_modules/swiper/swiper-bundle.js",'./node_modules/imask/dist/imask.js', "src/js/main.js",])
+   //  .pipe(uglify())
+    .pipe(concat("main.js"))
+    .pipe(src(["src/js/**/*.js",'!src/js/main.js']))
+   //  .pipe(uglify())
+	 .pipe(concat("main.js"))
+    .pipe(rename({extname: '.min.js'}))
+    .pipe(dest("dist/js"))
+    .pipe(browserSync.stream());
+}
 
 const sass = gulpSass(cssSass);
 const fileIncludeSettings = {
@@ -57,23 +46,17 @@ export function html() {
 	 
 }
 
-export function styles() {
-	return src("src/scss/main.scss", {sourcemaps: true })
-	  .pipe(sass({ outputStyle: "compressed" }))
-	  .pipe(concat("main.min.css"))
-	  .pipe(dest("./dist/css"))
-	  .pipe(browserSync.stream());
- }
+export const styles = (done) => {
+  src("src/scss/main.scss", {sourcemaps: true })
+   //  .pipe(sass({ outputStyle: "compressed" }))
+    .pipe(sass({ outputStyle: "expanded" }))
+   //  .pipe(concat("main.min.css"))
+	.pipe(rename({extname: '.min.css'}))
+    .pipe(dest("./dist/css"))
+    .pipe(browserSync.stream());
 
-// export function styles() {
-//   return src("src/scss/main.scss", {sourcemaps: true })
-//    //  .pipe(sass({ outputStyle: "compressed" }))
-//     .pipe(sass({ outputStyle: "expanded" }))
-//    //  .pipe(concat("main.min.css"))
-// 	.pipe(rename({extname: '.min.css'}))
-//     .pipe(dest("./dist/css"))
-//     .pipe(browserSync.stream());
-// }
+	 done();
+}
 
 export function images() {
   return src(["src/image/**/*.*", "!src/image/**/*.svg"], {

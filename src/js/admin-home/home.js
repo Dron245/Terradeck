@@ -1,12 +1,14 @@
 const number = document.querySelector(".admin-home__number");
-
-IMask(number, {
+if (number) {
+	IMask(number, {
     mask: '+{7} (000)-000-00-00'
 })
+}
+
 
 const hours = document.querySelectorAll(".admin-home__graphic-input");
-
-[...hours].forEach((hour) =>
+if (hours) {
+	[...hours].forEach((hour) =>
   IMask(hour, {
     mask: "HH:MM",
     blocks: {
@@ -25,3 +27,5 @@ const hours = document.querySelectorAll(".admin-home__graphic-input");
     },
   })
 );
+}
+

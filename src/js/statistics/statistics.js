@@ -23,7 +23,9 @@ new Table();
 
 const filterButton = document.querySelector(".statistics__filter-button");
 const statisticsFilter = document.querySelector(".statistics__filter");
-
-filterButton.addEventListener("click", () => {
+if (filterButton) {
+	filterButton.addEventListener("click", () => {
   statisticsFilter.classList.toggle("statistics__filter--active");
 });
+}
+

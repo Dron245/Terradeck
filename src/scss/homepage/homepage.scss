@@ -9,8 +9,10 @@
   }
 
   .top__item {
-    height: 100%;
+   //  height: 100%;
     width: calc(50% - 10px);
+	 display: flex;
+	 flex-direction: column;
   }
 
   .top__slider {
@@ -18,6 +20,8 @@
     flex-grow: 1;
     margin-top: 40px;
     overflow: hidden;
+	 display: flex;
+	 flex-direction: column;
   }
 
   .top__slider-wrapper {

@@ -7,7 +7,8 @@ class Controllers {
       const input = controller.querySelector(".input-controller__number");
       const plusButton = input.nextElementSibling;
       const minusButton = input.previousElementSibling;
-      const addToCartButton = input.closest('.card__table-point').querySelector('.card__table-button');
+		if (input.closest('.card__table-point')) {
+			const addToCartButton = input.closest('.card__table-point').querySelector('.card__table-button');
       input.addEventListener("input", ({ target }) => {
         target.value = target.value.replace(/\D+/g, "");
         if (target.value.length < 1) {
@@ -20,6 +21,8 @@ class Controllers {
       });
       plusButton.addEventListener("click", () => this.plusValue(input, addToCartButton));
       minusButton.addEventListener("click", () => this.minusValue(input, addToCartButton));
+		}
+      
     });
   }
 

@@ -218,7 +218,7 @@
     }
     .information__table-input:checked + .information__check-block::after {
       content: "";
-      background-image: url(../../image/check.png);
+      background-image: url('../image/check.png');
       background-size: 12px 12px;
       background-position: center;
       background-repeat: no-repeat;
