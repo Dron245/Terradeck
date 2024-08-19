@@ -52,7 +52,7 @@ export const styles = (done) => {
     .pipe(sass({ outputStyle: "expanded" }))
    //  .pipe(concat("main.min.css"))
 	.pipe(rename({extname: '.min.css'}))
-    .pipe(dest("./dist/css"))
+    .pipe(dest("./dist/css", {sourcemaps: '.' }))
     .pipe(browserSync.stream());
 
 	 done();

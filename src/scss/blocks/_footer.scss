@@ -38,7 +38,8 @@
 
   .footer__copyrights {
     font-size: 14px;
-    color: $white;
+   //  color: $white;
+	color: rgba(255, 255, 255, 0.6);
     line-height: 1.5;
   }
 }

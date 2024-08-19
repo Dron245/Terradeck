@@ -75,7 +75,7 @@
   .assortment__filter-list {
     display: flex;
     flex-direction: column;
-    gap: 14px 0;
+    gap: 8px 0;
   }
 
   .assortment__filter-label {
@@ -132,7 +132,34 @@
       transition: .3s all linear;
     }
   }
-
+  .assortment__actions{
+	margin-top: 32px;
+    display: grid;
+    justify-content: center;
+    gap: 15px;
+	 @media (max-width: 1000.98px){
+		  & button:first-child {
+			display: none;
+		  }
+	 }
+	 a {
+		color: #ff8100;
+		text-align: center;
+	 }
+	 & button:not(.assortment__form-submit) {
+		border-radius: 8px;
+		padding: 12px 25px 12px 25px;
+		text-decoration: none;
+		background: #ff8100;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 150%;
+		color: #fff;
+		display: inline-block;
+		transition: 0.4s all ease;
+		text-align: center;
+	 }
+  }
   .assortment__content {
     flex-grow: 1;
   }
@@ -159,6 +186,7 @@
     padding: 20px;
     border-radius: 10px;
     background-color: $grey;
+	 
   }
 
   .assortment__table-wrapper {
@@ -181,6 +209,9 @@
     font-weight: 700;
   }
 
+  .assortment__table-image {
+	width: 92px;
+ }
   .assortment__top-key {
     align-self: end;
     font-size: 16px;
@@ -241,7 +272,7 @@
   .assortment__table-point {
     display: grid;
     justify-content: space-between;
-    grid-template-columns: 253px 62px 123px 50px 90px;
+    grid-template-columns: 273px 62px 123px 50px 90px;
   }
 
   .assortment__point-item {
@@ -299,7 +330,7 @@
     }
     .assortment__table-wrapper {
       width: 100%;
-      justify-content: space-between;
+      // justify-content: space-between;
     }
 
     .assortment__table-title {

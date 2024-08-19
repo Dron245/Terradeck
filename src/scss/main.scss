@@ -267,8 +267,11 @@ a:focus, button:focus {
 
   .bread__content {
     display: flex;
+	 flex-wrap: wrap;
+	//  gap: 10px;
+
     align-items: center;
-    gap: 0 16px;
+    gap: 10px 6px;
   }
 
   .bread__link {
@@ -356,6 +359,7 @@ a:focus, button:focus {
 
   .products__status {
     display: flex;
+	 min-width: 95px;
     align-items: baseline;
     gap: 0 6px;
     font-size: 14px;
@@ -435,9 +439,10 @@ a:focus, button:focus {
 .change-contents {
   .change-contents__buttons {
     display: flex;
+	 gap: 10px;
   }
   .change-contents__button {
-    padding: 0 20px 10px;
+    padding: 0 0px 10px 0;
     border-bottom: 1px solid $orange;
   }
 

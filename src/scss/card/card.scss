@@ -78,7 +78,8 @@
     height: 40px;
     border: 2px solid $orange;
     border-radius: 8px;
-   
+   display:grid ;
+	 place-items:center;
   }
 
 
@@ -166,7 +167,7 @@
     margin-top: 80px;
     min-height: 310px;
     position: relative;
-
+	gap: 10px;
     .change-contents__item--active {
       display: flex;
     }
