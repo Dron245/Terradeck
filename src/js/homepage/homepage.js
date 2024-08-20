@@ -1,9 +1,9 @@
 new Swiper(".top__slider", {
   spaceBetween: 10,
   loop: true,
-  autoplay: {
-    delay: 3000,
-  },
+//   autoplay: {
+//     delay: 3000,
+//   },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

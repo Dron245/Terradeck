@@ -253,10 +253,13 @@
     }
 
     .card__image-slider {
-      max-width: 320px;
+      // max-width: 320px;
       margin: 0 auto;
     }
 
+	 .card__pagination-wrapper {
+		justify-content: center;
+	 }
     .card__pagination-slide {
       display: block;
       max-width: 56px;
@@ -265,7 +268,7 @@
 
     .card__slider-button {
       position: absolute;
-      top: 50%;
+      top: -2000%;
       z-index: 5;
     }
 
