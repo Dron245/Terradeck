@@ -39,6 +39,12 @@
     gap: 0 12px;
     color: $black;
     text-decoration: none;
+	 span, svg {
+		@media (max-width: 767.98px){
+			  display: none;
+		}
+
+	 }
   }
   .header__sign-icon {
     max-width: 32px;

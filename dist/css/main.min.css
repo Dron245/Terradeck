@@ -841,6 +841,13 @@ template {
   color: #202020;
   text-decoration: none;
 }
+@media (max-width: 767.98px) {
+  .header .header__sign span, .header .header__sign svg,
+  .header .header__profile span,
+  .header .header__profile svg {
+    display: none;
+  }
+}
 .header .header__sign-icon {
   max-width: 32px;
 }
@@ -2116,6 +2123,11 @@ template {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 700;
+}
+@media (max-width: 767.98px) {
+  .assortment .assortment__table-title {
+    word-break: break-all;
+  }
 }
 .assortment .assortment__table-image {
   width: 92px;
