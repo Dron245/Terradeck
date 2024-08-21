@@ -312,3 +312,9 @@ if (inputsWrappers.length) {
 function giveValue(buttons) {
   [...buttons].forEach();
 }
+
+
+
+if (document.querySelector('.page-404')) {
+	document.querySelector('main').classList.add('pagemain404')
+}

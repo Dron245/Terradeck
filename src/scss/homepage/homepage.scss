@@ -35,7 +35,9 @@
 		display: none;
 	 }
 	 p {
-		padding-block: 20px;
+		// padding-block: 20px;
+		padding-top: 12px;
+		padding-bottom: 20px;
 		font-size: 16px;
 		line-height: 1.3;
 		br{display: none;}
@@ -52,6 +54,7 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 1.3;
+	 
   }
 
   .top__slider-data {
